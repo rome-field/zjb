@@ -1,0 +1,193 @@
+	
+	body{
+		font:20px;
+		}
+	
+
+	#logintext{
+		float:right;
+		font:15px;
+		}
+
+	/*   登录LI对齐   */
+	.info1{
+		line-height:60px;
+		height:60px;
+		width:500px;
+
+		}
+	.info1 img input{
+		vertical-align:middle;
+		line-height:15PX;
+		
+	}
+	.info1 span{
+		width:100px; 
+		margin-left:50px;
+		margin-top:5px;
+		height:15px;
+		Font:15px/15PX simhei;
+		color:#000;
+		float:left;
+		margin-top:30px;
+		}
+
+
+	table{
+		margin-top:100px;
+		}
+	
+		
+	.box{
+		width:300px;	
+		height:30px; 
+		line-height:30px;
+		font-family:Arial, Helvetica, sans-serif;
+		float:left;
+		margin-top:20px;
+		}
+	
+	
+	.yzm{
+		float:left;
+		margin:22px 10px  ;
+
+		}
+	#yzm{
+		float:left;
+		margin-right:2px;
+		}
+	.loginbox{
+		width:400px;
+	
+		height:500px;
+		padding-right:100px;
+		margin-top:20px;
+		
+		text-align:center; 
+		float:right;
+		
+		
+		}
+	#top{
+	
+		font-size:30px;
+		width:1002px;
+		height:50px;
+		background-color:#f4f4f4
+		
+		}
+
+
+
+
+
+
+	/* 导航以上CSS*/	
+	#container{
+		width:1002px;	
+		margin:0 auto;
+		}
+
+	body {
+		TEXT-ALIGN: center;
+		background-color:#e7ebea;
+		}
+
+
+	#pos{
+		background-color:#e7ebea;
+		}
+		
+	#rpos{
+		TEXT-ALIGN: right;
+		height:20px;
+		Font:15px/20PX simhei;
+		}
+		
+	#rpos li{
+		float:right;
+		}
+	#header{
+		height:87px;
+		width:1002px;			
+		}
+	#header img{
+		float:left;
+		margin:0px 10px 0 0px;
+		border:1px solid blue;	
+		}
+	#rheader{
+		float:left;
+		margin-top:30px;
+		width:700px;
+		height:50px;
+		}
+	#city{
+		float:left;
+		}
+	#ing span{
+		width:200px;
+		float:right;
+		}
+		
+	#city span{
+	    width:70px;
+		height:15px;
+		text-align:center;
+		Font:15px/15PX simhei;
+		color:#000;
+		float:left;
+		}
+
+	#banner span{
+		float:right;
+		TEXT-ALIGN: center;
+		margin-right:50px;
+		margin-top:10px;
+		}
+	#nav li{
+		float:left;
+		list-style:none;
+		margin:0 1px;
+		width:90px;
+		height:37px
+        }
+	 #nav li a{
+		display:block;
+		background-color:#ff8a00;
+		width:90px;
+		height:37px;
+		text-align:center;
+		Font:15px/37PX simhei;
+		color:#fff;
+	   }
+	 #nav li a:hover{
+		display:block;
+		background-color:#ea6601;
+		width:90px;
+		height:37px;
+		color: #fff;
+	   }
+	 #banner span{
+		width:70px;
+		height:15px;
+		text-align:center;
+		Font:15px/15PX simhei;
+		color:#000;
+		float:right;
+		}
+	
+	#banner{
+		width:1002px;
+		background-color:#ff7900;
+		height:40px;
+		margin:8px 0;
+		}
+	#main{
+		width:1002px;
+		height:600px;
+		background:#fff
+		}
+	  
+
