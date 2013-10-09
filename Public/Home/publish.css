@@ -1,0 +1,317 @@
+#container{
+				width:1002px;	
+				height:100%;
+				margin:0 auto;
+			}
+
+			body {
+				TEXT-ALIGN: center;
+				background-color:#e7ebea;
+			}
+
+			#pos{
+				background-color:#e7ebea;
+
+				Font:12px/20PX simhei;
+			}
+			
+			.navbar{
+				 Font:15px/37PX simhei;
+				 font-weight:700;
+			}
+			.nav{
+				Font:15px/37PX simhei;
+			}
+			#ing{
+				float:right;
+				margin-top:10px;
+			}
+			#header{
+				height:87px;
+				width:1002px;
+				background-color:#fff;
+			}
+			#header img{
+				float:left;
+				margin:0px 10px 0 0px;
+				
+			}
+			#rheader{
+			   float:left;
+			   margin-top:30px;
+			   width:700px;
+			   height:40px;
+			}
+				#rheader img{
+			   float:left;
+			 margin-left:10px;
+			 margin-right:20px;
+			   width:450px;
+			   height:40px;
+			}
+			#city{
+				float:left;
+				margin-top:10px;
+			}
+			
+
+			
+			#main{
+			   width:1002px;
+			  
+			   background-color:#fff;
+			   border:2px solid #c9cbca;
+			   height:100%;
+			   
+			}
+
+			
+			.navbar-brand{				
+				margin-left:20px;
+				font-size:15px;
+				
+				}
+			
+			
+			form{
+				float:left;
+				width:1002px;
+				border:0;
+				height:40px;
+				margin:10px 15px 10px 10px;
+			}
+			.input-medium{
+				width:700px;
+				height:20px;
+				border:1px solid #000;
+				margin-left:10px;
+				color:##ff8a00;
+				font-size:25px;
+				margin-right:10px;
+				margin-top:10px;
+			}	
+			 .btn{
+				border:1px solid #000;
+				
+			 }
+	  /*内页*/
+	   
+		   			#c2{
+				width:269px;
+				float:right;
+				height:100%;
+		
+				
+				
+			}
+			#innmain{
+
+			   text-align:left
+			   
+			}
+			
+		#inn {
+		
+			width:700px;
+				height:260px;
+				
+				
+				margin-left:40px;
+				margin-top:70px;
+			
+
+
+		}
+
+
+		#innimg {
+			float:left;
+			width:300px;
+			height:230px;
+			border:2px solid #c9cbca;
+			text-align:left;
+			background-color:#fff
+			
+				
+
+		}
+
+
+
+
+		#innimg dt,#inntxt dt{
+			margin:20px 0 0 15px;
+			font-size:15px;
+		}
+		#innimg dd,#inntxt dd{
+			margin-top:2px;
+			font-size:12px;
+			margin:0px 0 20px 15px;
+		}
+		.maichebut{
+			margin-left:15px;
+		}
+
+
+		
+
+		#inntxt{
+			float:left;
+			border:2px solid #c9cbca;
+			text-align:left;
+			width:300px;
+			height:230px;
+			margin-left:30px;
+			background-color:#fff
+		}
+		#inntxt table{
+		text-align:left;
+			width:300px;
+			height:230px;
+			background-color:#f4f4f4;
+			
+		}
+		 #inntxt table tr td{ border-bottom:#c9cbca dashed 1px; width:50%; background-color:#f4f4f4; }
+		#lmain{
+			width:730px;
+				
+				float:left;
+				border:1px solid #c9cbca;
+		
+		background-color:#f4f4f4;
+		text-align:left;
+		 border:1px solid #c9cbca;
+		}
+		#rmain{
+			width:266px;
+				height:100%;
+				float:right;
+				border:1px solid #c9cbca;
+		font-size:30px;
+		
+		background-color:#f4f4f4;
+		
+		
+		 border:1px solid #c9cbca;
+		}
+		
+		#qydt table tr{
+			font-size:12px;
+			border-bottom:solid 1px #000;
+			
+			
+			background-color:#f4f4f4;
+			text-align:left;
+			
+		}
+		#qydt table th{
+			font-size:12px;
+			border-bottom:solid 1px  #c9cbca;
+			border-right:solid 1px  #c9cbca;
+			font-size:12px;
+			background-color:#f4f4f4;
+			text-align:left;
+			
+		}
+		#qydt table{
+		
+		height:100%;
+		width:710px;
+		margin-left:21px;
+		
+
+		}
+		#xw ul li{
+			float:left;
+			font-size:15px;
+			margin-left:10px;
+			background-color:#c9cbca;
+		}
+		#xw{
+			width:720px;
+			height:20px;
+			margin-bottom:20px;
+			
+		}
+
+		#qydt table tr td{
+			font-size:15px;
+			border-bottom:solid 1px #000;
+			
+			margin-left:5px;
+			
+			text-align:left;
+		}
+		 #qydt,#yhcx{
+				display:none;
+				height:100%
+		   }
+		   .cyxx_new li{
+				float:left;
+				font-size:12px;
+				width:200px;
+				height:30px;
+				margin-top:4px;
+		   }
+		     .cyxx_new {
+				border:solid 1px #c9cbca;
+				height:100px;;
+				width:700px;
+				margin-left:10px;
+				
+
+		   }
+
+		   #carimp img{
+				width:600px;
+				height:400px;
+				background-color:#000;
+				margin-top:30px;
+		   }
+
+
+		    #carimp{
+				width:600px;
+				height:100%;
+				
+				margin-left:65px;
+				margin-top:30px;
+		   }
+			 #zxxx span{
+				background-color:#e7ebea;
+				Font:20px/30PX simhei;
+				width:100%;
+				TEXT-ALIGN: left;
+				clear:both;
+				height:25px;
+				
+		   }
+		
+		   .rb1 ul li{		   
+		   padding-left:12px;
+		   padding-bottom:5px;
+		  
+		  
+		   font:12px "times new roman","宋体",serif;
+	   }
+		 
+		  .rb1{
+			   width:269px;;
+			   height:100%;
+			   background-color:#f4f4f4;
+				float:left;display:inline;
+				margin:0 0 20px 0;
+				 border:1px solid #c9cbca;
+				 text-align:center
+		   }
+			.rb1 img { 
+				
+				width:200;   
+				margin:10px auto
+				
+				
+		   }
+		   .bdlist li{
+				float:left;
+				border:2px;
+		   }

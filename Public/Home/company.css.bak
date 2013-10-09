@@ -1,0 +1,374 @@
+			#container{
+				width:1002px;
+				margin:0 auto;
+			}
+
+
+
+			body {
+				background-color:#fff;
+			}
+
+
+
+			#c0 img{
+				height:150px;
+				width:1002px;
+			}
+
+
+
+			.c0 img{
+				margin-top:10px;
+				width:1002px;
+				height:120px;
+			}
+			
+
+
+			
+			#pos{
+				Font:15px/20PX simhei;
+			}
+
+			#banner{
+				Font:15px/20PX simhei;
+			}
+			#header{
+				height:87px;
+				width:1002px;			
+			}
+			#header img{
+				float:left;
+				margin:0px 10px 0 0px;
+				border:1px solid blue;	
+				
+			}
+			#rheader{
+			   float:left;
+			   margin-top:30px;
+			   width:700px;
+			   height:50px;
+			}
+			#rheader img{
+			   float:left;
+			 margin-left:10px;
+			 margin-right:20px;
+			   width:450px;
+			   height:40px;
+			}
+			#city{
+				float:left;
+				margin-top:10px;
+			}
+			
+			#ing{
+				float:right;
+				margin-top:10px;
+			}
+			#banner{
+			   width:1002px;
+			   margin-top:30px;
+			   height:37px;
+			}
+			
+			#banner span{
+			
+			   float:right;
+			   TEXT-ALIGN: center;
+			   margin-right:50px;
+			   margin-top:10px;
+			}
+			#main{
+			   width:1002px;
+			   height:100%;
+			   background-color:#fff;
+			   border-bottom:1px solid #c9cbca;
+			
+			   
+			}
+			#c1{
+				width:730px;
+				
+				float:left;
+			
+				
+			}
+			#c2{
+				width:242px;
+				float:right;
+				height:100%;
+				background-color:#fff
+				padding-left:30px;
+				
+			}
+			
+			
+			form{
+				float:left;
+				margin-top:20px;
+				margin-right:10px;
+				padding-right:20px;
+				border:0;
+				
+				
+			}
+			#ins{
+				width:700px;
+				border:1px solid blue;
+				margin-left:10px;
+			}	 
+			
+		   #nav li{
+			   float:left;
+			   list-style:none;
+			   margin:0 1px;
+			   width:87px;
+			   height:37px
+		  }
+		   #nav li a{
+			   display:block;
+			   background-color:#ff8a00;
+			   width:87px;
+			   height:37px;
+			   text-align:center;
+			   Font:15px/37PX simhei;
+			   color:#fff;
+		   }
+		   #nav li a:hover{
+			   display:block;
+			   background-color:#ea6601;
+			   width:87px;
+			   height:37px;
+			   color: #fff;
+		   }
+		 
+			#nav1 {
+				width:1002px;
+				height:40px;
+			}
+			
+			
+			#nav1 li{
+			   float:left;
+			   list-style:none;
+			   margin:0px 1px 0 0;
+			   width:70px;
+			   height:15px
+
+				
+		  }
+		   #nav1 li a{
+			   display:block;
+			   width:70px;
+			   height:15px;
+			   text-align:center;
+			   Font:15px/15PX simhei;
+			   color:#ff8a00;
+
+		   }
+			#nav1 li a:hover{
+			   display:block;
+			   width:70px;
+			   height:15px;
+			   color: #fff;
+			   }		
+			#footer{
+			   width:1002px;
+			 
+			   height:464px;
+			   }
+			.b1{
+			   width:230px;;
+			   height:280px;
+			   background:#fff;
+				float:left;
+				margin-right:0px;
+				margin-top:12px;
+				 border:1px solid #c9cbca;
+				 text-align:center
+		   }
+			.b1 img { 
+				
+				width:200;   
+				margin:10px auto
+				
+				
+		   }
+			
+			.b1 ul li{		   
+			   padding-left:12px;
+			   padding-bottom:5px;
+			  
+			  
+			   font:12px "times new roman","宋体",serif;
+		   }
+		   #zxxx span{
+				background-color:#e7ebea;
+				Font:20px/30PX simhei;
+				width:100%;
+				TEXT-ALIGN: left;
+				clear:both;
+				height:25px;
+				
+		   }
+		
+		   .rb1 ul li{		   
+		   
+		
+		  
+		  margin-top:15px;
+		   font:12px "times new roman","宋体",serif;
+		   
+	   }
+		 
+		  .rb1{
+			   width:230px;;
+			   height:100%;
+			   background:#fff;
+				float:left;display:inline;
+				margin:0 0 20px 0;
+				 border:1px solid #c9cbca;
+				 text-align:center
+		   }
+			.rb1 img { 
+				
+				width:200;   
+				margin:10px auto
+				
+				
+		   }
+			
+			
+			
+			#xw  li{
+				float:left;
+				font-size:15px;
+				margin-left:10px;
+			}
+			
+			#xw{
+				width:730px;
+				height:20px;
+				margin-top:10px;
+
+			
+			}
+			#qbxw,#qydt,#yhcx{
+			   width:729px;;
+			   height:700px;
+			   background:#fff;
+				margin-right:0px;
+				margin-top:12px;
+				 border-bottom:1px solid #c9cbca;
+				 text-align:center
+		   }
+	
+
+		   .bb{
+				background:#000;
+		   }
+
+		   #main dt a{
+				float:left;
+				Font:15px/15PX simhei;
+			}
+			#main dt span{
+				float:left;
+				height:10px;
+				width:400px;
+				margin-left:15px; font-size:12px; font-weight:normal;
+			}	
+			#main dd{
+				line-height: 24px;
+				width:698px;
+				height:48px;
+				font-size:12px;
+				text-align:left;
+			}
+			#main dl{
+			padding: 15px;
+			border-bottom: 1px solid #DEE3E7;
+			margin-top: -1px;
+			height:106px;
+			}
+
+			#main dt{
+				font-size: 14px;
+				line-height: 26px;
+				font-weight: bold;
+				width:698px;
+				 height:27px;
+			}
+
+
+
+			.qytext{
+				width:700px;
+				height:50px;
+			}
+		
+			#qyjsbox1R  {
+			border-bottom:1px solid #c9cbca;
+			font-size: 14px;
+			margin-top:30px;
+			margin-left:40px;
+			width:900px;:
+			height:500px;
+			}
+
+			#qyjsbox1R h2 span{
+				width:400px;
+				height:35px;
+				font-size: 20px;
+				text-align:left;
+				margin-top:4px;
+				Font:20px/25PX simhei;
+			}
+			strong{
+				width:80px;
+				height:12px;
+				float:left;
+			}
+			.qytext span{
+				width:210px;
+				height:50px;
+				float:left;
+				text-align:left;
+
+			
+			}
+			.clearfix{
+				font-size: 14px;
+				margin-top:30px;
+				margin-left:40px;
+				width:900px;
+				height:500px;
+			}
+
+			.ucarTitle3 span {		
+				font-size: 20px;
+				width:900px;
+				height:35px;
+				margin-bottom:20px;
+				text-align:left;
+				Font:20px/25PX simhei;
+			
+			}
+
+			   .thumbnail img{
+	   width:215px;
+	   height:150px;
+	   }
+	   .nav{
+				
+				Font:15px/15PX simhei;
+				margin-left:0px;	
+			}
+			
+			.nav1{
+				Font:15px/0PX simhei;
+				width:1002px;
+			
+				margin-left:0px;	
+			}
