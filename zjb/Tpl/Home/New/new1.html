@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
 <title>
 公司
@@ -7,13 +7,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="" />
 <meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
-<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/public/home/company.css" type="text/css" />
+<js href="__ROOT__/public/js/jquery-1.7.1.js" />
+<js href="__ROOT__/public/dist/js/bootstrap.js" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
 
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
+
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
+ <!--[if lte IE 6]>
+  <!-- bsie css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
+ <![endif]-->
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
 <style type="text/css">
 	#
 </style>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	
 	function tab(pid)
 	
@@ -28,42 +46,63 @@
 			}
 	}
 
+</script> -->
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 </script>
  </head>
  <body>
  	
  <div id="container">
-	<div id="pos">
+	<div id="pos" >
 		
-		<ul id="rpos">
-			</li><a href="{:U('Home/Login/login')}#desc" target="_blank">登录</a></li>
-			</li><a href="{:U('Register/register')}#desc" target="_blank">注册</a></li>
+		<ul class="nav nav-tabs ">
+			
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					 注册<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
+							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
+					</ul>
+				</li>
+			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
+			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a></li>
 		</ul>
 	
 	</div>	
 		<div id="c0">
-				<img src="__ROOT__/Public/images/about_banner.jpg" alt="banner"/>
+				<img src="__ROOT__/public/images/about_banner.jpg" alt="banner"/>
 			</div>
 		 <div id="banner">
-			<ul id="nav">
-				<li><a href="{:U('Home/Company/company')}#desc">首页</a></li>
-				<li><a href="{:U('Home/New/new1')}#desc" target="_blank">新闻广告</a></li>
-				<li><a href="#" target="_blank">咨询答疑</a></li>
-				<li><a href="{:U('Home/Introduce/introduce')}#desc" target="_blank">公司介绍</a></li>
-			</ul>
+		 
+
+<ul class="nav nav-pills">
+  <li class="active"><a href="{:U('Home/Company/company')}#desc" target="_blank">首页</a></li>
+  <li><a href="{:U('Home/New/new1')}#desc" target="_blank">新闻广告</a></li>
+  <li><a href="#" target="_blank">咨询答疑</a></li>
+  <li><a href="{:U('Home/Introduce/introduce')}#desc" target="_blank">公司介绍</a></li>
+</ul>
+
+
 		</div>
+		
 		
 	 <div id="main">
 				<div id="c1">
 				<div id="xw">
-					<ul>
-						<li  onmouseover="tab('qbxw');">全部新闻</li>
-						<li onmouseover="tab('qydt');">企业动态</li>
-						<li onmouseover="tab('yhcx');">优惠促销</li>
-					<ul>
+					<ul class="nav nav-tabs" id="myTab">
+						<li><a href="#qbxw" data-toggle="tab">Home全部新闻<</a></li>
+						<li><a href="#qydt" data-toggle="tab">Profile企业动态</a></li>
+						 <li><a href="#yhcx" data-toggle="tab">Messages优惠促销</a></li>
+				</ul>
 				</div>
-			
-				<div id="qbxw">
+				<div class="tab-content">
+				<div id="qbxw" class="tab-pane fade in active" >
 				 <dl  class='ba'>
               <dt><a href="/v3112/news/127350.html">二把刀新手开车省油技巧</a><span style="margin-left:15px; font-size:12px; font-weight:normal;">(2013-03-04 04:37:11)</span></dt>
               <dd>我们都知道，对于同样一辆车不同的人开，耗油量是不同的，尤其对于一些二把刀驾驶新手，耗油量差别是很大的，除了车辆自身的排量以外，驾驶技巧对耗油也至关重要，让北京优途二手车连锁品牌经营中心的赵经理来告诉大  <a href="/v3112/news/127350.html">[查看详情]</a></dd>
@@ -117,24 +156,22 @@
 				
 				
 			</div>
-			<div id="qydt">
-				12313
+			<div id="qydt" class="tab-pane fade" >
+				<p>12313</p>
 			</div>
-			<div id="yhcx">
+			<div id="yhcx" class="tab-pane fade" >
 				
 				1231231
 				
 			</div>
-			
+			</div>
 		
 			</div>
 		
 			<div id="c2">
 				<div class="rb1">
 				
-				<div id="zxxx">
-					<h1><span>公司信息</span><h1>
-				</div>
+				<h4><span class="label label-default">New</span></h4>
 				
 				
 				<ul>
@@ -148,9 +185,7 @@
 			</div>
 			<div class="rb1">
 				
-				<div id="zxxx">
-					<h1><span>公司信息</span><h1>
-				</div>
+				<h4><span class="label label-default">New</span></h4>
 				
 				
 				<ul>
@@ -164,9 +199,7 @@
 			</div>
 			<div class="rb1">
 				
-				<div id="zxxx">
-					<h1><span>公司信息</span><h1>
-				</div>
+				<h4><span class="label label-default">New</span></h4>
 				
 				
 				<ul>
@@ -180,9 +213,7 @@
 			</div>
 			<div class="rb1">
 				
-				<div id="zxxx">
-					<h1><span>公司信息</span><h1>
-				</div>
+				<h4><span class="label label-default">New</span></h4>
 				
 				
 				<ul>

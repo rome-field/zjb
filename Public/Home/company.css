@@ -26,17 +26,13 @@
 			
 
 
-			#rpos{
-				TEXT-ALIGN: right;
-				height:20px;
+			
+			#pos{
 				Font:15px/20PX simhei;
 			}
-	
 
-
-			#rpos li{
-				float:right;
-
+			#banner{
+				Font:15px/20PX simhei;
 			}
 			#header{
 				height:87px;
@@ -54,27 +50,28 @@
 			   width:700px;
 			   height:50px;
 			}
+			#rheader img{
+			   float:left;
+			 margin-left:10px;
+			 margin-right:20px;
+			   width:450px;
+			   height:40px;
+			}
 			#city{
 				float:left;
+				margin-top:10px;
 			}
-			#ing span{
-				width:200px;
+			
+			#ing{
 				float:right;
+				margin-top:10px;
 			}
 			#banner{
 			   width:1002px;
-			  background-color:#ff7900;
+			   margin-top:30px;
 			   height:37px;
 			}
-			span{
-			  width:70px;
-			   height:15px;
-			   text-align:center;
-			   Font:15px/15PX simhei;
-			   color:#000;
-			   float:left;
-			}
-
+			
 			#banner span{
 			
 			   float:right;
@@ -86,15 +83,15 @@
 			   width:1002px;
 			   height:100%;
 			   background-color:#fff;
-			   border:1px solid #c9cbca;
-			   margin-top:30px;	
+			   border-bottom:1px solid #c9cbca;
+			
 			   
 			}
 			#c1{
 				width:730px;
-				height:100%;
+				
 				float:left;
-				border:1px solid #c9cbca;
+			
 				
 			}
 			#c2{
@@ -103,7 +100,7 @@
 				height:100%;
 				background-color:#fff
 				padding-left:30px;
-				border:1px solid #c9cbca;
+				
 			}
 			
 			
@@ -217,11 +214,12 @@
 		   }
 		
 		   .rb1 ul li{		   
-		   padding-left:12px;
-		   padding-bottom:5px;
+		   
+		
 		  
-		  
+		  margin-top:15px;
 		   font:12px "times new roman","宋体",serif;
+		   
 	   }
 		 
 		  .rb1{
@@ -252,7 +250,9 @@
 			#xw{
 				width:730px;
 				height:20px;
-				margin-top:15px;
+				margin-top:10px;
+
+			
 			}
 			#qbxw,#qydt,#yhcx{
 			   width:729px;;
@@ -260,12 +260,10 @@
 			   background:#fff;
 				margin-right:0px;
 				margin-top:12px;
-				 border:1px solid #c9cbca;
+				 border-bottom:1px solid #c9cbca;
 				 text-align:center
 		   }
-		   #qydt,#yhcx{
-				display:none;
-		   }
+	
 
 		   .bb{
 				background:#000;
@@ -290,7 +288,7 @@
 			}
 			#main dl{
 			padding: 15px;
-			border-top: 1px solid #DEE3E7;
+			border-bottom: 1px solid #DEE3E7;
 			margin-top: -1px;
 			height:106px;
 			}
@@ -318,12 +316,7 @@
 			width:900px;:
 			height:500px;
 			}
-			#qyjsbox1R h2 {
-				font-size: 20px;
-				width:100px;
-				height:35px;
-				margin-bottom:20px;
-			}
+
 			#qyjsbox1R h2 span{
 				width:400px;
 				height:35px;
@@ -362,3 +355,15 @@
 				Font:20px/25PX simhei;
 			
 			}
+
+			   .thumbnail img{
+	   width:215px;
+	   height:150px;
+	   }
+	   .nav{
+				
+				Font:15px/15PX simhei;
+				margin-left:0px;	
+			}
+			
+			

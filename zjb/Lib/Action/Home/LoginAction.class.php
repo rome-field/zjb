@@ -1,8 +1,10 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
-
+	import('ORG.Util.Session');
 class LoginAction extends Action{
 	public function login(){
+	$c=Session::get(C('USER_AUTH_KEY'));
+	$this-> assign('c',$c);
 	$this->display();
     }
 	public function verify(){

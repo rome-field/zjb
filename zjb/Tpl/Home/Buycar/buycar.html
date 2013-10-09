@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
 <title>
 中介邦
@@ -7,8 +7,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="" />
 <meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
-<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/Public/index.css" type="text/css" />
+
+
+<js href="__ROOT__/public/js/jquery-1.7.1.js" />
+<js href="__ROOT__/public/dist/js/bootstrap.js" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/public/home/index.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
+ <!--[if lte IE 6]>
+  <!-- bsie css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
+ <![endif]-->
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
 <style type="text/css">
 </style>
 <script language="javascript">
@@ -29,20 +49,30 @@
  <body onload="myfunction()">
  	
  <div id="container">
-	<div id="pos">
+	<div id="pos" >
 		
-		<ul id="rpos">
-			</li><a href="{:U('Home/Login/login')}#desc" target="_blank">登录</a></li>
-			</li><a href="{:U('Register/register')}#desc" target="_blank">注册</a></li>
+		<ul class="nav nav-tabs ">
+			
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					 注册<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
+							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
+					</ul>
+				</li>
+			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
+			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a></li>
 		</ul>
 	
 	</div>	
 	
 	<div id="header">
-		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
+		<img src="__ROOT__/public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span>绍兴</span>
+				<span>{$c}</span>
 				<a href="{:U('City/city')}#desc" target="_blank">城市切换</a>
 			</div>
 			<img src="" alt="banner"/>
@@ -53,83 +83,66 @@
 			</div>
 		</div>
     </div>
-		 <div id="banner">
-			<ul id="nav">
-				<li><a href="{:U('Index/index')}#desc">合作商家</a></li>
+		 <div>
+			<ul class="nav nav-tabs navbar nav1">
+				<li class="active"><a href="{:U('Index/index')}#desc">合作商家</a></li>
 				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
 				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
 				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
 				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
 				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>
+				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+			
+				<li class="navbar-right"><a href="{:U('Licai/licai')}#desc">我要理财</a></li>
 			</ul>
-			<span>我要登记</span>
+			
 		</div>
 	 <div id="main">
 			
-			<div id="c1">
-				<form method="post">
-					<input type="text" name="inp" id="ins" value="           请输入汽车品牌、车系等" ONCLICK="dothings();"/>
-					<input type="image" src="__ROOT__/Public/images/search.gif" />
-				</form>
-			</div>
-			<div id="c2">
+			<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
+
+				<div id='c2'>
+					<a class="navbar-brand" href="#">区域 :</a>
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">莲都</a></li>
+							<li><a href="#">云和</a></li>
+							<li><a href="#">景宁</a></li>
+							<li><a href="#">龙泉</a></li>
+							<li><a href="#">庆元</a></li>
+							<li><a href="#">松阳</a></li>
+							<li><a href="#">遂昌</a></li>
+							<li><a href="#">青田</a></li>
+							<li><a href="#">缙云</a></li>
+						</ul>
+					<a class="navbar-brand" href="#">分类 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">房产中介</a></li>
+							<li><a href="#">汽车服务</a></li>
+							<li><a href="#">金融担保</a></li>
+						</ul>
 				
-					<span>区域 :</span>
-					<u><ul class="nav1">
-						<li><a href="#">不限</a></li>
-						<li><a href="#">莲都</a></li>
-						<li><a href="#">云和</a></li>
-						<li><a href="#">景宁</a></li>
-						<li><a href="#">龙泉</a></li>
-						<li><a href="#">庆元</a></li>
-						<li><a href="#">松阳</a></li>
-						<li><a href="#">遂昌</a></li>
-						<li><a href="#">青田</a></li>
-						<li><a href="#">缙云</a></li>
-					</ul>
-					</u>
-				
-				
-					<span>分类 :</span>
-					<ul class="nav1">
-						<li><a href="#">不限</a></li>
-						<li><a href="#">房产中介</a></li>
-						<li><a href="#">汽车服务</a></li>
-						<li><a href="#">金融担保</a></li>
-					</ul>
-					<span>品牌:</span>
-					<ul class="nav1">
-						<li><a href="#">不限</a></li>
-						<li><a href="#">房产中介</a></li>
-						<li><a href="#">汽车服务</a></li>
-						<li><a href="#">金融担保</a></li>
-					</ul>
-					<span>价格 :</span>
-					<ul class="nav1">
-						<li><a href="#">不限</a></li>
-						<li><a href="#">房产中介</a></li>
-						<li><a href="#">汽车服务</a></li>
-						<li><a href="#">金融担保</a></li>
-					</ul>
-				
-				
-					<span>排序 :</span>
-					<ul class="nav1">
-				
-						<li><a href="#">默认</a></li>
-						<li><a href="#">最新</a></li>
-						<li><a href="#">人气</a></li>
-					</ul>
-					
-			</div>
-	</div>
+					<a class="navbar-brand" href="#">排序 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">默认</a></li>
+							<li><a href="#">最新</a></li>
+							<li><a href="#">人气</a></li>
+						</ul>					
+				</div>
+	 
+
+
+
+	
+		
+ </div>
 	<div id="footer">
 		
 		
 			<div class="b1" id="1">
 				
-				<a href="{:U('Company/company')}#desc" target="_blank"><img src="__ROOT__/Public/images/eshop_service.jpg" alt="" /></a>
+				<a href="{:U('Company/company')}#desc" target="_blank"><img src="__ROOT__/public/images/eshop_service.jpg" alt="" /></a>
 				
 				
 				<ul>
@@ -143,7 +156,7 @@
 			</div>
 			<div class="b1" id="2">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -157,7 +170,7 @@
 			</div>
 			<div class="b1" id="3">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -171,7 +184,7 @@
 			</div>
 			<div class="b1" id="4">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -185,7 +198,7 @@
 			</div>
 			<div class="b1" id="5">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -199,7 +212,7 @@
 			</div>
 			<div class="b1" id="6">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -213,7 +226,7 @@
 			</div>
 			<div class="b1" id="7">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -227,7 +240,7 @@
 			</div>
 			<div class="b1"id="8">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -241,7 +254,7 @@
 			</div>
 			<div class="b1" id="9">
 				
-				<a href="{:U('Company/company')}#desc" target="_blank"><img src="__ROOT__/Public/images/eshop_service.jpg" alt="" /></a>
+				<a href="{:U('Company/company')}#desc" target="_blank"><img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" /></a>
 				
 				
 				<ul>
@@ -255,7 +268,7 @@
 			</div>
 			<div class="b1" id="10">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -269,7 +282,7 @@
 			</div>
 			<div class="b1" id="11">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -283,7 +296,7 @@
 			</div>
 			<div class="b1" id="12">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -297,7 +310,7 @@
 			</div>
 			<div class="b1" id="13">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -311,7 +324,7 @@
 			</div>
 			<div class="b1" id="14">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -325,7 +338,7 @@
 			</div>
 			<div class="b1" id="15">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
@@ -339,7 +352,7 @@
 			</div>
 			<div class="b1" id="16">
 				
-				<img src="__ROOT__/Public/images/eshop_service.jpg" alt="" />
+				<img src="__ROOT__/MYphp/Tpl/public/images/eshop_service.jpg" alt="" />
 				
 				
 				<ul>
