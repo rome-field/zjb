@@ -5,10 +5,21 @@
 			}
 
 			body {
-				TEXT-ALIGN: center;
+
 				background-color:#e7ebea;
 			}
+#main{
+			   width:1002px;
+			  
+			   background-color:#fff;
+			   border:2px solid #c9cbca;
+			  
+			  
+			    min-height:100%;
+				 min-height:1500px;
+			}
 
+			
 			#pos{
 				background-color:#e7ebea;
 
@@ -30,6 +41,7 @@
 				height:87px;
 				width:1002px;
 				background-color:#fff;
+				font-size:14px;
 			}
 			#header img{
 				float:left;
@@ -38,7 +50,7 @@
 			}
 			#rheader{
 			   float:left;
-			   margin-top:30px;
+			   margin-top:15px;
 			   width:700px;
 			   height:40px;
 			}
@@ -55,15 +67,17 @@
 			}
 			
 
-			
-			#main{
-			   width:1002px;
-			  
-			   background-color:#fff;
-			   border:2px solid #c9cbca;
-			   height:100%;
-			   
+			#rheader p{
+			   word-break:break-word; 
+			   word-wrap:break-word;
+			   width:400px;
+			   text-align:left;
+			   float:left;
+			   margin-left:20px;
+			   font-size:12px;
 			}
+
+			
 
 			
 			.navbar-brand{				
@@ -112,8 +126,8 @@
 			
 		#inn {
 		
-			width:700px;
-				height:260px;
+			width:1002px;
+				height:100%;
 				
 				
 				margin-left:40px;
@@ -126,7 +140,7 @@
 
 		#innimg {
 			float:left;
-			width:300px;
+			width:440px;
 			height:230px;
 			border:2px solid #c9cbca;
 			text-align:left;
@@ -159,7 +173,7 @@
 			float:left;
 			border:2px solid #c9cbca;
 			text-align:left;
-			width:300px;
+			width:440px;
 			height:230px;
 			margin-left:30px;
 			background-color:#fff
@@ -173,7 +187,7 @@
 		}
 		 #inntxt table tr td{ border-bottom:#c9cbca dashed 1px; width:50%; background-color:#f4f4f4; }
 		#lmain{
-			width:730px;
+			width:1002px;
 				
 				float:left;
 				border:1px solid #c9cbca;
@@ -204,48 +218,8 @@
 			text-align:left;
 			
 		}
-		#qydt table th{
-			font-size:12px;
-			border-bottom:solid 1px  #c9cbca;
-			border-right:solid 1px  #c9cbca;
-			font-size:12px;
-			background-color:#f4f4f4;
-			text-align:left;
-			
-		}
-		#qydt table{
-		
-		height:100%;
-		width:710px;
-		margin-left:21px;
-		
 
-		}
-		#xw ul li{
-			float:left;
-			font-size:15px;
-			margin-left:10px;
-			background-color:#c9cbca;
-		}
-		#xw{
-			width:720px;
-			height:20px;
-			margin-bottom:20px;
-			
-		}
-
-		#qydt table tr td{
-			font-size:15px;
-			border-bottom:solid 1px #000;
-			
-			margin-left:5px;
-			
-			text-align:left;
-		}
-		 #qydt,#yhcx{
-				display:none;
-				height:100%
-		   }
+		
 		   .cyxx_new li{
 				float:left;
 				font-size:12px;
@@ -315,3 +289,47 @@
 				float:left;
 				border:2px;
 		   }
+
+
+
+
+
+
+
+
+
+
+
+
+user agent stylesheetinput:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+padding: 1px 0px;
+}
+user agent stylesheetinput, input[type="password"], input[type="search"], isindex {
+-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+}
+user agent stylesheetinput, textarea, keygen, select, button, isindex {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
+-webkit-writing-mode: horizontal-tb;
+}

@@ -7,17 +7,17 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="__ROOT__/Tpl/public/images/reset.css" type="text/css" />
-  <link rel="stylesheet" href="__ROOT__/Tpl/public/Home/publish.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/public/Home/publish.css" type="text/css" />
 
-<script type="text/javascript" src="__ROOT__/Tpl/public/js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="__ROOT__/Tpl/public/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="__ROOT__/public/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="__ROOT__/public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap.css">
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
 
 
 
@@ -81,7 +81,7 @@ border:1px;
 	</div>	
 	
 	<div id="header">
-		<img src="__ROOT__/Tpl/public/images/logo.jpg" alt=""/>
+		<img src="__ROOT__/public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
 				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
@@ -114,8 +114,8 @@ border:1px;
 		<h3 style="margin-bottom:0px;"><span class="label label-default">New</span></h3>
 			<div id="lmain">
 				
-			<div id="inn" >
-				<div id="innimg" > <dl>
+		<div id="inn" >
+			<div id="innimg" > <dl>
               <dt>免费发布</dt>
               <dd>免费快速发布车源，操作简单</dd>
               
@@ -125,11 +125,11 @@ border:1px;
               <dt>权威平台</dt>
               <dd>最权威的二手车交易平台</dd> 
            </dl>
-         <div class="maichebut">
-            <span class="butbox1"><a href="<?php echo U('Home/Publishcar/publishcar');?>#desc">123</a><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
-        </div>
-</div>
-				<div id="inntxt"><dl>
+				 <div class="maichebut">
+					<span class="butbox1"><a href="<?php echo U('Home/Publish/publishcar');?>#desc">123</a><a href="<?php echo U('Home/Publish/hypublishcar');?>#desc">123</a><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
+				</div>
+			</div>
+			<div id="inntxt"><dl>
               <dt>免费发布</dt>
               <dd>免费快速发布车源，操作简单</dd>
               
@@ -139,31 +139,45 @@ border:1px;
               <dt>权威平台</dt>
               <dd>最权威的二手车交易平台</dd> 
            </dl>
-         <div class="maichebut">
-            <span class="butbox1"><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
-        </div></div>
-				
-		</div>
-		</div>
-			
-			
-				<div id="c3">
-				<div class="rb1">
-				
-				<h4><span class="label label-default">New</span></h4>
-				
-				
-				<ul>
-					<li>方便的货物管理</a></li>
-					<li>自定义会员类型</a></li>
-					<li>丰线支付功能</a></li>
-					<li>丰富的订单统计</a></li>
-					<li>财物报表生成</a></li>
-				</ul>
-				
+				 <div class="maichebut">
+				 <span class="butbox1"><a href="<?php echo U('Home/Publish/publishhouse');?>#desc">123</a><a href="<?php echo U('Home/Publish/hypublishhouse');?>#desc">123</a>
+					<span class="butbox1"><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
+				</div>
 			</div>
+			<div id="innimg"><dl>
+              <dt>免费发布</dt>
+              <dd>免费快速发布车源，操作简单</dd>
+              
+              <dt>最多用户</dt>
+              <dd>最多用户的二手车网站</dd>
+              
+              <dt>权威平台</dt>
+              <dd>最权威的二手车交易平台</dd> 
+           </dl>
+				 <div class="maichebut">
+				 <span class="butbox1"><a href="<?php echo U('Home/Publish/publishdk');?>#desc">123</a><a href="<?php echo U('Home/Publish/hypublishdk');?>#desc">123</a>
+					<span class="butbox1"><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
+				</div>
 			</div>
-			
+			<div id="inntxt"><dl>
+              <dt>免费发布</dt>
+              <dd>免费快速发布车源，操作简单</dd>
+              
+              <dt>最多用户</dt>
+              <dd>最多用户的二手车网站</dd>
+              
+              <dt>权威平台</dt>
+              <dd>最权威的二手车交易平台</dd> 
+           </dl>
+				 <div class="maichebut">
+				 <span class="butbox1"><a href="<?php echo U('Home/Publish/publishlc');?>#desc">123</a><a href="<?php echo U('Home/Publish/hypublishlc');?>#desc">123</a>
+					<span class="butbox1"><input name="" type="button" value="个人发布二手车" onclick="" style="background:#f49c1b;font-color:#fff;"/></span> <span class="butbox2"><input name="" type="button" value="商家发布" onclick=""/></span>
+				</div>
+		
+		
+		</div>
+				
+
 			
 				
 		

@@ -75,7 +75,8 @@
 				<span><?php echo ($c); ?></span>
 				<a href="<?php echo U('City/city');?>#desc" target="_blank">城市切换</a>
 			</div>
-			<img src="" alt="banner"/>
+			<p style="width:500px;"> 
+				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
@@ -92,8 +93,8 @@
 				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
 				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
 				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
-			
-				<li class="navbar-right"><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>
+				<li style="width:450px"> </li>
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 			
 		</div>
@@ -115,19 +116,66 @@
 							<li><a href="#">青田</a></li>
 							<li><a href="#">缙云</a></li>
 						</ul>
-					<a class="navbar-brand" href="#">分类 :</a>							
+					<a class="navbar-brand" href="#">类型 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">房产中介</a></li>
-							<li><a href="#">汽车服务</a></li>
-							<li><a href="#">金融担保</a></li>
+							<li><a href="#">轿车</a></li>
+							<li><a href="#">越野车/suv</a></li>
+							<li><a href="#">MPV</a></li>
+							<li><a href="#">跑车</a></li>
+							<li><a href="#">客车</a></li>
+							<li><a href="#">货车</a></li>
+							<li><a href="#">面包车</a></li>
+							<li><a href="#">皮卡</a></li>
+							<li><a href="#">工程车</a></li>
+						</ul>
+
+					<a class="navbar-brand" href="#">品牌 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">大众</a></li>
+							<li><a href="#">本田</a></li>
+							<li><a href="#">别克</a></li>
+							<li><a href="#">丰田</a></li>
+							<li><a href="#">夏利</a></li>
+							<li><a href="#">日产</a></li>
+							<li><a href="#">奇瑞</a></li>
+							<li><a href="#">宝马</a></li>
+							<li><a href="#">现代</a></li>
+							<li><a href="#">奥迪</a></li>
+							<li><a href="#">马自达</a></li>
+							<li><a href="#">比亚迪</a></li>
+							<li><a href="#">铃木</a></li>
+							<li><a href="#">雪铁龙</a></li>
+							<li><a href="#">吉利</a></li>
+							<li><a href="#">奔驰</a></li>
+							<li><a href="#">福特</a></li>
+							<li><a href="#">雪佛兰</a></li>
+							<li><a href="#">起亚</a></li>
+							<li><a href="#">标致</a></li>
+							<li><a href="#">其它品牌</a></li>
+						</ul>
+						<a class="navbar-brand" href="#">价格 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">1万以内</a></li>
+							<li><a href="#">1-2万</a></li>
+							<li><a href="#">2-3万</a></li>
+							<li><a href="#">3-4万</a></li>
+							<li><a href="#">4-5万</a></li>
+							<li><a href="#">5-6万</a></li>
+							<li><a href="#">6-7万</a></li>
+							<li><a href="#">7-8万</a></li>
+							<li><a href="#">8-9万</a></li>
+							<li><a href="#">9-10万</a></li>
+							<li><a href="#">10万以上</a></li>
 						</ul>
 				
 					<a class="navbar-brand" href="#">排序 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">默认</a></li>
 							<li><a href="#">最新</a></li>
-							<li><a href="#">人气</a></li>
+							<li><a href="#">售价</a></li>
 						</ul>					
 				</div>
 	 
@@ -366,7 +414,15 @@
 			</div>
 		
 		</div>	
-		
+		<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
   </div>
  </body>
 </html>

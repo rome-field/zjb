@@ -57,10 +57,10 @@
 		 
 
 <ul class="nav nav-pills">
-  <li class="active"><a href="<?php echo U('Home/Company/company');?>#desc" target="_blank">首页</a></li>
-  <li><a href="<?php echo U('Home/New/new1');?>#desc" target="_blank">新闻广告</a></li>
-  <li><a href="#" target="_blank">咨询答疑</a></li>
-  <li><a href="<?php echo U('Home/Introduce/introduce');?>#desc" target="_blank">公司介绍</a></li>
+  <li class="active"><a href="<?php echo U('Home/Company/company');?>#desc"">首页</a></li>
+  <li><a href="<?php echo U('Home/New/new1');?>#desc"">新闻广告</a></li>
+  <li><a href="<?php echo U('Home/Answers/answers');?>#desc">咨询答疑</a></li>
+  <li><a href="<?php echo U('Home/Introduce/introduce');?>#desc">公司介绍</a></li>
 </ul>
 
 

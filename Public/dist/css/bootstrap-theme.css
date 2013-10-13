@@ -57,9 +57,11 @@ a.thumbnail:hover {
 }
 .span30{
 	width: 228px;
+	margin-left:0px;
+	margin-right:0px;
 }
 .span5{
-width:730px;
+width:740px;
 float:left;
 }
 

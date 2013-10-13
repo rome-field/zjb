@@ -9,7 +9,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="images/reset.css" type="text/css" />
   <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
-  <link rel="stylesheet" href="__ROOT__/public/Home/login.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/public/Home/innerpage.css" type="text/css" />
   <js href="__ROOT__/public/js/jquery-1.7.1.js" />
 <js href="__ROOT__/public/dist/js/bootstrap.js" />
 <!-- Latest compiled and minified CSS -->
@@ -83,24 +83,25 @@ border:1px;
 					 注册<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
+							<li><a href="{:U('Register/hyregister')}#desc" target="_blank">会员注册</a></li>
+							<li><a href="{:U('Register/register')}#desc" target="_blank">个人注册</a></li>
 					</ul>
 				</li>
-			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a></li>
+			<li class="active"><a href="{:U('Register/register')}#desc" target="_blank">登录</a></li>
+			<li class="active"><a href="{:U('Audit/audit')}#desc" target="_blank">欢迎  kkkk登录</a></li>
 		</ul>
 	
-</div>	
+	</div>	
 	
 	<div id="header">
 		<img src="__ROOT__/public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span>{$c}</span>
-				<a href="{:U('City/city')}#desc" target="_blank">城市切换</a>
+				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
+				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
 			</div>
-			<img src="__ROOT__/public/images/logo.jpg" alt="banner"/>
+			<p> 
+				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
@@ -109,7 +110,7 @@ border:1px;
 		</div>
     </div>
 		 <div>
-			<ul class="nav nav-tabs navbar">
+			<ul class="nav nav-tabs navbar nav1">
 				<li class="active"><a href="#">合作商家</a></li>
 				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
 				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
@@ -118,13 +119,13 @@ border:1px;
 				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
 				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 			
-				<li class="navbar-right"><a href="{:U('Licai/licai')}#desc">我要理财</a></li>
+				<li class="navbar-right"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
 			</ul>
 			
 		</div>
-		
-		<div id="innmain">
 		<h3><span class="label label-default">New</span></h3>
+		<div id="innmain">
+		
 			<div id="lmain">
 				
 			<div id="inn" >

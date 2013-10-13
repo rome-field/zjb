@@ -9,7 +9,16 @@ class AuditAction extends Action{
 		import('ORG.Util.Image');	
 		Image::buildImageVerify();
 	}
+	public function right(){
+	$this->display();
+    }
+public function Password (){
+	$this->display();
+    }
 
+public function publishmsg (){
+	$this->display();
+    }
 };
 
 //验证登录

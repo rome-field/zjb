@@ -83,7 +83,8 @@ border:1px;
 				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
 				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
 			</div>
-			<span> 中介服务<span>
+			<p> 
+				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
@@ -93,7 +94,7 @@ border:1px;
     </div>
 		 <div>
 			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="#">合作商家</a></li>
+				<li class="active"><a href="<?php echo U('Index/index');?>#desc">合作商家</a></li>
 				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
 				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
 				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>

@@ -46,7 +46,7 @@
  </head>
  <body onload="myfunction()">
  	
- <div id="container">
+ <div id="container" style="width:85%; min-width:1170px;">
 	<div id="pos" >
 		
 		<ul class="nav nav-tabs ">
@@ -73,7 +73,8 @@
 				<span><?php echo ($c); ?></span>
 				<a href="<?php echo U('City/city');?>#desc" target="_blank">城市切换</a>
 			</div>
-			<span>中介邦<span>
+			<p> 
+				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
@@ -90,8 +91,8 @@
 				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
 				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
 				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
-			
-				<li class="navbar-right"><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>
+				<li style="width:450px"></li>
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 			
 		</div>
@@ -113,19 +114,57 @@
 							<li><a href="#">青田</a></li>
 							<li><a href="#">缙云</a></li>
 						</ul>
-					<a class="navbar-brand" href="#">分类 :</a>							
+						<a class="navbar-brand" href="#">类型 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">房产中介</a></li>
-							<li><a href="#">汽车服务</a></li>
-							<li><a href="#">金融担保</a></li>
+							<li><a href="#">轿车</a></li>
+							<li><a href="#">商务车</a></li>
+							<li><a href="#">面包车</a></li>
+							<li><a href="#">越野车</a></li>
+							<li><a href="#">皮卡</a></li>
+							<li><a href="#">客车</a></li>
+							<li><a href="#">货车</a></li>
+						</ul>
+					<a class="navbar-brand" href="#">座位 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">5座</a></li>
+							<li><a href="#">7座</a></li>
+							<li><a href="#">9座</a></li>
+							<li><a href="#">11座</a></li>
+							<li><a href="#">12座</a></li>
+							<li><a href="#">14座</a></li>
+							<li><a href="#">15座</a></li>
+							<li><a href="#">16座</a></li>
+							<li><a href="#">17座</a></li>
+							<li><a href="#">22座</a></li>
+							<li><a href="#">24座</a></li>
+							<li><a href="#">29座</a></li>
+							<li><a href="#">33座</a></li>
+							<li><a href="#">39座</a></li>
+							<li><a href="#">40座</a></li>
+						</ul>
+						<a class="navbar-brand" href="#">价格 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">200元以下</a></li>
+							<li><a href="#">200-300元</a></li>
+							<li><a href="#">300-400元</a></li>
+							<li><a href="#">400-600元</a></li>
+							<li><a href="#">600-1000元</a></li>
+							<li><a href="#">1000-2000元</a></li>
+							<li><a href="#">2000以上</a></li>
+							<li><a href="#">7-8万</a></li>
+							<li><a href="#">8-9万</a></li>
+							<li><a href="#">9-10万</a></li>
+							<li><a href="#">10万以上</a></li>
 						</ul>
 				
 					<a class="navbar-brand" href="#">排序 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">默认</a></li>
 							<li><a href="#">最新</a></li>
-							<li><a href="#">人气</a></li>
+							<li><a href="#">租金</a></li>
 						</ul>					
 				</div>
 	 
@@ -364,7 +403,15 @@
 			</div>
 		
 		</div>	
-		
+		<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
   </div>
  </body>
 </html>

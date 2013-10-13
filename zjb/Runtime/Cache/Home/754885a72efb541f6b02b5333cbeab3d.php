@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
 <head>
 <title>
 中介邦
@@ -17,6 +17,16 @@
 <link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
 <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
 <link rel="stylesheet" href="__ROOT__/public/home/index.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
+ <!--[if lte IE 6]>
+  <!-- bsie css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
+ <![endif]-->
+<!-- Optional theme -->
+
+<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
 <style type="text/css">
 </style>
 <script language="javascript">
@@ -46,12 +56,12 @@
 					 注册<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
-							<li><a href="<?php echo U('Register/hyregister');?>#desc" target="_blank">会员注册</a></li>
-							<li><a href="<?php echo U('Register/register');?>#desc" target="_blank">个人注册</a></li>
+							<li><a href="<?php echo U('Register/hyregister');?>#desc">会员注册</a></li>
+							<li><a href="<?php echo U('Register/register');?>#desc">个人注册</a></li>
 					</ul>
 				</li>
-			<li class="active"><a href="<?php echo U('Register/register');?>#desc" target="_blank">登录</a></li>
-			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc" target="_blank">欢迎  kkkk登录</a></li>
+			<li class="active"><a href="<?php echo U('Login/login');?>#desc">登录</a></li>
+			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎  kkkk登录</a></li>
 		</ul>
 	
 	</div>	
@@ -63,7 +73,8 @@
 				<span><?php echo ($c); ?></span>
 				<a href="<?php echo U('City/city');?>#desc" target="_blank">城市切换</a>
 			</div>
-			<img src="" alt="banner"/>
+			<p> 
+				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
@@ -79,9 +90,10 @@
 				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
 				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
 				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
-				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
-			
-				<li class="navbar-right"><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>
+				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp	
+				<li style="width:450px"> </li>
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
+			</ul>
 			</ul>
 			
 		</div>
@@ -103,19 +115,28 @@
 							<li><a href="#">青田</a></li>
 							<li><a href="#">缙云</a></li>
 						</ul>
-					<a class="navbar-brand" href="#">分类 :</a>							
+					<a class="navbar-brand" href="#">来源 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">房产中介</a></li>
-							<li><a href="#">汽车服务</a></li>
-							<li><a href="#">金融担保</a></li>
+							<li><a href="#">个人资金</a></li>
+							<li><a href="#">企业资金</a></li>
+							<li><a href="#">银行资金</a></li>
+						</ul>
+						<a class="navbar-brand" href="#">额度 :</a>							
+						<ul class="nav nav-pills navbar-brand">
+							<li class="active"><a href="#">不限</a></li>
+							<li><a href="#">10万以上</a></li>
+							<li><a href="#">10-50万</a></li>
+							<li><a href="#">50-100万</a></li>
+							<li><a href="#">100-500万</a></li>
+							<li><a href="#">500万以上</a></li>
 						</ul>
 				
 					<a class="navbar-brand" href="#">排序 :</a>							
 						<ul class="nav nav-pills navbar-brand">
 							<li class="active"><a href="#">默认</a></li>
 							<li><a href="#">最新</a></li>
-							<li><a href="#">人气</a></li>
+							<li><a href="#">额度</a></li>
 						</ul>					
 				</div>
 	 
@@ -354,7 +375,15 @@
 			</div>
 		
 		</div>	
-		
+		<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
   </div>
  </body>
 </html>

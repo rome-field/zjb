@@ -1,0 +1,30 @@
+[ 2013-10-11T10:59:22+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Company/companyPic.html
+ERR: 非法操作:companyPic
+
+[ 2013-10-11T11:00:24+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Company/companyPic.html
+ERR: 非法操作:companyPic
+
+[ 2013-10-11T11:12:53+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Company/companyPic.html
+ERR: 非法操作:companyPic
+
+[ 2013-10-11T13:44:37+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Buyhouse/
+ERR: 非法操作:index
+
+[ 2013-10-11T13:44:40+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Buycar/
+ERR: 非法操作:index
+
+[ 2013-10-11T21:54:21+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Buyhouse/
+ERR: 非法操作:index
+
+[ 2013-10-11T22:17:04+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Home/Publish/hypublishcar.html
+ERR: 模板不存在[./zjb/Tpl/Home/Publish/hypublishcar.html]
+
+[ 2013-10-11T22:17:41+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Home/Publish/hypublishcar.html
+ERR: 模板不存在[./zjb/Tpl/Home/Publish/hypublishcar.html]
+
+[ 2013-10-11T22:17:43+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Home/Publish/hypublishcar.html
+ERR: 模板不存在[./zjb/Tpl/Home/Publish/hypublishcar.html]
+
+[ 2013-10-11T22:17:46+08:00 ] 127.0.0.1 /zhongjiebang/zhongjiebang/index.php/Home/Publish/hypublishcar.html
+ERR: 模板不存在[./zjb/Tpl/Home/Publish/hypublishcar.html]
+

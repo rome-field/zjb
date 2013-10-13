@@ -222,18 +222,14 @@
   .span7 {
     width: 414px;
   }
-  .span6 {
-    width: 352px;
-  }
+
   .span5 {
     width: 290px;
   }
   .span4 {
     width: 228px;
   }
-  .span3 {
-    width: 166px;
-  }
+
   .span2 {
     width: 104px;
   }
@@ -489,7 +485,7 @@
 }
 @media (min-width: 1200px) {
   .row {
-    margin-left: -30px;
+   
     *zoom: 1;
   }
   .row:before,
@@ -502,7 +498,7 @@
   }
   [class*="span"] {
     float: left;
-    margin-left: 30px;
+
   }
   .container,
   .navbar-fixed-top .container,
@@ -527,9 +523,7 @@
   .span7 {
     width: 670px;
   }
-  .span6 {
-    width: 570px;
-  }
+
   .span5 {
     width: 470px;
   }

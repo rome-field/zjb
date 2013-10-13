@@ -1,0 +1,39 @@
+.control-label{
+		float:left	;
+		text-align:right;
+		width: 160px;
+padding-top: 5px;
+		
+		}
+.inline{
+	float:left;
+	padding-right:10px;
+}
+.control-group{
+	clear:both;
+}
+
+	 .nav{
+				
+				Font:15px/15PX simhei;
+				margin-left:0px;	
+			}
+label, input, button, select, textarea {
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+}
+.form-horizontal .control-group {
+margin-bottom: 20px;
+}
+
+.form-horizontal .controls {
+margin-left: 180px;
+}
+
+.input-xlarge {
+width: 270px;
+}
+#J_brand_window {
+display: block;
+}

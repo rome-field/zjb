@@ -5,6 +5,19 @@ class PublishAction extends Action{
 	public function publish(){
 	$this->display();
     }
+	public function publishcar(){
+	$this->display();
+    }
+	public function publishhouse(){
+	$this->display();
+    }
+	public function hypublishcar(){
+	$this->display();
+    }
+	public function hypublishhouse(){
+	$this->display();
+    }
+
 	
 
 };

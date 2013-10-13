@@ -44,6 +44,17 @@
 				border:1px solid blue;	
 				
 			}
+
+			.caption p{		   
+				margin-top:8px;
+				text-align: center;
+				font-size:12px;
+			   }
+			 .caption h3{		   
+				margin-top:0px;
+				text-align: center;
+				font-size:16px;
+			   }
 			#rheader{
 			   float:left;
 			   margin-top:30px;
@@ -365,5 +376,4 @@
 				Font:15px/15PX simhei;
 				margin-left:0px;	
 			}
-			
 			
