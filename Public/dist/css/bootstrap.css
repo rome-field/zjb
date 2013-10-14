@@ -2388,6 +2388,7 @@ input[type="button"].btn-block {
   opacity: 1;
   top: 24px; left: 100px; display: block; 
    word-break:break-word; word-wrap:break-word;
+	font-size:13px;
 }
 
 .collapse {
@@ -5347,7 +5348,7 @@ a.thumbnail:focus {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border-bottom: 1px solid #C9CBCA;;
 }
 
 .list-group-item:first-child {

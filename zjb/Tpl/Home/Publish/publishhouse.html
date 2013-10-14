@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
-  <title> 登录 </title>
+  <title> 发布房产</title>
   <meta name="Generator" content="EditPlus">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
@@ -9,7 +9,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
-
+<js href="__ROOT__/public/js/city.js" />
 <js href="__ROOT__/public/js/jquery-1.7.1.js" />
 <js href="__ROOT__/public/dist/js/bootstrap.js" />
 <!-- Latest compiled and minified CSS -->
@@ -372,5 +372,29 @@ border:1px;
 	
 
 </div>
+<script  type="text/javascript">
+function $(objname){return document.getElementById(objname);}
+var oarray = $("flashimg").getElementsByTagName('img');
+var imgnum = oarray.length-1;
+function fout()
+{var o = oarray[imgnum];
+	if(o!=null)
+	{if(o.style.opacity == null || o.style.opacity == ""){o.style.opacity =1;}
+		var opacitynum = o.style.opacity;
+		//alert(opacitynum);
+		if(opacitynum < 0.11)
+		{o.style.display='none';
+			o.parentNode.insertBefore(o, oarray[0]);
+			o.style.display = '';
+			o.style.filter = '';
+			o.style.opacity = 1;
+			setTimeout("fout()",3000);
+			return;}
+		else{o.style.filter='alpha(opacity:'+(opacitynum*100-10)+')';
+		o.style.opacity = opacitynum-0.1;
+		setTimeout("fout()",50);
+		}}}
+fout();setup();
+</script>
 </body>
 </html>

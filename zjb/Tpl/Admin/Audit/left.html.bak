@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -84,15 +84,25 @@ h3 a {
 
 <body style="background:#fff">
 <div id="container">
-      <h3 class="type"><a href="<?php echo U('Index/index');?>" target="_top">返回首页</a></h3>
-      
-	  <h3 class="type"><a href="<?php echo U('Audit/right');?>" target="main">个人管理</a></h3>
+      <h3 class="type"><a href="javascript:void(0)">用户认证</a></h3>
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-			<li><a href="<?php echo U('Audit/password');?>" target="main">修改密码</a></li>
-			<li><a href="<?php echo U('Audit/publishmsg');?>" target="main">已经发布消息</a></li>
-			<li><a href="<?php echo U('Company/companyPic');?>" target="main">退出管理</a></li>
+          	<li><a href="{:U('Webconfig/index')}" target="main">个人用户认证</a></li>	
+			<li><a href="{:U('Webconfig/advanced')}" target="main">企业用户认证</a></li>		
+        </ul>
+	  </div>
+      
+	  <h3 class="type"><a href="javascript:void(0)">信息认证</a></h3>
+      <div class="content">
+		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
+        <ul class="MM">
+			<li><a href="{:U('Company/index')}" target="main">个人用户车辆</a></li>
+			<li><a href="{:U('Company/companydesc')}" target="main">企业用户车辆</a></li>
+			<li><a href="{:U('Company/gywm')}" target="main">卖房信息</a></li>
+			<li><a href="{:U('Company/companyPic')}" target="main">出租房信息</a></li>
+			<li><a href="{:U('Company/ygPic')}" target="main">贷款信息</a></li>
+			<li><a href="{:U('Company/honour')}" target="main">理财信息</a></li>
         </ul>
 	  </div>
 	<!--
@@ -100,8 +110,8 @@ h3 a {
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-			<li><a href="<?php echo U('Cate/index');?>" target="main">首页栏目</a></li>
-			<li><a href="<?php echo U('Cate/addCate');?>" target="main">添加栏目</a></li>
+			<li><a href="{:U('Cate/index')}" target="main">首页栏目</a></li>
+			<li><a href="{:U('Cate/addCate')}" target="main">添加栏目</a></li>
         </ul>
 	  </div>
 
@@ -109,8 +119,8 @@ h3 a {
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('News/index');?>" target="main">新闻管理</a></li>
-		   <li><a href="<?php echo U('News/addNews');?>" target="main">添加新闻</a></li>
+          <li><a href="{:U('News/index')}" target="main">新闻管理</a></li>
+		   <li><a href="{:U('News/addNews')}" target="main">添加新闻</a></li>
         </ul>
 	  </div>
 	 
@@ -118,9 +128,9 @@ h3 a {
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('Goods/index');?>" target="main">商品列表</a></li>
-		   <li><a href="<?php echo U('Goods/addGoods');?>" target="main">添加商品</a></li>
-		   <li><a href="<?php echo U('Goods/classList');?>" target="main">商品分类</a></li>
+          <li><a href="{:U('Goods/index')}" target="main">商品列表</a></li>
+		   <li><a href="{:U('Goods/addGoods')}" target="main">添加商品</a></li>
+		   <li><a href="{:U('Goods/classList')}" target="main">商品分类</a></li>
         </ul>
 	  </div>
 	
@@ -128,30 +138,30 @@ h3 a {
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('Msg/index');?>" target="main">查看留言</a></li>
+          <li><a href="{:U('Msg/index')}" target="main">查看留言</a></li>
         </ul>
 	  </div>
 	  <h3 class="type"><a href="javascript:void(0)">友情链接</a></h3>
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('Link/index');?>" target="main">查看所有</a></li>
-		  <li><a href="<?php echo U('Link/addlink');?>" target="main">添加新的</a></li>
+          <li><a href="{:U('Link/index')}" target="main">查看所有</a></li>
+		  <li><a href="{:U('Link/addlink')}" target="main">添加新的</a></li>
         </ul>
 	  </div>
 	  <h3 class="type"><a href="javascript:void(0)">招贤纳士</a></h3>
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('Job/index');?>" target="main">查看所有</a></li>
-		  <li><a href="<?php echo U('Job/addJob');?>" target="main">添加信息</a></li>
+          <li><a href="{:U('Job/index')}" target="main">查看所有</a></li>
+		  <li><a href="{:U('Job/addJob')}" target="main">添加信息</a></li>
         </ul>
 	  </div>
 	  <h3 class="type"><a href="javascript:void(0)">系统设置</a></h3>
       <div class="content">
 		<div style="background:url(__PUBLIC__/admin/adminImages/menu_topline.gif); width:182px; height:5px; overflow:hidden"></div>
         <ul class="MM">
-          <li><a href="<?php echo U('System/index');?>" target="main">修改密码</a></li>
+          <li><a href="{:U('System/index')}" target="main">修改密码</a></li>
         </ul>
 	  </div>
 </div>

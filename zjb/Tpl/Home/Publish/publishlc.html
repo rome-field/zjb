@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
-  <title> 登录 </title>
+  <title> 发布理财</title>
   <meta name="Generator" content="EditPlus">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
 
 <js href="__ROOT__/public/js/jquery-1.7.1.js" />
-
+<js href="__ROOT__/public/js/city.js" />
 <js href="__ROOT__/public/dist/js/bootstrap.js" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
@@ -117,7 +117,7 @@ border:1px;
   <form class="form-horizontal" style="float:left;" >
     <fieldset style="width:720px;margin:0px auto;height:100%;background:#fff">
       <div id="legend" class="">
-        <legend class="">表单名</legend>
+        <legend class="">理财</legend>
       </div>
     <div class="control-group">
 
@@ -375,6 +375,30 @@ function chkAll(o, name){
 $('#J_pointer_btn').click(function(){
     art.dialog.open('?controller=Main&action=baiduMapSelectPointDialog', { title: '选取位置<span style="color:red;">（请在地图上点击）</span>', width:'720px', height:'420px', fixed:true }, false);
 });
+</script>
+<script  type="text/javascript">
+function $(objname){return document.getElementById(objname);}
+var oarray = $("flashimg").getElementsByTagName('img');
+var imgnum = oarray.length-1;
+function fout()
+{var o = oarray[imgnum];
+	if(o!=null)
+	{if(o.style.opacity == null || o.style.opacity == ""){o.style.opacity =1;}
+		var opacitynum = o.style.opacity;
+		//alert(opacitynum);
+		if(opacitynum < 0.11)
+		{o.style.display='none';
+			o.parentNode.insertBefore(o, oarray[0]);
+			o.style.display = '';
+			o.style.filter = '';
+			o.style.opacity = 1;
+			setTimeout("fout()",3000);
+			return;}
+		else{o.style.filter='alpha(opacity:'+(opacitynum*100-10)+')';
+		o.style.opacity = opacitynum-0.1;
+		setTimeout("fout()",50);
+		}}}
+fout();setup();
 </script>
 </body>
 </html>

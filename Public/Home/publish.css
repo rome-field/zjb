@@ -120,7 +120,7 @@
 			}
 			#innmain{
 
-			   text-align:left
+			   text-align:center;
 			   
 			}
 			
@@ -144,8 +144,8 @@
 			height:230px;
 			border:2px solid #c9cbca;
 			text-align:left;
-			background-color:#fff
-			
+			background-color:#fff;
+			margin-bottom:20px;
 				
 
 		}
@@ -176,7 +176,8 @@
 			width:440px;
 			height:230px;
 			margin-left:30px;
-			background-color:#fff
+			background-color:#fff;
+			margin-bottom:20px;
 		}
 		#inntxt table{
 		text-align:left;
@@ -333,3 +334,7 @@ text-align: start;
 user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
 -webkit-writing-mode: horizontal-tb;
 }
+ .thumbnail img{
+	   width:430px;
+	   height:300px;
+	   }
