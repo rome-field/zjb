@@ -132,14 +132,21 @@
 
 			.caption p{		   
 				margin-top:8px;
+				text-align: left;
+				font-size:13px;
+			   }
+
+			   .caption a{		   
+				margin-top:8px;
 				text-align: center;
-				font-size:12px;
+				font-size:13px;
 			   }
 
 			   .caption h3{		   
 				margin-top:8px;
-				text-align: center;
-				font-size:16px;
+				text-align: left;
+				font-size:13px;
+				font-weight:bold;
 			   }
 
 			.thumbnail img{
@@ -147,7 +154,7 @@
 			   height:180px;
 			   }
 
-			.b1{
+	/*		.b1{
 				width:1000px;;
 				height:130px;
 				background:#fff;
@@ -175,7 +182,7 @@
 				float:left;display:inline;
 				margin-top:15px;
 			   }
-		
+		*/
 			.span3{
 				display:none;
 			}

@@ -100,7 +100,7 @@
 			}
 			#c1{
 				width:730px;
-				
+				border:1px solid #c9cbca;
 				float:left;
 			
 				
@@ -228,8 +228,9 @@
 		   
 		
 		  
-		  margin-top:15px;
+		  margin-top:8px;
 		   font:12px "times new roman","宋体",serif;
+		   text-align:left;
 		   
 	   }
 		 
@@ -238,7 +239,7 @@
 			   height:100%;
 			   background:#fff;
 				float:left;display:inline;
-				margin:0 0 20px 0;
+				margin:0 0 5px 0;
 				 border:1px solid #c9cbca;
 				 text-align:center
 		   }
@@ -377,3 +378,7 @@
 				margin-left:0px;	
 			}
 			
+.list-group {
+padding-left: 0;
+margin-bottom: 20px;
+}

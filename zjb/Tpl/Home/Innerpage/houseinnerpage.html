@@ -1,17 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
  <head>
-  <title>发布</title>
+  <title>内页</title>
   <meta name="Generator" content="EditPlus">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="images/reset.css" type="text/css" />
   <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
- 
-
-<js href="__ROOT__/public/js/jquery-1.7.1.js" />
-<js href="__ROOT__/public/js/city.js" />
+  <link rel="stylesheet" href="__ROOT__/public/Home/innerpage.css" type="text/css" />
+  <js href="__ROOT__/public/js/jquery-1.7.1.js" />
 <js href="__ROOT__/public/dist/js/bootstrap.js" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
@@ -19,15 +18,20 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
+ <!--[if lte IE 6]>
+  <!-- bsie css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
+ <![endif]-->
+<!-- Optional theme -->
 
-<link rel="stylesheet" href="__ROOT__/Public/dist/css/github.css"/>
+<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
 
 
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-responsive.css"/>
 
-  <link rel="stylesheet" href="__ROOT__/public/Home/publish.css" type="text/css" />
-   <link rel="stylesheet" href="__ROOT__/public/Home/form.css" type="text/css" />
-   <link rel="stylesheet" href="__ROOT__/public/Home/edit.css" type="text/css" />
+
 
 
 <style type="text/css">
@@ -70,7 +74,7 @@ border:1px;
 <div id="container">
 <form name="submitForm" method="post" action="" id="submitForm" target="formSubmit">
 	
-	<div id="pos" >
+<div id="pos" >
 		
 		<ul class="nav nav-tabs ">
 			
@@ -119,60 +123,99 @@ border:1px;
 			</ul>
 			
 		</div>
-		
+		<h3><span class="label label-default">信息</span></h3>
 		<div id="innmain">
-		<h3 style="margin-bottom:0px;text-align:left"><span class="label label-default">发布信息</span></h3>
+		
 			<div id="lmain">
-
-
-
-		<div class="span6">
-     
-      <ul class="thumbnails" style="text-align: center;margin-left: auto;margin-right: auto;">
-        
-        <li class="span50">
-          <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
-            <div class="caption">
-			<p style="text-align: center;"><a href="{:U('Home/Publish/publishcar')}#desc" class="btn btn-primary">个人</a> 
-			<a href="{:U('Home/Publish/hypublishcar')}#desc" class="btn">企业</a></p>
-            </div>
-          </div>
-        </li>
-		<li class="span50">
-          <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
-            <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/publishhouse')}#desc" class="btn btn-primary">个人</a> 
-			<a href="{:U('Home/Publish/hypublishhouse')}#desc" class="btn">企业</a></p>
-
-            </div>
-            </div>
-          
-        </li>
-		
-		<li class="span50">
-          <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
-            <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/publishdk')}#desc" class="btn btn-primary">个人</a> <a href="{:U('Home/Publish/hypublishdk')}#desc" class="btn">企业</a></p>
-            </div>
-          </div>
-        </li>
-		<li class="span50">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/hypublishlc')}#desc" class="btn btn-primary">个人</a> <a href="{:U('Home/Publish/hypublishlc')}#desc" class="btn">企业</a></p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-		
-		
 				
+			<div id="inn" >
+				<div id="innimg" ><img src="__ROOT__/public/images/logo.jpg" alt=""/></div>
+				<div id="inntxt">
+					<table>
+						<tr>
+							<td>报价</td>
+							<td>单价</td>
+						</tr>
+						<tr>
+							<td>房型</td>
+							<td>朝向</td>
+						</tr>
+						<tr>
+							<td>面积</td>
+							<td>装修</td>
+						</tr>
+						<tr>
+							
+							<td>楼层</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="2">地址</td>
+							
+						</tr>
+						<tr>
+							
+							<td>联系人</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="2">联系电话</td>
 
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="c1">
+				<div id="xw">
+					<ul>
+						<li>房屋图片</li>
+						
+						
+					<ul>
+				</div>
+			
+				<div id="qbxw">
+				 
+		
+				<div id="carimp">
+						<img src="__ROOT__/public/images/logo.jpg"/>
+						<img src="__ROOT__/public/images/logo.jpg"/>
+				</div>
+
+				
+			</div>
+			
+			<div id="yhcx">
+				
+				1231231
+				
+			</div>
+			
+		
+			</div>
+		</div>
+			
+			
+				<div id="c3">
+				<div class="rb1">
+				
+				<h4><span class="label label-default">公司信息</span></h4>
+				
+				
+				<ul>
+					<li style="font-weight:bold;font-size:15px;">北京优途旧机动车经纪有限公司<li>
+					<li><span>公司类型：</span>&nbsp&nbsp &nbsp <span>专业公司</span></li>
+					<li><span>公司地址：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+					<li><span>邮政编码：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+					<li><span>&nbsp &nbsp&nbsp联系人：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+					<li><span>&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp电话：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+					<li><span>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp传真：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+					<li><span>注册时间：</span>&nbsp&nbsp &nbsp <span>面积:150㎡</span></li>
+				</ul>
+				
+			</div>
+			
+			
 			
 				
 		

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
-  <title> 登录 </title>
+  <title>企业发布的信息</title>
   <meta name="Generator" content="EditPlus">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
@@ -13,6 +13,7 @@
 <js href="__ROOT__/public/js/jquery-1.7.1.js" />
 
 <js href="__ROOT__/public/dist/js/bootstrap.js" />
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
 
@@ -35,7 +36,8 @@
    <link rel="stylesheet" href="__ROOT__/public/Home/form.css" type="text/css" />
    <link rel="stylesheet" href="__ROOT__/public/Home/edit.css" type="text/css" />
 
-
+<js href="__ROOT__/public/js/citys.js" />
+<js href="__ROOT__/public/js/city.js" />
 
 <style type="text/css">
 *:focus {outline: none}
@@ -134,8 +136,6 @@ border:1px;
 
     
 
-    
-
     <div class="control-group">
           <label class="control-label">类别</label>
           <div class="controls">
@@ -170,8 +170,6 @@ border:1px;
           </div>
 
         </div>
-
-    
 
     
 
@@ -466,6 +464,31 @@ border:1px;
 	
 
 </div>
+
+<script  type="text/javascript">
+function $(objname){return document.getElementById(objname);}
+var oarray = $("flashimg").getElementsByTagName('img');
+var imgnum = oarray.length-1;
+function fout()
+{var o = oarray[imgnum];
+	if(o!=null)
+	{if(o.style.opacity == null || o.style.opacity == ""){o.style.opacity =1;}
+		var opacitynum = o.style.opacity;
+		//alert(opacitynum);
+		if(opacitynum < 0.11)
+		{o.style.display='none';
+			o.parentNode.insertBefore(o, oarray[0]);
+			o.style.display = '';
+			o.style.filter = '';
+			o.style.opacity = 1;
+			setTimeout("fout()",3000);
+			return;}
+		else{o.style.filter='alpha(opacity:'+(opacitynum*100-10)+')';
+		o.style.opacity = opacitynum-0.1;
+		setTimeout("fout()",50);
+		}}}
+fout();setup();
+</script>
 <script type="text/javascript">
 var show_mileage = '<input type="radio" name="MV_mileage" value="0" checked />不限　 <input type="radio" name="MV_mileage" value="I"  />3万公里以下　 <input type="radio" name="MV_mileage" value="II"  />3万以上到5万公里　 <input type="radio" name="MV_mileage" value="III"  />5万以上到10万公里　 <input type="radio" name="MV_mileage" value="IV"  />10万公里以上　 ';
 var show_input_mileage = '<input type="text" name="MV_mileage" id="J_mileage" class="input3" size="10" value="" /> 万公里';
@@ -585,5 +608,6 @@ $('#J_pointer_btn').click(function(){
     art.dialog.open('?controller=Main&action=baiduMapSelectPointDialog', { title: '选取位置<span style="color:red;">（请在地图上点击）</span>', width:'720px', height:'420px', fixed:true }, false);
 });
 </script>
+
 </body>
 </html>

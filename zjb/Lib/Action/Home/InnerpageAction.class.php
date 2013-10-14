@@ -5,7 +5,9 @@ class InnerpageAction extends Action{
 	public function innerpage(){
 	$this->display();
     }
-	
+	public function houseinnerpage(){
+	$this->display();
+    }
 
 };
 

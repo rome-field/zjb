@@ -30,11 +30,12 @@
 		height:26px;
 		color:#2B90C1;
 		width:190px;
+
 		}
 	li span{
 		width:60px; 
 		float:left;
-		text-align:right;
+		
 		}
 	input{
 		vertical-align:middle;
@@ -63,14 +64,15 @@
 		top:50px; 
 		display:none;
 		border:1px solid red;
-		background:pink
+		margin-bottom:5px;
 		}
 	#lg img{
 		vertical-align:middle;
-		float:right;
+		float:left;
+		margin-left:20px;
 		}
 	.yzm{
-		float:left;
+		float:right;
 		margin-left:2px;
 	
 		}
