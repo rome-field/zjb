@@ -39,7 +39,7 @@ $(function(){
 	  <form action="" method="post" name="myform">
 		<div id="login">
 			<div id="top">
-				<div id="left"><img src="__ROOT__/MYphp/Tpl/Public/home/loginImages/login_1.jpg"/></div>
+				<div id="left"><img src="__ROOT__/MYphp/Tpl/Public/Home/loginImages/login_1.jpg"/></div>
 				<div id="center">
 				<ul>
 					<li class="info"></li>

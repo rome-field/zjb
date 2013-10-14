@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <title>
@@ -7,9 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="" />
 <meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
-<js href="__ROOT__/Public/js/jquery-1.7.1.js" />
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
 
-<js href="__ROOT__/Public/dist/js/bootstrap.js" />
+<script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
 
 
@@ -59,14 +59,34 @@
 
  	
  <div class="container" style="width:85%; min-width:1170px;">
-	<include file="Common:top"/>	
+	<div id="pos" >	
+    <ul class="nav nav-tabs ">
+        <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
+            <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
+            <li class='active'><a href='<?php echo U("Index/logout");?>'>注销</a></li>
+        <?php else: ?>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    注册<span class="caret"></span>
+                </a>
+		<ul class="dropdown-menu">
+			<li><a href="<?php echo U('Register/show_reg');?>#desc">普通会员注册</a></li>
+			<li><a href="<?php echo U('Register/show_hyreg');?>#desc">商家会员注册</a></li>
+		</ul>
+            </li>
+            <li class="active"><a href="<?php echo U('Index/login');?>#desc">登录</a></li><?php endif; ?>
+			
+    </ul>
+	
+</div>	
+		
 	
 	<div id="header">
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
-				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
+				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
 
 			</div>
 			<p style="width:480px;"> 
@@ -82,14 +102,14 @@
 		 <div>
 			<ul class="nav nav-tabs navbar nav1">
 				<li class="active"><a href="#">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
-				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
-				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
-				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
-				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
+				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
+				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
+				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
+				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
+				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 				<li style="width:450px"> </li>
-				<li class="navbar-right" style="text-align:right;"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 		</div>
 	 <div id="main">
@@ -139,7 +159,7 @@
       <ul class="thumbnails">
         <li class="span3" id="1">
           <div class="thumbnail">
-           <a href="{:U('Company/company')}#desc"> 
+           <a href="<?php echo U('Company/company');?>#desc"> 
 				<img src="__ROOT__/Public/images/about_banner.jpg" alt=""></a>
             <div class="caption">
 			 <h3>丽水市贷贷邦经济信息咨询有限公司</h3>

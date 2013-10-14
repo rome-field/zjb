@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
  <head>
   <title> 会员注册 </title>
@@ -7,17 +7,17 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
-  <link rel="stylesheet" href="__ROOT__/public/Home/login.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/Public/Home/login.css" type="text/css" />
 
-<js href="__ROOT__/public/js/jquery-1.7.1.js" />
-<js href="__ROOT__/public/dist/js/bootstrap.js" />
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-theme.css">
 
 <link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
  <!--[if lte IE 6]>
@@ -65,22 +65,22 @@ border:1px;
 					 注册<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
+							<li><a href="<?php echo U('Register/hyregister');?>#desc">会员注册</a></li>
+							<li><a href="<?php echo U('Register/register');?>#desc">个人注册</a></li>
 					</ul>
 				</li>
-			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a></li>
+			<li class="active"><a href="<?php echo U('Login/login');?>#desc">登录</a></li>
+			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎  kkkk登录</a></li>
 		</ul>
 	
 	</div>	
 	
 	<div id="header">
-		<img src="__ROOT__/public/images/logo.jpg" alt=""/>
+		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
-				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
+				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
 			</div>
 			<p> 
 				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
@@ -93,15 +93,15 @@ border:1px;
     </div>
 		 <div>
 			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="{:U('Index/index')}#desc">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
-				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
-				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
-				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
-				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+				<li class="active"><a href="<?php echo U('Index/index');?>#desc">合作商家</a></li>
+				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
+				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
+				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
+				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
+				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
+				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 			
-				<li class="navbar-right"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
+				<li class="navbar-right"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 			
 		</div>
@@ -112,7 +112,7 @@ border:1px;
 		</div>
 		<div id="main">
 			<div id="lmain" style="width:500px;height:400px;float:left;margin-top:50px;">
-			        <img src="__ROOT__/public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
+			        <img src="__ROOT__/Public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
 			</div>
 			  <div class="loginbox" style="border-left:solid 2px #e7ebea">
 				  <table   width="100%" class="logintable">
@@ -139,7 +139,7 @@ border:1px;
 						  <td style="padding-right:50pt;" >
 							  <span class="butt" style="line-height:50px;">
 							  <input type="submit" name="btnSubmit" value="登录" class="btns" accesskey="l" id="btnSubmit" />
-							  </span><span class="reg-a" border="2"><a href="{:U('Home/Login/login')}">已有账号，直接登录</a></span>
+							  </span><span class="reg-a" border="2"><a href="<?php echo U('Home/Login/login');?>">已有账号，直接登录</a></span>
 						  </td>
 					  </tr>
 				  </table>

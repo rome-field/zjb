@@ -1,0 +1,23 @@
+<div id="pos" >	
+    <ul class="nav nav-tabs ">
+        <if condition="session('?uname')">
+            <li class="active"><a href="{:U('Audit/audit')}#desc">欢迎您，{Think.session.uname}</a></li>
+            <li class="active"><a href="{:U('Member/index')}">会员中心</a></li>
+            <li class='active'><a href='{:U("Index/logout")}'>注销</a></li>
+        <else/>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    注册<span class="caret"></span>
+                </a>
+		<ul class="dropdown-menu">
+			<li><a href="{:U('Register/show_reg')}#desc">普通会员注册</a></li>
+			<li><a href="{:U('Register/show_hyreg')}#desc">商家会员注册</a></li>
+		</ul>
+            </li>
+            <li class="active"><a href="{:U('Index/login')}#desc">登录</a></li>
+        </if>
+			
+    </ul>
+	
+</div>	
+	

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
   <title>发布</title>
@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
  
 
-<js href="__ROOT__/Public/js/jquery-1.7.1.js" />
-<js href="__ROOT__/Public/js/city.js" />
-<js href="__ROOT__/Public/dist/js/bootstrap.js" />
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/city.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap.css">
 
@@ -79,12 +79,12 @@ border:1px;
 					 注册<span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc" target="_blank">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc" target="_blank">个人注册</a></li>
+							<li><a href="<?php echo U('Register/hyregister');?>#desc" target="_blank">会员注册</a></li>
+							<li><a href="<?php echo U('Register/register');?>#desc" target="_blank">个人注册</a></li>
 					</ul>
 				</li>
-			<li class="active"><a href="{:U('Register/register')}#desc" target="_blank">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc" target="_blank">欢迎  kkkk登录</a></li>
+			<li class="active"><a href="<?php echo U('Register/register');?>#desc" target="_blank">登录</a></li>
+			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc" target="_blank">欢迎  kkkk登录</a></li>
 		</ul>
 	
 	</div>	
@@ -93,8 +93,8 @@ border:1px;
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
-				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
+				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
 			</div>
 			<p> 
 				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
@@ -108,14 +108,14 @@ border:1px;
 		 <div>
 			<ul class="nav nav-tabs navbar nav1">
 				<li class="active"><a href="#">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
-				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
-				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
-				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
-				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
+				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
+				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
+				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
+				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
+				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 			
-				<li class="navbar-right"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
+				<li class="navbar-right"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 			
 		</div>
@@ -132,19 +132,19 @@ border:1px;
         
         <li class="span50">
           <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
+            <a href="<?php echo U('Home/Innerpage/innerpage');?>#desc" target="_blank"><img src="" alt=""></a>
             <div class="caption">
-			<p style="text-align: center;"><a href="{:U('Home/Publish/publishcar')}#desc" class="btn btn-primary">个人</a> 
-			<a href="{:U('Home/Publish/hypublishcar')}#desc" class="btn">企业</a></p>
+			<p style="text-align: center;"><a href="<?php echo U('Home/Publish/publishcar');?>#desc" class="btn btn-primary">个人</a> 
+			<a href="<?php echo U('Home/Publish/hypublishcar');?>#desc" class="btn">企业</a></p>
             </div>
           </div>
         </li>
 		<li class="span50">
           <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
+            <a href="<?php echo U('Home/Innerpage/innerpage');?>#desc" target="_blank"><img src="" alt=""></a>
             <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/publishhouse')}#desc" class="btn btn-primary">个人</a> 
-			<a href="{:U('Home/Publish/hypublishhouse')}#desc" class="btn">企业</a></p>
+            <p style="text-align: center;"><a href="<?php echo U('Home/Publish/publishhouse');?>#desc" class="btn btn-primary">个人</a> 
+			<a href="<?php echo U('Home/Publish/hypublishhouse');?>#desc" class="btn">企业</a></p>
 
             </div>
             </div>
@@ -153,9 +153,9 @@ border:1px;
 		
 		<li class="span50">
           <div class="thumbnail">
-            <a href="{:U('Home/Innerpage/innerpage')}#desc" target="_blank"><img src="" alt=""></a>
+            <a href="<?php echo U('Home/Innerpage/innerpage');?>#desc" target="_blank"><img src="" alt=""></a>
             <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/publishdk')}#desc" class="btn btn-primary">个人</a> <a href="{:U('Home/Publish/hypublishdk')}#desc" class="btn">企业</a></p>
+            <p style="text-align: center;"><a href="<?php echo U('Home/Publish/publishdk');?>#desc" class="btn btn-primary">个人</a> <a href="<?php echo U('Home/Publish/hypublishdk');?>#desc" class="btn">企业</a></p>
             </div>
           </div>
         </li>
@@ -163,7 +163,7 @@ border:1px;
           <div class="thumbnail">
             <img src="" alt="">
             <div class="caption">
-            <p style="text-align: center;"><a href="{:U('Home/Publish/hypublishlc')}#desc" class="btn btn-primary">个人</a> <a href="{:U('Home/Publish/hypublishlc')}#desc" class="btn">企业</a></p>
+            <p style="text-align: center;"><a href="<?php echo U('Home/Publish/hypublishlc');?>#desc" class="btn btn-primary">个人</a> <a href="<?php echo U('Home/Publish/hypublishlc');?>#desc" class="btn">企业</a></p>
             </div>
           </div>
         </li>
