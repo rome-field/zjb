@@ -5,6 +5,7 @@
   text-align:left;
   list-style:none; 
 padding-left:5px;
+zoom:1;
 
 }
 .thumbnails:before,
@@ -17,7 +18,7 @@ padding-left:5px;
 }
 .thumbnails > li {
   float: left;
-  margin: 0 0px 18px 12px;
+  margin: 0 0px 18px 17px;
 }
 .thumbnail {
   display: block;

@@ -4,117 +4,17 @@
 <title>
 中介邦
 </title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="" />
-<meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
-<js href="__ROOT__/public/js/jquery-1.7.1.js" />
-
-<js href="__ROOT__/public/dist/js/bootstrap.js" />
-<!-- Latest compiled and minified CSS -->
-
-
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
-
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
-<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/public/home/index.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
- <!--[if lte IE 6]>
-  <!-- bsie css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
-<!-- bsie 额外的 css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
- <![endif]-->
-<!-- Optional theme -->
-
-
-
-
-
-
-<style type="text/css">
-</style>
-<script language="javascript">
-  function myfunction(){
-        for(var i=1;i<=5;i++){  
-              document.getElementById(i).style.display= "block" ;
-           }  
-			 }
-  function dothings(){
-  var txt1=document.getElementById("ins");
-  txt1.value=" ";
-  txt1.focus();
-
- }
-         
-                              
-</script>
- </head>
- <body onload="myfunction()">
-
-        
- 
-
- 	
+	<include file="./zjb/Tpl/Home/Injection/injection.html"/>
+	<link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+</head>
+ <body> 	
  <div class="container" style="width:85%; min-width:1170px;">
-	<div id="pos" >
-		
-		<ul class="nav nav-tabs ">
-			
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					 注册<span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
-					</ul>
-				</li>
-			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a><a href="{:U('Comaudit/audit')}#desc"></a></li>
-		</ul>
-	
-	</div>	
-	
-	<div id="header">
-		<img src="__ROOT__/public/images/logo.jpg" alt=""/>
-		<div id="rheader">
-			<div id="city">
-				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
-				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
-
-			</div>
-			<p style="width:480px;"> 
-				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-			
-			<div id="ing">
-				<span>商家合作：133-0578-0578<br>
-				资金合作：153-0578-0578
-				</span>
-			</div>
-		</div>
-    </div>
-		 <div>
-			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="#">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
-				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
-				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
-				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
-				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
-				<li style="width:450px"> </li>
-				<li class="navbar-right" style="text-align:right;"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
-			</ul>
-		</div>
+	<include file="./zjb/Tpl/Home/Header/header.html"/>
+	<include file="./zjb/Tpl/Home/Banner/banner.html"/>
+    <include file="./zjb/Tpl/Home/Navigation/navigation.html"/>
 	 <div id="main">
-			
-				<img src="__ROOT__/public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
-			
-			
-	<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
+		<img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
+				<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
 
 				<div id="c2">
 					<a class="navbar-brand" href="#">区域 :</a>
@@ -145,88 +45,27 @@
 							<li><a href="#">人气</a></li>
 						</ul>					
 				</div>		
- 
-
-	</div>	
- <div id="footer">
-			
-		
+		</div>	
+		  <div id="footer">
 			<div class="span6">
-     
-      <ul class="thumbnails">
-        <li class="span3" id="1">
-          <div class="thumbnail">
-           <a href="{:U('Company/company')}#desc"> 
-				<img src="__ROOT__/public/images/about_banner.jpg" alt=""></a>
-            <div class="caption">
-			 <h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-         <li class="span3" id="2">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="3">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="4">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			 <h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="5">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-	</div>
-	<ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
-</ul>
-  </div>
- </body>
+				<ul class="thumbnails">
+					 <volist name="list" id="vo">
+						<li class="span3">
+						  <div class="thumbnail">
+							<a  href="{:U('Home/Company/company')}#desc"><img src="" alt=""></a>
+							<div class="caption">
+						<h3  style="text-align: center;">{$vo.id}</h3>
+						<p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+						<p><span>{$vo.id} </span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+						<p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+						 <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
+							</div>
+						  </div>
+						</li>
+					</volist>	
+				</ul>
+			</div>
+		</div>
+	<div class="yahoo2">{$page}</div>
+</body>
 </html>

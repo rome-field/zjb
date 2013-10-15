@@ -16,41 +16,6 @@
 				 Font:15px/37PX simhei;
 				 font-weight:700;
 			}
-			
-			#header{
-				height:87px;
-				width:1002px;
-				background-color:#fff;
-					font-size:13px;
-			}
-			#header img{
-				float:left;
-				margin:0px 10px 0 0px;
-				
-			}
-			#ing{
-				float:right;
-				margin-top:10px;
-			}
-			
-			#pos{
-				background-color:#e7ebea;
-
-				Font:12px/20PX simhei;
-			}
-			
-			
-
-			#c2{
-				width:1000px;
-				
-				
-				height:100%;
-				background-color:#fff;
-				margin-top:20px;
-				border-right:solid 2px #c9cbca; 
-				margin-bottom:20px;
-			}
 
 			.navbar-brand{				
 				margin-left:20px;
@@ -58,48 +23,16 @@
 				
 				}
 			
-			
 			form{
-				float:left;
 				width:1002px;
-				height:100%;
-				margin:0px 15px 10px 10px;
-			}
-			.input-medium{
-				width:700px;
-				height:20px;
-				border:1px solid #000;
-				margin-left:10px;
-				color:##ff8a00;
-				font-size:25px;
-				margin-right:10px;
-				margin-top:10px;
-			}	
-			 .btn{
-				border:1px solid #000;
-				
-			 }
-			
-			#rheader p{
-			   word-break:break-word; 
-			   word-wrap:break-word;
-			   width:400px;
-			   text-align:left;
-			   float:left;
-			   margin-left:20px;
-			   font-size:12px;
 			}
 
-			#city{
-				float:left;
-				margin-top:10px;
-			}
-			#rheader{
-			   float:left;
-			   margin-top:15px;
-			   width:700px;
-			   height:40px;
-			}
+
+			
+
+
+
+
 	
 
 	#logintext{
@@ -110,8 +43,9 @@
 	/*   登录LI对齐   */
 	.info1{
 		line-height:60px;
-		height:60px;
 		width:460px;
+		min-height: 50px;
+		float: left;
 
 		}
 	.info1 img input{
@@ -122,29 +56,37 @@
 	.info1 span{
 		width:100px; 
 		margin-left:30px;
-		margin-top:5px;
+
 		height:15px;
 		Font:15px/15PX simhei;
 		color:#000;
 		float:left;
-		margin-top:30px;
+		margin-top:22px;
 		}
 
 
 	.logintable{
-		margin-top:100px;
+		margin-top:10px;
 		}
 	
 		
 	.box{
-		width:300px;	
-		height:30px; 
+		width:200px;	
+		height:21px; 
 		line-height:30px;
 		font-family:Arial, Helvetica, sans-serif;
 		float:left;
 		margin-top:20px;
 		}
-	
+
+	select{
+		width:200px;	
+
+		font-family:Arial, Helvetica, sans-serif;
+		float:left;
+		margin-top: 21px;
+		
+		}
 	
 	.yzm{
 		float:left;
@@ -157,11 +99,7 @@
 		}
 	.loginbox{
 		width:300px;
-	
-		height:500px;
-	
-		margin-top:20px;
-		
+		height:100%;
 		text-align:center; 
 		float:left;
 		

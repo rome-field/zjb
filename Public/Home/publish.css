@@ -1,30 +1,10 @@
-#container{
+			#container{
 				width:1002px;	
 				height:100%;
 				margin:0 auto;
 			}
 
-			body {
-
-				background-color:#e7ebea;
-			}
-#main{
-			   width:1002px;
-			  
-			   background-color:#fff;
-			   border:2px solid #c9cbca;
-			  
-			  
-			    min-height:100%;
-				 min-height:1500px;
-			}
-
-			
-			#pos{
-				background-color:#e7ebea;
-
-				Font:12px/20PX simhei;
-			}
+		
 			
 			.navbar{
 				 Font:15px/37PX simhei;
@@ -32,28 +12,16 @@
 			}
 			.nav{
 				Font:15px/37PX simhei;
+				margin-bottom:0;
 			}
-			#ing{
-				float:right;
-				margin-top:10px;
-			}
-			#header{
-				height:87px;
-				width:1002px;
-				background-color:#fff;
-				font-size:14px;
-			}
+		
+
 			#header img{
 				float:left;
 				margin:0px 10px 0 0px;
 				
 			}
-			#rheader{
-			   float:left;
-			   margin-top:15px;
-			   width:700px;
-			   height:40px;
-			}
+
 				#rheader img{
 			   float:left;
 			 margin-left:10px;
@@ -61,24 +29,6 @@
 			   width:450px;
 			   height:40px;
 			}
-			#city{
-				float:left;
-				margin-top:10px;
-			}
-			
-
-			#rheader p{
-			   word-break:break-word; 
-			   word-wrap:break-word;
-			   width:400px;
-			   text-align:left;
-			   float:left;
-			   margin-left:20px;
-			   font-size:12px;
-			}
-
-			
-
 			
 			.navbar-brand{				
 				margin-left:20px;
@@ -88,253 +38,43 @@
 			
 			
 			form{
-				float:left;
 				width:1002px;
-				border:0;
-				height:40px;
-				margin:10px 15px 10px 10px;
 			}
-			.input-medium{
-				width:700px;
-				height:20px;
-				border:1px solid #000;
-				margin-left:10px;
-				color:##ff8a00;
-				font-size:25px;
-				margin-right:10px;
-				margin-top:10px;
-			}	
-			 .btn{
-				border:1px solid #000;
-				
-			 }
-	  /*内页*/
-	   
-		   			#c2{
-				width:269px;
-				float:right;
-				height:100%;
-		
-				
-				
+
+
+			user agent stylesheetinput:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+			padding: 1px 0px;
 			}
-			#innmain{
-
-			   text-align:center;
-			   
+			user agent stylesheetinput, input[type="password"], input[type="search"], isindex {
+			-webkit-appearance: textfield;
+			padding: 1px;
+			background-color: white;
+			border: 2px inset;
+			border-image-source: initial;
+			border-image-slice: initial;
+			border-image-width: initial;
+			border-image-outset: initial;
+			border-image-repeat: initial;
+			-webkit-rtl-ordering: logical;
+			-webkit-user-select: text;
+			cursor: auto;
 			}
-			
-		#inn {
-		
-			width:1002px;
-				height:100%;
-				
-				
-				margin-left:40px;
-				margin-top:70px;
-			
-
-
-		}
-
-
-		#innimg {
-			float:left;
-			width:440px;
-			height:230px;
-			border:2px solid #c9cbca;
-			text-align:left;
-			background-color:#fff;
-			margin-bottom:20px;
-				
-
-		}
-
-
-
-
-		#innimg dt,#inntxt dt{
-			margin:20px 0 0 15px;
-			font-size:15px;
-		}
-		#innimg dd,#inntxt dd{
-			margin-top:2px;
-			font-size:12px;
-			margin:0px 0 20px 15px;
-		}
-		.maichebut{
-			margin-left:15px;
-		}
-
-
-		
-
-		#inntxt{
-			float:left;
-			border:2px solid #c9cbca;
-			text-align:left;
-			width:440px;
-			height:230px;
-			margin-left:30px;
-			background-color:#fff;
-			margin-bottom:20px;
-		}
-		#inntxt table{
-		text-align:left;
-			width:300px;
-			height:230px;
-			background-color:#f4f4f4;
-			
-		}
-		 #inntxt table tr td{ border-bottom:#c9cbca dashed 1px; width:50%; background-color:#f4f4f4; }
-		#lmain{
-			width:1002px;
-				
-				float:left;
-				border:1px solid #c9cbca;
-		
-		background-color:#f4f4f4;
-		text-align:left;
-		 border:1px solid #c9cbca;
-		}
-		#rmain{
-			width:266px;
-				height:100%;
-				float:right;
-				border:1px solid #c9cbca;
-		font-size:30px;
-		
-		background-color:#f4f4f4;
-		
-		
-		 border:1px solid #c9cbca;
-		}
-		
-		#qydt table tr{
-			font-size:12px;
-			border-bottom:solid 1px #000;
-			
-			
-			background-color:#f4f4f4;
-			text-align:left;
-			
-		}
-
-		
-		   .cyxx_new li{
-				float:left;
-				font-size:12px;
-				width:200px;
-				height:30px;
-				margin-top:4px;
-		   }
-		     .cyxx_new {
-				border:solid 1px #c9cbca;
-				height:100px;;
-				width:700px;
-				margin-left:10px;
-				
-
-		   }
-
-		   #carimp img{
-				width:600px;
-				height:400px;
-				background-color:#000;
-				margin-top:30px;
-		   }
-
-
-		    #carimp{
-				width:600px;
-				height:100%;
-				
-				margin-left:65px;
-				margin-top:30px;
-		   }
-			 #zxxx span{
-				background-color:#e7ebea;
-				Font:20px/30PX simhei;
-				width:100%;
-				TEXT-ALIGN: left;
-				clear:both;
-				height:25px;
-				
-		   }
-		
-		   .rb1 ul li{		   
-		   padding-left:12px;
-		   padding-bottom:5px;
-		  
-		  
-		   font:12px "times new roman","宋体",serif;
-	   }
-		 
-		  .rb1{
-			   width:269px;;
-			   height:100%;
-			   background-color:#f4f4f4;
-				float:left;display:inline;
-				margin:0 0 20px 0;
-				 border:1px solid #c9cbca;
-				 text-align:center
-		   }
-			.rb1 img { 
-				
-				width:200;   
-				margin:10px auto
-				
-				
-		   }
-		   .bdlist li{
-				float:left;
-				border:2px;
-		   }
-
-
-
-
-
-
-
-
-
-
-
-
-user agent stylesheetinput:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
-padding: 1px 0px;
-}
-user agent stylesheetinput, input[type="password"], input[type="search"], isindex {
--webkit-appearance: textfield;
-padding: 1px;
-background-color: white;
-border: 2px inset;
-border-image-source: initial;
-border-image-slice: initial;
-border-image-width: initial;
-border-image-outset: initial;
-border-image-repeat: initial;
--webkit-rtl-ordering: logical;
--webkit-user-select: text;
-cursor: auto;
-}
-user agent stylesheetinput, textarea, keygen, select, button, isindex {
-margin: 0em;
-font: -webkit-small-control;
-color: initial;
-letter-spacing: normal;
-word-spacing: normal;
-text-transform: none;
-text-indent: 0px;
-text-shadow: none;
-display: inline-block;
-text-align: start;
-}
-user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
--webkit-writing-mode: horizontal-tb;
-}
- .thumbnail img{
-	   width:430px;
-	   height:300px;
-	   }
+			user agent stylesheetinput, textarea, keygen, select, button, isindex {
+			margin: 0em;
+			font: -webkit-small-control;
+			color: initial;
+			letter-spacing: normal;
+			word-spacing: normal;
+			text-transform: none;
+			text-indent: 0px;
+			text-shadow: none;
+			display: inline-block;
+			text-align: start;
+			}
+			user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
+			-webkit-writing-mode: horizontal-tb;
+			}
+			 .thumbnail img{
+				   width:430px;
+				   height:300px;
+				   }
