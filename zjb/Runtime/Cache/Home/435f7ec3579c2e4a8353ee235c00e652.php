@@ -4,84 +4,43 @@
 <title>
 中介邦
 </title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="" />
+	<meta charset="utf-8" />
 <meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
+<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
-
 <script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
-
-
 <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap.css">
-
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-theme.css">
-<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
- <!--[if lte IE 6]>
-  <!-- bsie css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
-<!-- bsie 额外的 css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
- <![endif]-->
-<!-- Optional theme -->
+<link rel="stylesheet" href="__ROOT__/Public/Home/public.css">
 
 
-
-
-
-
-<style type="text/css">
-</style>
-<script language="javascript">
-  function myfunction(){
-        for(var i=1;i<=5;i++){  
-              document.getElementById(i).style.display= "block" ;
-           }  
-			 }
-  function dothings(){
-  var txt1=document.getElementById("ins");
-  txt1.value=" ";
-  txt1.focus();
-
- }
-         
-                              
-</script>
- </head>
- <body onload="myfunction()">
-
-        
- 
-
- 	
+	<link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+</head>
+ <body> 	
  <div class="container" style="width:85%; min-width:1170px;">
-	<div id="pos" >	
-    <ul class="nav nav-tabs ">
-        <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
-            <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
-            <li class='active'><a href='<?php echo U("Index/logout");?>'>注销</a></li>
-        <?php else: ?>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    注册<span class="caret"></span>
-                </a>
-		<ul class="dropdown-menu">
-			<li><a href="<?php echo U('Register/show_reg');?>#desc">普通会员注册</a></li>
-			<li><a href="<?php echo U('Register/show_hyreg');?>#desc">商家会员注册</a></li>
-		</ul>
-            </li>
-            <li class="active"><a href="<?php echo U('Index/login');?>#desc">登录</a></li><?php endif; ?>
-			
-    </ul>
-	
-</div>	
+		<div id="pos" >
 		
+		<ul class="nav nav-tabs ">
+			
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					 注册<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+							<li><a href="<?php echo U('Register/hyregister');?>#desc">会员注册</a></li>
+							<li><a href="<?php echo U('Register/register');?>#desc">个人注册</a></li>
+					</ul>
+				</li>
+			<li class="active"><a href="<?php echo U('Login/login');?>#desc">登录</a></li>
+			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎  kkkk登录</a></li>
+		</ul>
 	
-	<div id="header">
+	</div>	
+
+
+		<div id="header">
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
@@ -91,17 +50,19 @@
 			</div>
 			<p style="width:480px;"> 
 				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-			
 			<div id="ing">
 				<span>商家合作：133-0578-0578<br>
 				资金合作：153-0578-0578
 				</span>
 			</div>
 		</div>
-    </div>
-		 <div>
+    </div>	
+
+
+    
+		<div>
 			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="#">合作商家</a></li>
+				<li class="active"><a href="<?php echo U('Index/index');?>#desc">合作商家</a></li>
 				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
 				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
 				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
@@ -112,12 +73,10 @@
 				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
 			</ul>
 		</div>
+
 	 <div id="main">
-			
-				<img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
-			
-			
-	<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
+		<img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
+				<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
 
 				<div id="c2">
 					<a class="navbar-brand" href="#">区域 :</a>
@@ -148,88 +107,25 @@
 							<li><a href="#">人气</a></li>
 						</ul>					
 				</div>		
- 
-
-	</div>	
- <div id="footer">
-			
-		
+		</div>	
+		  <div id="footer">
 			<div class="span6">
-     
-      <ul class="thumbnails">
-        <li class="span3" id="1">
-          <div class="thumbnail">
-           <a href="<?php echo U('Company/company');?>#desc"> 
-				<img src="__ROOT__/Public/images/about_banner.jpg" alt=""></a>
-            <div class="caption">
-			 <h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-         <li class="span3" id="2">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="3">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="4">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			 <h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-		 <li class="span3" id="5">
-          <div class="thumbnail">
-            <img src="" alt="">
-            <div class="caption">
-			<h3>丽水市贷贷邦经济信息咨询有限公司</h3>
-			<p>地址：丽水市莲都区古城路147号</p>
-			<p>主营:  中小企业及个人贷款业务</p>
-			<p><span>联系人:谢先生</span>&nbsp&nbsp &nbsp <span>手机:18806787799</span></p>
-              <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-	</div>
-	<ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
-</ul>
-  </div>
- </body>
+				<ul class="thumbnails">
+					 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="span3">
+						  <div class="thumbnail">
+							<a  href="<?php echo U('Home/Company/company');?>#desc"><img src="" alt=""></a>
+							<div class="caption">
+						<h3  style="text-align: center;"><?php echo ($vo["id"]); ?></h3>
+						<p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+						<p><span><?php echo ($vo["id"]); ?> </span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+						<p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+						 <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
+							</div>
+						  </div>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>	
+				</ul>
+			</div>
+		</div>
+	<div class="yahoo2"><?php echo ($page); ?></div>
+</body>
 </html>

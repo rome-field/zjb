@@ -4,68 +4,13 @@
 <title>
 公司
 </title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="" />
-<meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
-<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
-<link rel="stylesheet" href="__ROOT__/public/home/company.css" type="text/css" />
-<js href="__ROOT__/public/js/jquery-1.7.1.js" />
-<js href="__ROOT__/public/dist/js/bootstrap.js" />
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap.css">
-
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="__ROOT__/public/dist/css/bootstrap-theme.css">
-
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
- <!--[if lte IE 6]>
-  <!-- bsie css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
-<!-- bsie 额外的 css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
- <![endif]-->
-<!-- Optional theme -->
-
-<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
- </head>
- <body>
- 	
+<include file="./zjb/Tpl/Home/Injection/injection.html"/>
+<link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+</head>
+<body>
  <div id="container">
-	<div id="pos" >
-		
-		<ul class="nav nav-tabs ">
-			
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					 注册<span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc">个人注册</a></li>
-					</ul>
-				</li>
-			<li class="active"><a href="{:U('Login/login')}#desc">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc">欢迎  kkkk登录</a></li>
-		</ul>
-	
-	</div>	
-		<div id="c0">
-				<img src="__ROOT__/public/images/about_banner.jpg" alt="banner"/>
-			</div>
-		 <div id="banner">
-		 
-
-<ul class="nav nav-pills">
-  <li class="active"><a href="{:U('Home/Company/company')}#desc"">首页</a></li>
-  <li><a href="{:U('Home/New/new1')}#desc"">新闻广告</a></li>
-  <li><a href="{:U('Home/Answers/answers')}#desc">咨询答疑</a></li>
-  <li><a href="{:U('Home/Introduce/introduce')}#desc">公司介绍</a></li>
-</ul>
-
-
-		</div>
-		
+	<include file="./zjb/Tpl/Home/Header/header.html"/>
+	<include file="./zjb/Tpl/Home/Banner/Combanner.html"/>
 	 <div id="main">
 	
 			<div id="qyjsbox1R">

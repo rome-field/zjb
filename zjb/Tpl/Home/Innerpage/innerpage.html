@@ -2,32 +2,8 @@
 <html lang="zh-CN">
  <head>
   <title>内页</title>
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="images/reset.css" type="text/css" />
-  <link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
+ <include file="./zjb/Tpl/Home/Injection/injection.html"/>
   <link rel="stylesheet" href="__ROOT__/Public/Home/innerpage.css" type="text/css" />
-  <js href="__ROOT__/Public/js/jquery-1.7.1.js" />
-<js href="__ROOT__/Public/dist/js/bootstrap.js" />
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap.css">
-
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-theme.css">
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/github.css"/>
- <!--[if lte IE 6]>
-  <!-- bsie css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/bootstrap-ie6.css"/>
-<!-- bsie 额外的 css 补丁文件 -->
-<link rel="stylesheet" href="__ROOT__/Tpl/Public/dist/css/ie.css"/>
- <![endif]-->
-<!-- Optional theme -->
-
-<link rel="stylesheet" href="__ROOT__/Tpl/public/dist/css/bootstrap-responsive.css"/>
 
 
 
@@ -51,85 +27,21 @@ border:1px;
 	float:left;
 }
 </style>
-<script type="text/javascript">
-	
-	function tab(pid)
-	
-	{
-		var ps=['qbxw','qydt','yhcx'];
-			for(var i=0,len=ps.length;i<len;i++){
-				if(ps[i]==pid){
-					document.getElementById(ps[i]).style.display='block';
-					}else{
-						document.getElementById(ps[i]).style.display='none';
-				}
-			}
-	}
-
-</script>
-
 
 </head>
 <body style="background-color:#e7ebea;">
 <div id="container">
 <form name="submitForm" method="post" action="" id="submitForm" target="formSubmit">
-	
-<div id="pos" >
-		
-		<ul class="nav nav-tabs ">
-			
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					 注册<span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu">
-							<li><a href="{:U('Register/hyregister')}#desc" target="_blank">会员注册</a></li>
-							<li><a href="{:U('Register/register')}#desc" target="_blank">个人注册</a></li>
-					</ul>
-				</li>
-			<li class="active"><a href="{:U('Register/register')}#desc" target="_blank">登录</a></li>
-			<li class="active"><a href="{:U('Audit/audit')}#desc" target="_blank">欢迎  kkkk登录</a></li>
-		</ul>
-	
-	</div>	
-	
-	<div id="header">
-		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
-		<div id="rheader">
-			<div id="city">
-				<span>{$c}</span>&nbsp&nbsp&nbsp&nbsp
-				<a href="{:U('City/city')}#desc" target="_blank">[城市切换]</a>
-			</div>
-			<p> 
-				fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-			<div id="ing">
-				<span>商家合作：133-0578-0578<br>
-				资金合作：153-0578-0578
-				</span>
-			</div>
-		</div>
-    </div>
-		 <div>
-			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="#">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/buyhouse')}#desc">我要买房</a></li>
-				<li><a href="{:U('Zhuhouse/zhuhouse')}#desc">我要租房</a></li>
-				<li><a href="{:U('Buycar/buycar')}#desc">我要买车</a></li>
-				<li><a href="{:U('Zhucar/zhucar')}#desc">我要租车</a></li>
-				<li><a href="{:U('Daikuang/daikuang')}#desc">我要贷款</a></li>
-				<li><a href="{:U('Licai/licai')}#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
-			
-				<li class="navbar-right"><a href="{:U('Publish/publish')}#desc">我要登记</a></li>
-			</ul>
-			
-		</div>
+	<include file="./zjb/Tpl/Home/Header/header.html"/>
+	<include file="./zjb/Tpl/Home/Banner/Lgbanner.html"/>
+    <include file="./zjb/Tpl/Home/Navigation/Lgnavigation.html"/>
 		<h3><span class="label label-default">信息</span></h3>
 		<div id="innmain">
 		
 			<div id="lmain">
 				
 			<div id="inn" >
-				<div id="innimg" ><img src="__ROOT__/Public/images/logo.jpg" alt=""/></div>
+				<div id="innimg" ><img src="__ROOT__/public/images/logo.jpg" alt=""/></div>
 				<div id="inntxt">
 					<table>
 						<tr>
@@ -186,8 +98,8 @@ border:1px;
 					<li class="line728"></li>
 				</ul>
 				<div id="carimp">
-						<img src="__ROOT__/Public/images/logo.jpg"/>
-						<img src="__ROOT__/Public/images/logo.jpg"/>
+						<img src="__ROOT__/public/images/logo.jpg"/>
+						<img src="__ROOT__/public/images/logo.jpg"/>
 				</div>
 
 				

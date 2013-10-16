@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <title> 会员注册 </title>
+   <include file="./zjb/Tpl/Home/Injection/injection.html"/>
+   <js href="__ROOT__/Public/js/cityss.js" />
+  <link rel="stylesheet" href="__ROOT__/Public/Home/login.css" type="text/css" />
+
+
+
+
+<style type="text/css">
+*:focus {outline: none}
+
+
+tr,td{font-size:15px;
+color:#000000;
+background:#fff;
+border:1px;
+}
+#login-header{
+	float:left;
+	font:15px;
+}
+#cityname{
+	float:left;
+}
+</style>
+
+
+
+</head>
+<body style="background-color:#e7ebea;">
+<div id="container">
+<form name="submitForm" method="post" action="" id="submitForm" target="formSubmit">
+	<include file="./zjb/Tpl/Home/Header/header.html"/>
+	<include file="./zjb/Tpl/Home/Banner/Lgbanner.html"/>
+    <include file="./zjb/Tpl/Home/Navigation/Lgnavigation.html"/>
+		<div id="top">
+				<span>
+					会员注册
+				</span>
+		</div>
+		<div id="main">
+			<div id="lmain" style="width:450px;height:400px;float:left;margin-top:50px;">
+			        <img src="__ROOT__/public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
+			</div>
+			  <div class="loginbox" style="border-left:solid 2px #e7ebea">
+				  <table   width="100%" class="logintable">
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					  <tr id="usernametr" height="60">
+						<td></td>
+						<td>
+						
+						<ul>
+								<li class="info"></li>
+								<li class="info1"><span>用户名:&nbsp;</span><input type="text" name="uname" class="box"/></li>
+								<li class="info1"><span>企业名称:&nbsp;</span><input type="text" name="uname" class="box"/></li>
+								<li class="info1"><span>公司地址:&nbsp;</span><input type="text" name="address" class="box"/></li>
+								<li class="info1"><span>公司电话:&nbsp;</span><input type="text" name="address" class="box"/></li>
+								<li class="info1"><span>公司类型:</span>
+								<select>
+									  <option>房产中介</option>
+									  <option>汽车服务</option>
+									  <option>金融担保</option>
+								</select></li>
+								<li class="info1"><span>上传图片:</span><input class="input-file box" id="fileInput" type="file"></li>
+								<li class="info1"><span>选择城市：&nbsp;</span><select id="s1" name="lz_sf"  style="width:100px"></select> <select name="lz_sx" id="s2" style="width:100px"></select></li>   
+								 <li class="info1"><span>公司业务简介:</span><textarea type="" class="textarea" style="float:left;margin-top:9px;height:50px;"> </textarea></li>
+								<li class="info1"><span>公司联系人:</span><input type="text" name="xm" class="box"/></li>
+								<li class="info1"><span>公司电话:&nbsp;</span><input type="text" name="dh" class="box"/></li>
+								<li class="info1"><span>&nbsp;&nbsp;&nbsp;&nbsp;密码:&nbsp;</span><input type="password" name="upwd" class="box"/></li>
+								<li class="info1"><span>确认密码:&nbsp;</span><input type="password" name="upwd1" class="box"/></li>
+								<li class="info1"><span>验证码:&nbsp;</span><input type="text" name="yzm" class="box" id="yzm" style="width:50px;"/></span>
+								<img src="__URL__/verify" class="yzm" id="__URL__/verify"/></li>
+							</ul>
+						
+						</td>
+					  </tr>
+					  <tr height="0px">
+					  	<td></td>
+						  <td style="padding-right:50pt;" >
+							  <span class="butt" style="line-height:50px;">
+							  <input type="submit" name="btnSubmit" value="登录" class="btns" accesskey="l" id="btnSubmit" />
+							  </span><span class="reg-a" border="2"><a href="{:U('Home/Login/login')}">已有账号，直接登录</a></span>
+						  </td>
+					  </tr>
+				  </table>
+				</div>
+				<!--scrool bg-->
+			</div>
+	
+	
+	
+	
+
+</form></div>
+<script  type="text/javascript"> 
+setup()
+</script>
+</body>
+</html>
