@@ -5,7 +5,7 @@
 中介邦
 </title>
 	<meta charset="utf-8" />
-<meta name="keywords" content="北京优途旧机动车经纪有限公司,优途汽车,优途汽车二手车,北京优途旧机动车经纪有限公司地址" />
+<meta name="keywords" content="中介帮 rome 信息发布" />
 <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
@@ -20,26 +20,27 @@
 </head>
  <body> 	
  <div class="container" style="width:85%; min-width:1170px;">
-		<div id="pos" >
-		
-		<ul class="nav nav-tabs ">
-			
-				<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-					 注册<span class="caret"></span>
-				</a>
-					<ul class="dropdown-menu">
-							<li><a href="<?php echo U('Register/hyregister');?>#desc">会员注册</a></li>
-							<li><a href="<?php echo U('Register/register');?>#desc">个人注册</a></li>
-					</ul>
-				</li>
-			<li class="active"><a href="<?php echo U('Login/login');?>#desc">登录</a></li>
-			<li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎  kkkk登录</a></li>
+	<div id="pos" >	
+    <ul class="nav nav-tabs ">
+        <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
+            <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
+            <li class='active'><a href='<?php echo U("Index/logout");?>'>注销</a></li>
+        <?php else: ?>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    注册<span class="caret"></span>
+                </a>
+		<ul class="dropdown-menu">
+			<li><a href="<?php echo U('Register/register');?>#desc">普通会员注册</a></li>
+			<li><a href="<?php echo U('Register/hyregister');?>#desc">商家会员注册</a></li>
 		</ul>
+            </li>
+            <li class="active"><a href="<?php echo U('Index/login');?>#desc">登录</a></li><?php endif; ?>
+			
+    </ul>
 	
-	</div>	
-
-
+</div>	
+	
 		<div id="header">
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">

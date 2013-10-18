@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <title>普通会员注册</title>
+    <title> 登录 </title>
   <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
 <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
@@ -14,10 +14,12 @@
 <link rel="stylesheet" href="__ROOT__/Public/Home/public.css">
 
 
-  <script type="text/javascript" src="__ROOT__/Public/js/region.js"></script>
+  <script type="text/javascript" src="__ROOT__/Public/js/cityss.js"></script>
   <link rel="stylesheet" href="__ROOT__/Public/Home/login.css" type="text/css" />
   <style type="text/css">
     *:focus {outline: none}
+
+
     tr,td{font-size:15px;
           color:#000000;
           background:#fff;
@@ -28,9 +30,9 @@
 
 </head>
 <body style="background-color:#e7ebea;">
-
   <div id="container">
-    <form name="submitForm" method="post" action="<?php echo U('Register/register');?>" id="submitForm" target="formSubmit">
+    <form name="submitForm" method="post" action="<?php echo U('Index/login');?>" id="submitForm" target="formSubmit">
+
       <div id="pos" >	
     <ul class="nav nav-tabs ">
         <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
@@ -87,16 +89,15 @@
 		</div>
       <div id="top">
         <span>
-          注册
+          登录
         </span>
       </div>
-
       <div id="main">
         <div id="lmain" style="width:450px;height:400px;float:left;margin-top:50px;">
           <img src="__ROOT__/public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
         </div>
         <div class="loginbox" style="border-left:solid 2px #e7ebea">
-          <table   width="100%" class="logintable">
+          <table   width="90%" class="logintable">
             <tr>
               <td></td>
               <td></td>
@@ -106,38 +107,31 @@
               <td>
                 <ul>
                   <li class="info"></li>
-                  <li class="info1"><span>用户名:&nbsp;</span><input type="text" name="uname" class="box"/></li>
-                  <li class="info1"><span>手机号:&nbsp;</span><input type="text" name="phone" class="box"/></li>
-                  <li class="info1"><span>选择城市：&nbsp;</span>
-                    <!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
-<select id="sheng" name="sheng" onchange="loadRegion('sheng', 2, 'shiqu', '<?php echo U('Ajax/getRegion');?>');" style='width:90px'>
-  <option value='0'selected>省份/直辖市</option>
-  <?php if(is_array($province)): $i = 0; $__LIST__ = $province;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$area): $mod = ($i % 2 );++$i;?><option value="<?php echo ($area["id"]); ?>"><?php echo ($area["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-</select> 
-<select id="shiqu" name="shi" onchange="loadRegion('shiqu', 3, 'town', '<?php echo U('Ajax/getRegion');?>');" style='width:70px'>
-  <option value="0">市/县</option>
-</select>
-<select name="town" id='town'style='width:70px'>
-  <option value='0'>镇/区</option>
-</select>
-                  </li>   
+                  <li class="info1"><span>手机号:&nbsp;</span><input type="text" name="uname" class="box"/></li>
                   <li class="info1"><span>密码:&nbsp;</span><input type="password" name="upwd" class="box"/></li>
-                  <li class="info1"><span>确认密码:&nbsp;</span><input type="password" name="upwd1" class="box"/></li>
+                  <li class="info1"><span>用户类型:&nbsp;</span>
+                    <div style="text-align: left;">
+                      <input type="radio" value="会员登录" name="group" checked="checked">会员登录
+                      <input type="radio" value="个人登录" name="group" checked="checked">个人登录
+                    </div>
+                  </li>
                   <li class="info1"><span>验证码:&nbsp;</span><input type="text" name="yzm" class="box" id="yzm" style="width:50px;"/></span><img src="__APP__/Common/verify" class="yzm" id="verify"/></li>
                 </ul>
-
+              </td>
+            </tr>
+            <tr height="60px">
+              <td></td>
+              <td style="padding-left: -20pt;">
+                <input type="checkbox" style="vertical-align: middle;" id="coks" value="on" name="remember" />
+                <label class="logintip" for="coks">下次自动登录 (公共场所慎用)</label>
               </td>
             </tr>
             <tr height="0px">
               <td></td>
               <td style="padding-right:50pt;" >
                 <span class="butt" style="line-height:50px;">
-                  <input type="submit" name="btnSubmit" value="注册" class="btns" accesskey="l" id="btnSubmit" />
-                </span><span class="reg-a" border="2"><a href="<?php echo U('Index/login');?>">已有账号，直接登录</a></span>
+                  <input type="submit" name="btnSubmit" value="登录" class="btns" accesskey="l" id="btnSubmit" />
+                </span><span class="reg-a" border="2"><a href="<?php echo U('Register/register');?>">免费注册</a>|<a href="/forgetpassword" id="herf">找回密码</a> </span>
               </td>
             </tr>
           </table>
@@ -145,11 +139,10 @@ and open the template in the editor.
         <!--scrool bg-->
       </div>
 
-    </form>
-  </div>
 
-  <script  type="text/javascript"> 
-    setup()
-  </script>
+
+
+
+    </form></div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<select id="sheng" name="sheng" onchange="loadRegion('sheng', 2, 'shiqu', '{:U(\'Ajax/getRegion\')}');" style='width:90px'>
+  <option value='0'selected>省份/直辖市</option>
+  <volist name="province" id="area">
+    <option value="{$area.id}">{$area.name}</option>
+  </volist>
+</select> 
+<select id="shiqu" name="shi" onchange="loadRegion('shiqu', 3, 'town', '{:U(\'Ajax/getRegion\')}');" style='width:70px'>
+  <option value="0">市/县</option>
+</select>
+<select name="town" id='town'style='width:70px'>
+  <option value='0'>镇/区</option>
+</select>

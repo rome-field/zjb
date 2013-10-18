@@ -5,6 +5,8 @@ class RegisterAction extends Action {
     public function  register(){
 	$c=Session::get(C('USER_AUTH_KEY'));
 	$this-> assign('c',$c);
+    $province = M('area')->where('level=1')->select();
+    $this->assign(province,$province);
 	$this->display();
     }
 	 public function  hyregister(){
