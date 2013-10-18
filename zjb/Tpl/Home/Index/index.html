@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<title>
-中介邦
-</title>
-	<include file="./zjb/Tpl/Home/Injection/injection.html"/>
-	<link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+  <head>
+    <title>
+      中介邦
+    </title>
+  <include file="./zjb/Tpl/Home/Injection/injection.html"/>
+  <link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
 </head>
- <body> 	
- <div class="container" style="width:85%; min-width:1170px;">
-	<include file="Common:top"/>
-	<include file="./zjb/Tpl/Home/Banner/banner.html"/>
+<body> 	
+  <div class="container" style="width:85%; min-width:1170px;">
+    <include file="Common:top"/>
+    <include file="./zjb/Tpl/Home/Banner/banner.html"/>
     <include file="./zjb/Tpl/Home/Navigation/navigation.html"/>
-	 <div id="main">
-		<img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
-				<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
+    <div id="main">
+      <img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
+      <form class="form-search form-inline">
+        <input class="input-medium search-query" type="text" />
+        <button class="btn" contenteditable="true" type="submit">查找</button>
+      </form>
 
-				<div id="c2">
-					<a class="navbar-brand" href="#">区域 :</a>
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">莲都</a></li>
-							<li><a href="#">云和</a></li>
-							<li><a href="#">景宁</a></li>
-							<li><a href="#">龙泉</a></li>
-							<li><a href="#">庆元</a></li>
-							<li><a href="#">松阳</a></li>
-							<li><a href="#">遂昌</a></li>
-							<li><a href="#">青田</a></li>
-							<li><a href="#">缙云</a></li>
-						</ul>
-					<a class="navbar-brand" href="#">分类 :</a>							
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">房产中介</a></li>
-							<li><a href="#">汽车服务</a></li>
-							<li><a href="#">金融担保</a></li>
-						</ul>
-				
-					<a class="navbar-brand" href="#">排序 :</a>							
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">默认</a></li>
-							<li><a href="#">最新</a></li>
-							<li><a href="#">人气</a></li>
-						</ul>					
-				</div>		
-		</div>	
-		  <div id="footer">
-			<div class="span6">
-				<ul class="thumbnails">
-					 <volist name="list" id="vo">
-						<li class="span3">
-						  <div class="thumbnail">
-							<a  href="{:U('Home/Company/company')}#desc"><img src="" alt=""></a>
-							<div class="caption">
-						<h3  style="text-align: center;">{$vo.id}</h3>
-						<p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
-						<p><span>{$vo.id} </span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
-						<p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
-						 <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-							</div>
-						  </div>
-						</li>
-					</volist>	
-				</ul>
-			</div>
-		</div>
-	<div class="yahoo2">{$page}</div>
+      <div id="c2">
+        <a class="navbar-brand" href="#">区域 :</a>
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">不限</a></li>
+          <volist name="zones" id="zone">
+            <li><a href="{:U('Index/zone',array('id'=>$zone.id))}">{$zone.name}</a></li>
+          </volist>
+        </ul>
+        <a class="navbar-brand" href="#">分类 :</a>							
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">不限</a></li>
+          <li><a href="#">房产中介</a></li>
+          <li><a href="#">汽车服务</a></li>
+          <li><a href="#">金融担保</a></li>
+        </ul>
+
+        <a class="navbar-brand" href="#">排序 :</a>							
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">默认</a></li>
+          <li><a href="#">最新</a></li>
+          <li><a href="#">人气</a></li>
+        </ul>					
+      </div>		
+    </div>	
+    <div id="footer">
+      <div class="span6">
+        <ul class="thumbnails">
+          <volist name="list" id="vo">
+            <li class="span3">
+              <div class="thumbnail">
+                <a  href="{:U('Home/Company/company')}#desc"><img src="" alt=""></a>
+                <div class="caption">
+                  <h3  style="text-align: center;">{$vo.id}</h3>
+                  <p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+                  <p><span>{$vo.id} </span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+                  <p><span>{$vo.id}</span>&nbsp&nbsp &nbsp <span>{$vo.id}</span></p>
+                  <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
+                </div>
+              </div>
+            </li>
+          </volist>	
+        </ul>
+      </div>
+    </div>
+    <div class="yahoo2">{$page}</div>
 </body>
 </html>

@@ -10,7 +10,7 @@ class AjaxAction extends Action
 		$Region=M("area");
 		$map['pid']=$_REQUEST["pid"];
 		$map['level']=$_REQUEST["type"];
-		$list=$Region->where($map)->select();
+		$list=$Region->field('id,name')->where($map)->select();
 		echo json_encode($list);
 	}
 	

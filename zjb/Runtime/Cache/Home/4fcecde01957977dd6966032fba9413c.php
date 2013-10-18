@@ -57,7 +57,7 @@
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<span><?php echo (session('city_name')); ?></span>&nbsp&nbsp&nbsp&nbsp
 				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
 
 			</div>

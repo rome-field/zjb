@@ -1,10 +1,10 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<title>
-中介邦
-</title>
-	<meta charset="utf-8" />
+  <head>
+    <title>
+      中介邦
+    </title>
+  <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
 <link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
@@ -16,11 +16,11 @@
 <link rel="stylesheet" href="__ROOT__/Public/Home/public.css">
 
 
-	<link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+  <link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
 </head>
- <body> 	
- <div class="container" style="width:85%; min-width:1170px;">
-	<div id="pos" >	
+<body> 	
+  <div class="container" style="width:85%; min-width:1170px;">
+    <div id="pos" >	
     <ul class="nav nav-tabs ">
         <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
             <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
@@ -41,12 +41,12 @@
 	
 </div>	
 	
-		<div id="header">
+    	<div id="header">
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
-				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
+				<span><?php echo (session('city_name')); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<a href="<?php echo U('Common/city');?>" target="_blank">[城市切换]</a>
 
 			</div>
 			<p style="width:480px;"> 
@@ -75,58 +75,53 @@
 			</ul>
 		</div>
 
-	 <div id="main">
-		<img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
-				<form class="form-search form-inline"><input class="input-medium search-query" type="text" /><button class="btn" contenteditable="true" type="submit">查找</button></form> 
+    <div id="main">
+      <img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
+      <form class="form-search form-inline">
+        <input class="input-medium search-query" type="text" />
+        <button class="btn" contenteditable="true" type="submit">查找</button>
+      </form>
 
-				<div id="c2">
-					<a class="navbar-brand" href="#">区域 :</a>
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">莲都</a></li>
-							<li><a href="#">云和</a></li>
-							<li><a href="#">景宁</a></li>
-							<li><a href="#">龙泉</a></li>
-							<li><a href="#">庆元</a></li>
-							<li><a href="#">松阳</a></li>
-							<li><a href="#">遂昌</a></li>
-							<li><a href="#">青田</a></li>
-							<li><a href="#">缙云</a></li>
-						</ul>
-					<a class="navbar-brand" href="#">分类 :</a>							
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">不限</a></li>
-							<li><a href="#">房产中介</a></li>
-							<li><a href="#">汽车服务</a></li>
-							<li><a href="#">金融担保</a></li>
-						</ul>
-				
-					<a class="navbar-brand" href="#">排序 :</a>							
-						<ul class="nav nav-pills navbar-brand">
-							<li class="active"><a href="#">默认</a></li>
-							<li><a href="#">最新</a></li>
-							<li><a href="#">人气</a></li>
-						</ul>					
-				</div>		
-		</div>	
-		  <div id="footer">
-			<div class="span6">
-				<ul class="thumbnails">
-					 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="span3">
-						  <div class="thumbnail">
-							<a  href="<?php echo U('Home/Company/company');?>#desc"><img src="" alt=""></a>
-							<div class="caption">
-						<h3  style="text-align: center;"><?php echo ($vo["id"]); ?></h3>
-						<p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-						<p><span><?php echo ($vo["id"]); ?> </span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-						<p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-						 <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
-							</div>
-						  </div>
-						</li><?php endforeach; endif; else: echo "" ;endif; ?>	
-				</ul>
-			</div>
-		</div>
-	<div class="yahoo2"><?php echo ($page); ?></div>
+      <div id="c2">
+        <a class="navbar-brand" href="#">区域 :</a>
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">不限</a></li>
+          <?php if(is_array($zones)): $i = 0; $__LIST__ = $zones;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$zone): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Index/zone',array('id'=>$zone.id));?>"><?php echo ($zone["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+        <a class="navbar-brand" href="#">分类 :</a>							
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">不限</a></li>
+          <li><a href="#">房产中介</a></li>
+          <li><a href="#">汽车服务</a></li>
+          <li><a href="#">金融担保</a></li>
+        </ul>
+
+        <a class="navbar-brand" href="#">排序 :</a>							
+        <ul class="nav nav-pills navbar-brand">
+          <li class="active"><a href="#">默认</a></li>
+          <li><a href="#">最新</a></li>
+          <li><a href="#">人气</a></li>
+        </ul>					
+      </div>		
+    </div>	
+    <div id="footer">
+      <div class="span6">
+        <ul class="thumbnails">
+          <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="span3">
+              <div class="thumbnail">
+                <a  href="<?php echo U('Home/Company/company');?>#desc"><img src="" alt=""></a>
+                <div class="caption">
+                  <h3  style="text-align: center;"><?php echo ($vo["id"]); ?></h3>
+                  <p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+                  <p><span><?php echo ($vo["id"]); ?> </span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+                  <p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
+                  <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
+                </div>
+              </div>
+            </li><?php endforeach; endif; else: echo "" ;endif; ?>	
+        </ul>
+      </div>
+    </div>
+    <div class="yahoo2"><?php echo ($page); ?></div>
 </body>
 </html>
