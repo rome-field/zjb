@@ -33,7 +33,7 @@
     <form name="submitForm" method="post" action="<?php echo U('Register/register');?>" id="submitForm" target="formSubmit">
       <div id="pos" >	
     <ul class="nav nav-tabs ">
-        <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
+        <?php if(session('?mname')): ?><li class="active">欢迎您，<?php echo (session('mname')); ?></li>
             <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
             <li class='active'><a href='<?php echo U("Index/logout");?>'>注销</a></li>
         <?php else: ?>
@@ -42,11 +42,11 @@
                     注册<span class="caret"></span>
                 </a>
 		<ul class="dropdown-menu">
-			<li><a href="<?php echo U('Register/register');?>#desc">普通会员注册</a></li>
-			<li><a href="<?php echo U('Register/hyregister');?>#desc">商家会员注册</a></li>
+			<li><a href="<?php echo U('Register/register');?>">普通会员注册</a></li>
+			<li><a href="<?php echo U('Register/hyregister');?>">商家会员注册</a></li>
 		</ul>
             </li>
-            <li class="active"><a href="<?php echo U('Index/login');?>#desc">登录</a></li><?php endif; ?>
+            <li class="active"><a href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
 			
     </ul>
 	
@@ -58,7 +58,7 @@
 		<div id="rheader">
 			<div id="city">
 				<span><?php echo (session('city_name')); ?></span>&nbsp&nbsp&nbsp&nbsp
-				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
+				<a href="<?php echo U('Common/city');?>" target="_blank">[城市切换]</a>
 
 			</div>
 			<p> 
@@ -108,6 +108,7 @@
                   <li class="info"></li>
                   <li class="info1"><span>用户名:&nbsp;</span><input type="text" name="uname" class="box"/></li>
                   <li class="info1"><span>手机号:&nbsp;</span><input type="text" name="phone" class="box"/></li>
+                  <li class="info1"><span>邮箱:&nbsp;</span><input type="text" name="email" class="box"/></li>
                   <li class="info1"><span>选择城市：&nbsp;</span>
                     <!--
 To change this template, choose Tools | Templates

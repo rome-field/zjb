@@ -1,0 +1,65 @@
+[ 2013-10-19T14:41:22+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=141&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 141 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:41:23+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=1412&type=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1412 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:41:36+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=133&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.031250s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 133 ) AND ( `level` = 2 )  [ RunTime:0.015625s ]
+
+[ 2013-10-19T14:41:40+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=1943&type=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1943 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:42:04+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=111&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 111 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:42:08+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=114&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 114 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:42:10+08:00 ] 127.0.0.1 /zjb/index.php/zjb/index.php/Index/index.html.html
+ERR: 无法加载模块:zjb
+
+[ 2013-10-19T14:43:44+08:00 ] 127.0.0.1 /zjb/index.php/zjb/index.php/Index/index.html.html
+ERR: 无法加载模块:zjb
+
+[ 2013-10-19T14:43:48+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=111&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.015625s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 111 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-19T14:43:52+08:00 ] 127.0.0.1 /zjb/index.php/zjb/index.php/Index/index.html.html
+ERR: 无法加载模块:zjb
+
+[ 2013-10-19T14:45:07+08:00 ] 127.0.0.1 /zjb/index.php/Ajax/getRegion.html?pid=112&type=2
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.000000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 112 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+

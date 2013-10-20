@@ -35,7 +35,7 @@
 
       <div id="pos" >	
     <ul class="nav nav-tabs ">
-        <?php if(session('?uname')): ?><li class="active"><a href="<?php echo U('Audit/audit');?>#desc">欢迎您，{Think.session.uname}</a></li>
+        <?php if(session('?mname')): ?><li class="active">欢迎您，<?php echo (session('mname')); ?></li>
             <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
             <li class='active'><a href='<?php echo U("Index/logout");?>'>注销</a></li>
         <?php else: ?>
@@ -44,11 +44,11 @@
                     注册<span class="caret"></span>
                 </a>
 		<ul class="dropdown-menu">
-			<li><a href="<?php echo U('Register/register');?>#desc">普通会员注册</a></li>
-			<li><a href="<?php echo U('Register/hyregister');?>#desc">商家会员注册</a></li>
+			<li><a href="<?php echo U('Register/register');?>">普通会员注册</a></li>
+			<li><a href="<?php echo U('Register/hyregister');?>">商家会员注册</a></li>
 		</ul>
             </li>
-            <li class="active"><a href="<?php echo U('Index/login');?>#desc">登录</a></li><?php endif; ?>
+            <li class="active"><a href="<?php echo U('Index/login');?>">登录</a></li><?php endif; ?>
 			
     </ul>
 	
@@ -59,8 +59,8 @@
 		<img src="__ROOT__/Public/images/logo.jpg" alt=""/>
 		<div id="rheader">
 			<div id="city">
-				<span><?php echo ($c); ?></span>&nbsp&nbsp&nbsp&nbsp
-				<a href="<?php echo U('City/city');?>#desc" target="_blank">[城市切换]</a>
+				<span><?php echo (session('city_name')); ?></span>&nbsp&nbsp&nbsp&nbsp
+				<a href="<?php echo U('Common/city');?>" target="_blank">[城市切换]</a>
 
 			</div>
 			<p> 
@@ -107,12 +107,12 @@
               <td>
                 <ul>
                   <li class="info"></li>
-                  <li class="info1"><span>手机号:&nbsp;</span><input type="text" name="uname" class="box"/></li>
+                  <li class="info1"><span>手机号:&nbsp;</span><input type="text" name="phone" class="box"/></li>
                   <li class="info1"><span>密码:&nbsp;</span><input type="password" name="upwd" class="box"/></li>
                   <li class="info1"><span>用户类型:&nbsp;</span>
                     <div style="text-align: left;">
-                      <input type="radio" value="会员登录" name="group" checked="checked">会员登录
-                      <input type="radio" value="个人登录" name="group" checked="checked">个人登录
+                      <input type="radio" value="0" name="type" checked="checked">普通会员
+                      <input type="radio" value="1" name="type" >商家会员
                     </div>
                   </li>
                   <li class="info1"><span>验证码:&nbsp;</span><input type="text" name="yzm" class="box" id="yzm" style="width:50px;"/></span><img src="__APP__/Common/verify" class="yzm" id="verify"/></li>
@@ -122,7 +122,7 @@
             <tr height="60px">
               <td></td>
               <td style="padding-left: -20pt;">
-                <input type="checkbox" style="vertical-align: middle;" id="coks" value="on" name="remember" />
+                <input type="checkbox" style="vertical-align: middle;" id="coks"  name="remember" />
                 <label class="logintip" for="coks">下次自动登录 (公共场所慎用)</label>
               </td>
             </tr>
