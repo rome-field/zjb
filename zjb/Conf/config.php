@@ -23,5 +23,11 @@ return array(
     'AUTO_LOGIN_KEY' => md5('zjb'),
     //自动登录有效时间=5天
 	'AUTO_LOGIN_LIFETIME' => 3600 * 24 * 5,
+    
+    //上传文件大小 2M
+    "UPLOAD_MAX_SIZE" =>"2097152",
+	"UPLOAD_EXTS" =>array('jpg','gif','png','jpeg','bmp'),
+	"UPLOAD_PATH" => "./uploads/", //上传路径
+    'THUMB_PREFIX'=> 't_', //缩略图前缀
 );
 ?>

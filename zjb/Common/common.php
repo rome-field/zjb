@@ -22,4 +22,27 @@ function encrytion ($value, $type=0) {
 	return $value ^ $key;
 }
 
+/**
+ * 上传图片
+ * 
+ */
+function upload_pic()
+{
+   import('ORG.Net.UploadFile');
+      $upload = new UploadFile();
+      $upload->maxSize = C('UPLOAD_MAX_SIZE');
+      $upload->allowExts = C('UPLOAD_EXTS');
+      $upload->savePath = C('UPLOAD_PATH').'company/logo/'.date('yW').'/';
+      $upload->thumb = 'true';
+      $upload->thumbMaxWidth = '240';
+      $upload->thumbMaxHeight = '180';
+      $upload->thumbPrefix = 't_';
+      if(!$upload->upload()){
+        //$this->error($upload->getErrorMsg());
+        Log::write('upload pic failed!');
+      }  else {
+        $info = $upload->getUploadFileInfo();
+      }
+      return $info;
+}
 ?>

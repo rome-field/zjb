@@ -1,0 +1,1670 @@
+[ 2013-10-21T09:29:15+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.143008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144008s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T09:29:20+08:00 ] 0.0.0.0 /zjb/index.php/Register/register.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:29:20+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:29:33+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=136&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 136 ) AND ( `level` = 2 )  [ RunTime:0.009000s ]
+
+[ 2013-10-21T09:29:35+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=2003&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 2003 ) AND ( `level` = 3 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T09:29:46+08:00 ] 0.0.0.0 /zjb/index.php/Register/register.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `zjb_user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `zjb_user` WHERE ( `mobile` = '13735558612' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: INSERT INTO `zjb_user` (`email`,`password`,`username`,`mobile`,`city_id`,`zone_id`) VALUES ('fieldrome@163.com','307ccdc69c73d2bc1f2c8f42b9bbe288','rommma','13735558612',2003,1360202) [ RunTime:0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.087005s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.092005s ]
+
+[ 2013-10-21T09:29:46+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:29:47+08:00 ] 0.0.0.0 /zjb/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:29:59+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:29:59+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:30:01+08:00 ] 0.0.0.0 /zjb/index.php/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:30:02+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T09:30:11+08:00 ] 0.0.0.0 /zjb/index.php/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_user` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`username`,`password` FROM `zjb_user` WHERE ( mobile ) AND ( 13735558612 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2013-10-21T09:30:11+08:00 ] 0.0.0.0 /zjb/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.092005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T09:31:05+08:00 ] 0.0.0.0 /zjb/index.php/Daikuang/daikuang.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_data` [ RunTime:0.005000s ]
+ERR: 1146:Table 'zjb.zjb_data' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `zjb_data`
+NOTIC: [8] Undefined variable: map D:\wamp\www\zjb\zjb\Lib\Action\Home\DaikuangAction.class.php 第 10 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_data` LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1146:Table 'zjb.zjb_data' doesn't exist
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `zjb_data` LIMIT 1  
+NOTIC: [8] Undefined variable: map D:\wamp\www\zjb\zjb\Lib\Action\Home\DaikuangAction.class.php 第 14 行.
+SQL: SELECT * FROM `zjb_data` ORDER BY create_time LIMIT 0,20   [ RunTime:0.000000s ]
+ERR: 1146:Table 'zjb.zjb_data' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `zjb_data` ORDER BY create_time LIMIT 0,20  
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T14:25:28+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.122007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.122007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T14:25:28+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T14:25:59+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=132&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 132 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T14:26:00+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1601&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1601 ) AND ( `level` = 3 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T14:26:49+08:00 ] ERR: upload pic failed!
+[ 2013-10-21T14:26:49+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] mkdir(): No such file or directory D:\wamp\www\zjb\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 167 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjb\zjb\Common\common.php 第 46 行.
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.026001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=1320101 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\zjb\zjb\Lib\Action\Home\RegisterAction.class.php 第 47 行.
+SQL: INSERT INTO `zjb_company` (`name`,`company_type`,`telephone`,`business`,`logo`,`address`) VALUES ('测试公司','1','0513839493',' 这话iyieg测试用的公','','某街道26好') [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.011001s ]
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086005s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.090005s ]
+
+[ 2013-10-21T14:26:49+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T14:26:51+08:00 ] 0.0.0.0 /zjb/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.092005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T14:31:00+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:31:00+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.098005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T14:31:02+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:31:02+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:41:39+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=134&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 134 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T14:41:40+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1501&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1501 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T14:42:03+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T14:42:04+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T14:44:14+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.111007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:44:17+08:00 ] 0.0.0.0 /zjb/index.php/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:44:17+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:44:40+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T14:44:40+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T14:44:58+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=132&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 132 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T14:44:59+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1607&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.015001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1607 ) AND ( `level` = 3 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T14:46:34+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [2] mkdir(): No such file or directory D:\wamp\www\zjb\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 167 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:46:37+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T14:52:23+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [2] mkdir(): No such file or directory D:\wamp\www\zjb\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 167 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T14:52:29+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.009000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.012000s ]
+
+[ 2013-10-21T14:53:44+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\zjb\zjb\Lib\Action\Home\RegisterAction.class.php 第 61 行.
+SQL: INSERT INTO `zjb_company` (`name`,`company_type`,`telephone`,`business`,`logo`,`address`) VALUES ('规范cvx','2','4556546767',' 非递归算法和规范化规范化规范共和国','./uploads/company/logo/1343/5264cf7712cf9.jpg','发光度分隔符45') [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.082005s ]
+
+[ 2013-10-21T14:53:47+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T14:53:49+08:00 ] 0.0.0.0 /zjb/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.094005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T15:01:01+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.114006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:01:04+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:01:04+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T15:01:07+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.021001s ]
+
+[ 2013-10-21T15:01:08+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T15:01:32+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=141&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 141 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T15:01:33+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1409&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1409 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T15:12:23+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+
+[ 2013-10-21T15:12:46+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-21T15:12:46+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.017001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.097005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:12:52+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T15:12:52+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-21T15:13:12+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=134&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 134 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T15:13:14+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1519&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1519 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T15:14:01+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `mobile` = '13735558612' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=1512 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\zjb\zjb\Lib\Action\Home\RegisterAction.class.php 第 47 行.
+SQL: INSERT INTO `zjb_company` (`name`,`company_type`,`telephone`,`business`,`password`,`username`,`mobile`,`city_id`,`zone_id`,`logo`,`address`) VALUES ('十三宿务所','3','35436536',' 规范化后街男孩 规范速度速度规范规范化附近海域','307ccdc69c73d2bc1f2c8f42b9bbe288','柔软','13735558612',1519,1512,'./uploads/company/logo/1343/t_5264d4393e305.jpg','规范化大概的后果') [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.077004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.080005s ]
+
+[ 2013-10-21T15:14:01+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:14:02+08:00 ] 0.0.0.0 /zjb/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T15:15:54+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.106006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:15:57+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:15:57+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.104006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:16:00+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.082004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.033002s ]
+
+[ 2013-10-21T15:16:00+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:16:12+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=133&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 133 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T15:16:13+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1905&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1905 ) AND ( `level` = 3 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T15:21:42+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `mobile` = '13732228612' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=1330201 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\zjb\zjb\Lib\Action\Home\RegisterAction.class.php 第 47 行.
+
+[ 2013-10-21T15:23:10+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T15:23:14+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T15:23:15+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:23:31+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=135&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 135 ) AND ( `level` = 2 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T15:23:33+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=2105&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 2105 ) AND ( `level` = 3 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T15:27:00+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `mobile` = '13735558612' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=1350202 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Trying to get property of non-object D:\wamp\www\zjb\zjb\Lib\Action\Home\RegisterAction.class.php 第 47 行.
+
+[ 2013-10-21T15:27:26+08:00 ] 0.0.0.0 /zjb/index.php/Index/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-21T15:27:26+08:00 ] 0.0.0.0 /zjb/index.php/Index/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\6eda847e25560e16bf605abefa4b5a02.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-21T15:27:29+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2013-10-21T15:27:29+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-21T15:27:55+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=133&type=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 133 ) AND ( `level` = 2 )  [ RunTime:0.000000s ]
+
+[ 2013-10-21T15:27:57+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/getRegion.html?pid=1901&type=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( `pid` = 1901 ) AND ( `level` = 3 )  [ RunTime:0.001000s ]
+
+[ 2013-10-21T15:28:32+08:00 ] 0.0.0.0 /zjb/index.php/Register/hyregister.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `mobile` = '13735558612' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `zjb_area` WHERE ( id=1330101 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `zjb_company` (`name`,`company_type`,`telephone`,`business`,`password`,`username`,`mobile`,`city_id`,`zone_id`,`logo`,`address`) VALUES ('未退公司','1','435456546',' 放到公司大法官三代富贵','307ccdc69c73d2bc1f2c8f42b9bbe288','小王','13735558612',1901,1330101,'./uploads/company/logo/1343/t_5264d7a07fd26.jpg','上城区白云路28号') [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( level=1 )  [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.076004s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php:99) D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.081005s ]
+
+[ 2013-10-21T15:28:32+08:00 ] 0.0.0.0 /zjb/index.php/Common/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-21T15:28:34+08:00 ] 0.0.0.0 /zjb/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Array to string conversion D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 89 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 110 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 125 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.112006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006001s ]
+

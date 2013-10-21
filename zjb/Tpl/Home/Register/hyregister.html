@@ -21,7 +21,7 @@
 </head>
 <body style="background-color:#e7ebea;">
   <div id="container">
-    <form name="submitForm" method="post" action="{:U('Register/hyregister')}" id="submitForm" target="formSubmit">
+    <form name="submitForm" method="post" action="{:U('Register/hyregister')}" id="submitForm" enctype="multipart/form-data">
       <include file="Common:top"/>
       <include file="./zjb/Tpl/Home/Banner/Lgbanner.html"/>
       <include file="./zjb/Tpl/Home/Navigation/Lgnavigation.html"/>
@@ -47,17 +47,17 @@
                 <ul>
                   <li class="info"></li>
                   <li class="info1"><span>公司名称:&nbsp;</span>
-                    <input type="text" name="cname" class="box"/>
+                    <input type="text" name="name" class="box"/>
                   </li>
                   <li class="info1"><span>公司类型:</span>
-                    <select name='ctype'>
+                    <select name='company_type'>
                       <option>类型选择</option>
-                      <option value='0'>房产中介</option>
-                      <option value='1'>汽车服务</option>
-                      <option value='2'>金融担保</option>
+                      <option value='1'>房产中介</option>
+                      <option value='2'>汽车服务</option>
+                      <option value='3'>金融担保</option>
                     </select></li>
                   <li class="info1"><span>公司电话:&nbsp;</span>
-                    <input type="text" name="Tel" class="box"/>
+                    <input type="text" name="telephone" class="box"/>
                   </li>
                   <li class="info1"><span>图片logo:</span>
                     <input class="input-file box" name='logo' id="fileInput" type="file">
@@ -71,6 +71,7 @@
                   </li>
                   <li class="info1"><span>联系人:</span><input type="text" name="uname" class="box"/></li>
                   <li class="info1"><span>联系人手机:&nbsp;</span><input type="text" name="phone" class="box"/></li>
+                  <li class="info1"><span>联系人邮箱:</span><input type="text" name="email" class="box"/></li>
                   <li class="info1"><span>&nbsp;&nbsp;&nbsp;&nbsp;密码:&nbsp;</span><input type="password" name="upwd" class="box"/></li>
                   <li class="info1"><span>确认密码:&nbsp;</span><input type="password" name="upwd1" class="box"/></li>
                   <li class="info1"><span>验证码:&nbsp;</span><input type="text" name="yzm" class="box" id="yzm" style="width:50px;"/></span>
