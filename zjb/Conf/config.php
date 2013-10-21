@@ -29,5 +29,15 @@ return array(
 	"UPLOAD_EXTS" =>array('jpg','gif','png','jpeg','bmp'),
 	"UPLOAD_PATH" => "./uploads/", //上传路径
     'THUMB_PREFIX'=> 't_', //缩略图前缀
+    
+    'COMPANY_TYPE' => array(
+        array('id'=>1,'name'=>'房产中介'),  
+        array('id'=>2,'name'=>'汽车服务'),
+        array('id'=>3,'name'=>'金融担保'),
+    ),
+    'COMPANY_SORT' => array(
+        array('id'=>1,'name'=>'最新'),
+        array('id'=>2,'name'=>'人气'),
+    ),
 );
 ?>

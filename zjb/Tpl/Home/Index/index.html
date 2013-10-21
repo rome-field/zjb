@@ -18,30 +18,9 @@
         <input class="input-medium search-query" type="text" />
         <button class="btn" contenteditable="true" type="submit">查找</button>
       </form>
-
       <div id="c2">
-        <a class="navbar-brand" href="#">区域 :</a>
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">不限</a></li>
-          <volist name="zones" id="zone">
-            <li><a href="{:U('Index/zone',array('id'=>$zone.id))}">{$zone.name}</a></li>
-          </volist>
-        </ul>
-        <a class="navbar-brand" href="#">分类 :</a>							
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">不限</a></li>
-          <li><a href="#">房产中介</a></li>
-          <li><a href="#">汽车服务</a></li>
-          <li><a href="#">金融担保</a></li>
-        </ul>
-
-        <a class="navbar-brand" href="#">排序 :</a>							
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">默认</a></li>
-          <li><a href="#">最新</a></li>
-          <li><a href="#">人气</a></li>
-        </ul>					
-      </div>		
+        <include file='Common:search_sel' />
+      </div>
     </div>	
     <div id="footer">
       <div class="span6">

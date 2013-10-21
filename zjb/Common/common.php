@@ -45,4 +45,28 @@ function upload_pic()
       }
       return $info;
 }
+
+/**
+ *  卸载指定的GET参数重组URL
+ *
+ * @param  $remove  需要过滤的字段  多个以数组方式传递
+ * @return String     URL地址
+ */
+function filterUrl($remove) {
+	$get = $_GET;
+	unset($get['_URL_']);
+	if (is_array($remove)) {
+		foreach ($remove as $v) {
+			unset($get[$v]);
+		}
+	} else {
+		unset($get[$remove]);
+	}
+	$url = '';
+	foreach ($get as $k => $v) {
+		$url .= '/' . $k . '/' . $v;
+	}
+	return __ACTION__ . $url;
+}
+
 ?>

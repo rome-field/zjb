@@ -81,28 +81,52 @@
         <input class="input-medium search-query" type="text" />
         <button class="btn" contenteditable="true" type="submit">查找</button>
       </form>
-
       <div id="c2">
-        <a class="navbar-brand" href="#">区域 :</a>
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">不限</a></li>
-          <?php if(is_array($zones)): $i = 0; $__LIST__ = $zones;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$zone): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Index/zone',array('id'=>$zone.id));?>"><?php echo ($zone["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-        </ul>
-        <a class="navbar-brand" href="#">分类 :</a>							
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">不限</a></li>
-          <li><a href="#">房产中介</a></li>
-          <li><a href="#">汽车服务</a></li>
-          <li><a href="#">金融担保</a></li>
-        </ul>
 
-        <a class="navbar-brand" href="#">排序 :</a>							
-        <ul class="nav nav-pills navbar-brand">
-          <li class="active"><a href="#">默认</a></li>
-          <li><a href="#">最新</a></li>
-          <li><a href="#">人气</a></li>
-        </ul>					
-      </div>		
+        <!--
+ <a class="navbar-brand" href="#">区域 :</a>
+  <ul class="nav nav-pills navbar-brand">
+    <li <?php if(!isset($_GET['zone'])): ?>class="active"<?php endif; ?>>
+    <a href=<?php echo (isset($_GET['zone'])?filterUrl('zone'):'#')?>>不限</a>
+    </li>
+    <?php if(is_array($zones)): $i = 0; $__LIST__ = $zones;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$zone): $mod = ($i % 2 );++$i;?><li <?php if($_GET['zone']== $zone['id']): ?>class="active"<?php endif; ?>>
+      <a href=<?php echo filterUrl('zone').'/zone/'.$zone['id'];?>><?php echo ($zone["name"]); ?></a>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?>
+  </ul>
+  <a class="navbar-brand" href="#">分类 :</a>							
+  <ul class="nav nav-pills navbar-brand">
+    <li <?php if(!isset($_GET['type'])): ?>class="active"<?php endif; ?>>
+    <a href=<?php echo (isset($_GET['type'])?filterUrl('type'):'#')?>>不限</a>
+    </li>
+    <?php if(is_array(C("company_type"))): foreach(C("company_type") as $key=>$v): ?><li <?php if($_GET['type']== $v['id']): ?>class="active"<?php endif; ?>>
+      <a href=<?php echo filterUrl('type').'/type/'.$v['id'];?>><?php echo ($v['name']); ?></a>
+      </li><?php endforeach; endif; ?>
+  </ul>
+
+  <a class="navbar-brand" href="#">排序 :</a>							
+  <ul class="nav nav-pills navbar-brand">
+    <li <?php if(!isset($_GET['rank'])): ?>class="active"<?php endif; ?>>
+    <a href=<?php echo (isset($_GET['rank'])?filterUrl('rank'):'#')?>>默认</a>
+    </li>
+    <?php if(is_array(C("company_sort"))): foreach(C("company_sort") as $key=>$v): ?><li <?php if($_GET['rank']== $v['id']): ?>class="active"<?php endif; ?>>
+      <a href=<?php echo filterUrl('rank').'/rank/'.$v['id'];?>><?php echo ($v['name']); ?></a>
+      </li><?php endforeach; endif; ?>
+  </ul>					
+-->
+
+<?php if(is_array($searchArray)): $i = 0; $__LIST__ = $searchArray;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><a class="navbar-brand" href="#"><?php echo ($s['name']); ?> :</a>
+  <ul class="nav nav-pills navbar-brand">
+    <li <?php if(!isset($_GET[$s['key']])): ?>class="active"<?php endif; ?>>
+    <a href=<?php echo (isset($_GET[$s['key']])?filterUrl($s['key']):'#')?>><?php echo ($s['default']); ?></a>
+    </li>
+    <?php if(is_array($s['data'])): foreach($s['data'] as $key=>$v): ?><li <?php if($_GET[$s['key']] == $v['id']): ?>class="active"<?php endif; ?>>
+      <a href=<?php echo filterUrl($s['key']).'/'.$s['key'].'/'.$v['id'];?>><?php echo ($v['name']); ?></a>
+      </li><?php endforeach; endif; ?>
+  </ul><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+
+      </div>
     </div>	
     <div id="footer">
       <div class="span6">
