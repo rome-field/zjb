@@ -18,6 +18,7 @@ Class UserModel extends Model
   
   protected $_auto = array(
       array('password','secmd5',1,'function'),
+      array('create_at','time',1,'function'),
   );
 }
 ?>

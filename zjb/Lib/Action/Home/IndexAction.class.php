@@ -35,6 +35,7 @@ class IndexAction extends CommonAction {
           $this->error('此IP今日已经推荐过，不可再推荐。');
         } else {
           $data['recommends'] = array('exp', 'recommends+1');
+          $data['re_time']=  time();
           M('company')->where('id=' . $_GET[zan])->save($data);
           cookie('recommends', 1, 3600 * 24);
         }
