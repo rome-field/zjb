@@ -3,15 +3,15 @@
 class IndexAction extends CommonAction {
 
   public function index() {
-    
-     //设置搜索区域
-     $searchArray = array(
-        array('name' => '区域', 'key' => 'zone','default'=>'不限','data'=>  session('city_zones')),
-        array('name' => '类别', 'key' => 'type','default'=>'不限','data'=>  C('COMPANY_TYPE')),
-        array('name' => '排序', 'key' => 'rank','default'=>'默认','data'=>  C('COMPANY_SORT')),
+
+    //设置搜索区域
+    $searchArray = array(
+        array('name' => '区域', 'key' => 'zone', 'default' => '不限', 'data' => session('city_zones')),
+        array('name' => '类别', 'key' => 'type', 'default' => '不限', 'data' => C('COMPANY_TYPE')),
+        array('name' => '排序', 'key' => 'rank', 'default' => '默认', 'data' => C('COMPANY_SORT')),
     );
     $this->assign('searchArray', $searchArray);
-    
+
     //设置搜索城市id
     $condition['city_id'] = session('city_id');
 
@@ -23,20 +23,36 @@ class IndexAction extends CommonAction {
         $condition['company_type'] = $_GET['type'];
       }
       if (isset($_GET['rank'])) {
-         if($_GET['rank']=='1'){
-           $order='create_at desc';
-         }elseif ($_GET['rank']=='2') {
+        if ($_GET['rank'] == '1') {
+          $order = 'create_at desc';
+        } elseif ($_GET['rank'] == '2') {
           $order = 'recommends desc';
         }
       }
+
+      if (isset($_GET['zan'])) {
+        if (cookie('recommended')) {
+          $this->error('此IP今日已经推荐过，不可再推荐。');
+        } else {
+          $data['recommends'] = array('exp', 'recommends+1');
+          M('company')->where('id=' . $_GET[zan])->save($data);
+          cookie('recommends', 1, 3600 * 24);
+        }
+      }
     }
-    
+
     //默认排序
-    if(!isset($order)){
+    if (!isset($order)) {
       $order = 're_time desc';
     }
-   
-    
+    $db = M('company');
+    $counts = $db->where($condition)->count();
+    import('ORG.Util.Page');
+    $Page = new Page($counts, C('NUM_PER_PAGE'));
+    $show = $Page->show();
+    $list = $db->where($condition)->order($order)->limit($Page->firstRow . ',' . $Page->listRows)->select();
+    $this->assign('list', $list);
+    $this->assign('page', $show);
     $this->display();
   }
 
@@ -82,18 +98,6 @@ class IndexAction extends CommonAction {
     session_unset();
     session_destroy();
     redirect('Index/login');
-  }
-
-  public function zone() {
-    
-  }
-
-  public function type() {
-    
-  }
-
-  public function rank() {
-    
   }
 
 }

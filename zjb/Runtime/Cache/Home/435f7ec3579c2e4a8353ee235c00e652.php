@@ -82,39 +82,7 @@
         <button class="btn" contenteditable="true" type="submit">查找</button>
       </form>
       <div id="c2">
-
-        <!--
- <a class="navbar-brand" href="#">区域 :</a>
-  <ul class="nav nav-pills navbar-brand">
-    <li <?php if(!isset($_GET['zone'])): ?>class="active"<?php endif; ?>>
-    <a href=<?php echo (isset($_GET['zone'])?filterUrl('zone'):'#')?>>不限</a>
-    </li>
-    <?php if(is_array($zones)): $i = 0; $__LIST__ = $zones;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$zone): $mod = ($i % 2 );++$i;?><li <?php if($_GET['zone']== $zone['id']): ?>class="active"<?php endif; ?>>
-      <a href=<?php echo filterUrl('zone').'/zone/'.$zone['id'];?>><?php echo ($zone["name"]); ?></a>
-      </li><?php endforeach; endif; else: echo "" ;endif; ?>
-  </ul>
-  <a class="navbar-brand" href="#">分类 :</a>							
-  <ul class="nav nav-pills navbar-brand">
-    <li <?php if(!isset($_GET['type'])): ?>class="active"<?php endif; ?>>
-    <a href=<?php echo (isset($_GET['type'])?filterUrl('type'):'#')?>>不限</a>
-    </li>
-    <?php if(is_array(C("company_type"))): foreach(C("company_type") as $key=>$v): ?><li <?php if($_GET['type']== $v['id']): ?>class="active"<?php endif; ?>>
-      <a href=<?php echo filterUrl('type').'/type/'.$v['id'];?>><?php echo ($v['name']); ?></a>
-      </li><?php endforeach; endif; ?>
-  </ul>
-
-  <a class="navbar-brand" href="#">排序 :</a>							
-  <ul class="nav nav-pills navbar-brand">
-    <li <?php if(!isset($_GET['rank'])): ?>class="active"<?php endif; ?>>
-    <a href=<?php echo (isset($_GET['rank'])?filterUrl('rank'):'#')?>>默认</a>
-    </li>
-    <?php if(is_array(C("company_sort"))): foreach(C("company_sort") as $key=>$v): ?><li <?php if($_GET['rank']== $v['id']): ?>class="active"<?php endif; ?>>
-      <a href=<?php echo filterUrl('rank').'/rank/'.$v['id'];?>><?php echo ($v['name']); ?></a>
-      </li><?php endforeach; endif; ?>
-  </ul>					
--->
-
-<?php if(is_array($searchArray)): $i = 0; $__LIST__ = $searchArray;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><a class="navbar-brand" href="#"><?php echo ($s['name']); ?> :</a>
+        <?php if(is_array($searchArray)): $i = 0; $__LIST__ = $searchArray;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><a class="navbar-brand" href="#"><?php echo ($s['name']); ?> :</a>
   <ul class="nav nav-pills navbar-brand">
     <li <?php if(!isset($_GET[$s['key']])): ?>class="active"<?php endif; ?>>
     <a href=<?php echo (isset($_GET[$s['key']])?filterUrl($s['key']):'#')?>><?php echo ($s['default']); ?></a>
@@ -133,19 +101,24 @@
         <ul class="thumbnails">
           <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="span3">
               <div class="thumbnail">
-                <a  href="<?php echo U('Home/Company/company');?>#desc"><img src="" alt=""></a>
+                <a  href="<?php echo U('company/'.$vo['id']);?>"><img src='__ROOT__/<?php echo ($vo["logo"]); ?>' alt="暂无logo"></a>
                 <div class="caption">
-                  <h3  style="text-align: center;"><?php echo ($vo["id"]); ?></h3>
-                  <p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-                  <p><span><?php echo ($vo["id"]); ?> </span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-                  <p><span><?php echo ($vo["id"]); ?></span>&nbsp&nbsp &nbsp <span><?php echo ($vo["id"]); ?></span></p>
-                  <p style="text-align: center;"><a href="#" class="btn btn-primary">推荐</a> <a href="#" class="btn">评论</a></p>
+                  <h3  style="text-align: center;"><?php echo ($vo["name"]); ?></h3>
+                  <p><span>地址：</span>&nbsp&nbsp &nbsp <span><?php echo ($vo["address"]); ?></span></p>
+                  <p><span>主营： </span>&nbsp&nbsp &nbsp <span><?php echo ($vo["business"]); ?></span></p>
+                  <p><span>联系人：</span><span><?php echo ($vo["username"]); ?></span>&nbsp&nbsp &nbsp <span>手机：</span><span><?php echo ($vo["mobile"]); ?></span></p>
+                  <p style="text-align: center;">
+                    <a href="__SELF__/zan/<?php echo ($vo['id']); ?>"  class="btn btn-primary">推荐</a> 
+                    <a href="#" class="btn">评论</a>
+                  </p>
                 </div>
               </div>
             </li><?php endforeach; endif; else: echo "" ;endif; ?>	
         </ul>
       </div>
     </div>
-    <div class="yahoo2"><?php echo ($page); ?></div>
+    <div class="yahoo2">
+      <?php echo ($page); ?>
+    </div>
 </body>
 </html>

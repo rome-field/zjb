@@ -30,6 +30,13 @@ return array(
 	"UPLOAD_PATH" => "./uploads/", //上传路径
     'THUMB_PREFIX'=> 't_', //缩略图前缀
     
+    'URL_ROUTER_ON'   => true, //开启路由
+    'URL_ROUTE_RULES' => array( //定义路由规则
+    'company/:id\d'               => 'Company/showIndex',
+),
+    //每页显示记录个数
+    'NUM_PER_PAGE'=>'2',
+    
     'COMPANY_TYPE' => array(
         array('id'=>1,'name'=>'房产中介'),  
         array('id'=>2,'name'=>'汽车服务'),
