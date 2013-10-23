@@ -6,7 +6,7 @@
 </title>
 <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
-<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->

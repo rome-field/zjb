@@ -4,7 +4,7 @@
     <title> 登录 </title>
   <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
-<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -94,7 +94,7 @@
       </div>
       <div id="main">
         <div id="lmain" style="width:450px;height:400px;float:left;margin-top:50px;">
-          <img src="__ROOT__/public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
+          <img src="__ROOT__/Public/images/login.jpg" alt="banner" style="margin-left:50px;"/>
         </div>
         <div class="loginbox" style="border-left:solid 2px #e7ebea">
           <table   width="90%" class="logintable">

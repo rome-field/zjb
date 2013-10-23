@@ -1,0 +1,1122 @@
+[ 2013-10-23T09:53:28+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013000s ]
+SQL: SHOW COLUMNS FROM `zjb_area` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `zjb_area` WHERE ( pid=1943 )  [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.129007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:56:14+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+
+[ 2013-10-23T09:56:34+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:56:36+08:00 ] 0.0.0.0 /zjb/index.php/Publish/Index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:56:49+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.006000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.091005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:56:50+08:00 ] 0.0.0.0 /zjb/index.php/Publish/Index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:56:59+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-23T09:57:00+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:57:52+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:57:53+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T09:58:17+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2013-10-23T10:10:08+08:00 ] 0.0.0.0 /zjb/index.php/Home/Innerpage/innerpage.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-23T10:37:24+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.075004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:41:49+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-23T10:41:58+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:42:38+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:43:55+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.076004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:47:16+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-23T10:47:57+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.075004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:52:33+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T10:56:33+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.075004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T11:09:10+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T11:09:37+08:00 ] 0.0.0.0 /zjb/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.048003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T11:09:39+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2013-10-23T11:10:39+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T11:14:17+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2013-10-23T11:20:35+08:00 ] 0.0.0.0 /zjb/index.php/Publish/rentHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-23T11:21:28+08:00 ] 0.0.0.0 /zjb/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2013-10-23T18:00:02+08:00 ] 0.0.0.0 /zjb/index.php/Publish/rentHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./zjb/Tpl/Home/Header/header.html): failed to open stream: No such file or directory D:\wamp\www\zjb\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.147008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149009s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-23T18:00:12+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+
+[ 2013-10-23T18:01:26+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+
+[ 2013-10-23T18:03:52+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.067003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2013-10-23T18:16:07+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T18:26:52+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-23T18:47:44+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2013-10-23T18:47:53+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T18:51:01+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-23T18:57:21+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T18:58:30+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-23T18:58:33+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T19:00:01+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2013-10-23T19:04:36+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.025001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.123007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-23T19:04:39+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.099005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T19:04:41+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T19:07:42+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T19:08:20+08:00 ] 0.0.0.0 /zjb/index.php?XDEBUG_SESSION_START=netbeans-xdebug
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `zjb_company` [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zjb_company` WHERE ( `city_id` = 1943 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `zjb_company` WHERE ( `city_id` = 1943 ) ORDER BY re_time desc LIMIT 0,2   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: zone D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: type D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+NOTIC: [8] Undefined index: rank D:\wamp\www\zjb\zjb\Runtime\Cache\Home\435f7ec3579c2e4a8353ee235c00e652.php 第 90 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109007s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-23T19:08:23+08:00 ] 0.0.0.0 /zjb/index.php/Publish/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2013-10-23T19:08:25+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.079004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2013-10-23T19:12:02+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2013-10-23T19:12:05+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T19:16:01+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfuploaddel
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2013-10-23T19:16:03+08:00 ] 0.0.0.0 /zjb/index.php/Publish/sellHouse.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\zjb\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: water_on D:\wamp\www\zjb\zjb\Runtime\Cache\Home\4ca7dfb622368381f1423d856d6cb3fb.php 第 331 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2013-10-23T19:16:06+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfupload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 31 行.
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' D:\wamp\www\zjb\zjb\Lib\Action\Home\AjaxAction.class.php 第 40 行.
+
+[ 2013-10-23T19:17:12+08:00 ] 0.0.0.0 /zjb/index.php/Ajax/swfuploaddel
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+

@@ -6,7 +6,7 @@
     </title>
   <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
-<link rel="stylesheet" href="__ROOT__/public/images/reset.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
 <script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -71,7 +71,7 @@
 				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
 				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 				<li style="width:450px"> </li>
-				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/publish');?>#desc">我要登记</a></li>
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/index');?>">我要登记</a></li>
 			</ul>
 		</div>
 

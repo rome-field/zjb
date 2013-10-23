@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <title>
 发布房子
 </title>
-<include file="./zjb/Tpl/Home/Injection/injection.html"/>
+<meta charset="utf-8" />
+<meta name="keywords" content="中介帮 rome 信息发布" />
+<link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/dist/js/bootstrap.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" href="__ROOT__/Public/Home/public.css">
+
+
 <!--[if lte IE 6]>
 <!-- bsie css 补丁文件 -->
 <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
@@ -36,15 +47,54 @@ border:1px;
 
 </head>
 <body style="background-color:#e7ebea;">
-<div id="container" >
-	<include file="./zjb/Tpl/Home/Header/header.html"/>
-	<include file="./zjb/Tpl/Home/Banner/Lgbanner.html"/>
-    <include file="./zjb/Tpl/Home/Navigation/Lgnavigation.html"/>		
-<div id="main">
-	  <form class="form-horizontal pull-left" >
+<div id="container">
+	
+	
+<div id="header">
+  <img src="__ROOT__/Public/images/logo.jpg" alt=""/>
+  <div id="rheader">
+    <div id="city">
+      <span><?php echo (session('city_name')); ?></span>&nbsp&nbsp&nbsp&nbsp
+      <a href="<?php echo U('Common/city');?>" target="_blank">[城市切换]</a>
+
+    </div>
+    <p> 
+      fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+
+    <div id="ing">
+      <span>商家合作：133-0578-0578<br>
+        资金合作：153-0578-0578
+      </span>
+    </div>
+  </div>
+</div>	
+
+
+    		<div>
+			<ul class="nav nav-tabs navbar nav1">
+				<li class="active"><a href="<?php echo U('Index/index');?>#desc">合作商家</a></li>
+				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
+				<li><a href="<?php echo U('Zhuhouse/zhuhouse');?>#desc">我要租房</a></li>
+				<li><a href="<?php echo U('Buycar/buycar');?>#desc">我要买车</a></li>
+				<li><a href="<?php echo U('Zhucar/zhucar');?>#desc">我要租车</a></li>
+				<li><a href="<?php echo U('Daikuang/daikuang');?>#desc">我要贷款</a></li>
+				<li><a href="<?php echo U('Licai/licai');?>#desc">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/index');?>">我要登记</a></li>
+			</ul>
+		</div>
+	<div id="main">
+	  <form class="form-horizontal pull-left">
 		<fieldset style="width:700px;margin:0px auto">
 		  <div id="legend" class="">
 			<legend class="">租售房</legend>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+				<label class="control-label" for="input01">公司名称</label>
+			  <div class="controls">
+				<input type="text" placeholder="" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
 		  </div>
 		  <div class="control-group" style="clear:both;">
 			  <label class="control-label">类型</label>
@@ -249,7 +299,7 @@ border:1px;
 		</div>
 	   </fieldset>
      </form>
-   </div>
+</div>
 </div>
 </body>
 </html>

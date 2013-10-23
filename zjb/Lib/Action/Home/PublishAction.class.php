@@ -1,26 +1,37 @@
 <?php
+
 // 本类由系统自动生成，仅供测试用途
 
-class PublishAction extends Action{
-	public function publish(){
-	$this->display();
-    }
-	public function publishcar(){
-	$this->display();
-    }
-	public function publishhouse(){
-	$this->display();
-    }
-	public function hypublishcar(){
-	$this->display();
-    }
-	public function hypublishhouse(){
-	$this->display();
-    }
+class PublishAction extends Action {
 
-	
+  function index() {
+    $this->display();
+    
+  }
 
-};
+  public function publish() {
+    $this->display();
+  }
+
+  public function publishcar() {
+    $this->display();
+  }
+
+  public function publishhouse() {
+    $this->display();
+  }
+
+  public function hypublishcar() {
+    $this->display();
+  }
+
+  public function hypublishhouse() {
+    $this->display();
+  }
+
+}
+
+;
 
 //验证登录
 /*	public function check(){

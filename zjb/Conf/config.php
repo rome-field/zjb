@@ -27,8 +27,12 @@ return array(
     //上传文件大小 2M
     "UPLOAD_MAX_SIZE" =>"2097152",
 	"UPLOAD_EXTS" =>array('jpg','gif','png','jpeg','bmp'),
-	"UPLOAD_PATH" => "./uploads/", //上传路径
+	"UPLOAD_PATH" => "uploads/", //上传路径
     'THUMB_PREFIX'=> 't_', //缩略图前缀
+    'UPLOAD_LIMIT'=> '10',
+    'SWFUPLOAD_THUMB_WIDTH' => '80',  //SWF前端上传时显示宽度
+	'SWFUPLOAD_THUMB_HEIGHT' => '60', //SWF前端上传时显示高度
+    'SWFUPLOAD_IMAGESIZE'=>'80,60,240,180',
     
     'URL_ROUTER_ON'   => true, //开启路由
     'URL_ROUTE_RULES' => array( //定义路由规则
