@@ -98,7 +98,7 @@ class IndexAction extends CommonAction {
     }
     session_unset();
     session_destroy();
-    redirect('Index/login');
+    $this->redirect('Index/login');
   }
 
 }

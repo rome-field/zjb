@@ -1,7 +1,14 @@
 <?php
 
-class CompanyModel extends Model {
+class CompanyModel extends RelationModel {
 
+  protected $_link = array(
+      'User' => array(
+          'mapping_type' => HAS_ONE,
+          'foreign_key' => 'company_id ',
+          'as_fields'=>'username,mobile,email,password,create_at,city_id,zone_id,user_type,is_authed,id:user_id',
+      )
+  );
   protected $_map = array(
       'upwd' => 'password',
       'uname' => 'username',
@@ -17,8 +24,8 @@ class CompanyModel extends Model {
   );
   protected $_auto = array(
       array('password', 'secmd5', 1, 'function'),
-      array('create_at','time',1,'function'),
-      array('re_time','time',1,'function'),
+      array('create_at', 'time', 1, 'function'),
+      array('re_time', 'time', 1, 'function'),
   );
 
 }

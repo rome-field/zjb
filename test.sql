@@ -6,13 +6,55 @@ CREATE SCHEMA IF NOT EXISTS `zjb` DEFAULT CHARACTER SET utf8 COLLATE utf8_genera
 USE `zjb` ;
 
 -- -----------------------------------------------------
+-- Table `zjb`.`zjb_user`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_user` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_user` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` CHAR(20) NOT NULL,
+  `email` CHAR(40) NOT NULL DEFAULT '',
+  `mobile` CHAR(14) NOT NULL,
+  `password` CHAR(32) NOT NULL,
+  `create_at` INT(10) UNSIGNED NOT NULL DEFAULT 0,
+  `city_id` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 1943,
+  `zone_id` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 1331101,
+  `user_type` BIT(1) NOT NULL DEFAULT 0 COMMENT 'default:common user',
+  `is_authed` BIT(1) NOT NULL DEFAULT 0,
+  `company_id` INT UNSIGNED NULL DEFAULT 0 COMMENT 'default:zjb',
+  PRIMARY KEY (`id`),
+  INDEX `cityid` (`city_id` ASC))
+ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_company`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_company` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_company` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` CHAR(40) NOT NULL,
+  `address` CHAR(50) NOT NULL,
+  `telephone` CHAR(13) NOT NULL,
+  `company_type` ENUM('房产中介','汽车服务','金融担保') NOT NULL,
+  `logo` VARCHAR(255) NOT NULL,
+  `business` VARCHAR(60) NOT NULL,
+  `re_time` INT(10) UNSIGNED NOT NULL DEFAULT 0,
+  `recommends` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '推荐人数',
+  PRIMARY KEY (`id`),
+  INDEX `name` (`name` ASC),
+  INDEX `address` (`address` ASC))
+ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
 -- Table `zjb`.`zjb_house`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `zjb`.`zjb_house` ;
 
 CREATE TABLE IF NOT EXISTS `zjb`.`zjb_house` (
   `id` INT UNSIGNED NOT NULL DEFAULT 0,
-  `title` CHAR(40) NOT NULL DEFAULT '',
   `house_kind` ENUM('普通住宅','高层住宅','民房','别墅','公寓','写字楼','商铺','厂房','其他') NOT NULL COMMENT '普高民别寓写字楼等',
   `parlors` TINYINT UNSIGNED NOT NULL DEFAULT 1 COMMENT '客厅',
   `rooms` TINYINT UNSIGNED NOT NULL DEFAULT 2 COMMENT '房间',
@@ -32,9 +74,40 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_house` (
   `bus_info` VARCHAR(255) NULL,
   `contact` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '联系人，不一定是发布者',
   `contact_phone` CHAR(14) NOT NULL DEFAULT '' COMMENT '联系人号码\n',
+  `info_id` INT UNSIGNED NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
-  INDEX `title` (`title` ASC),
   INDEX `addr` (`address` ASC))
+ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_car`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_car` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_car` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(45) NOT NULL,
+  `brand` ENUM('0','1') NOT NULL COMMENT '宝马，大众',
+  `type` ENUM('0','1') NOT NULL COMMENT '轿车，商务，面包',
+  `miles` SMALLINT NULL DEFAULT 0 COMMENT '里程数',
+  `insure_date` YEAR NOT NULL COMMENT '保险到期时间',
+  `reg_date` YEAR NOT NULL COMMENT '上牌时间',
+  `price` SMALLINT NOT NULL,
+  `series` ENUM('0','1') NOT NULL COMMENT '车系',
+  `check_date` YEAR NULL COMMENT '年检时间',
+  `accident` VARCHAR(45) NOT NULL COMMENT '重大事故',
+  `maintain` VARCHAR(45) NOT NULL COMMENT '保养维护',
+  `output` VARCHAR(45) NOT NULL COMMENT '排量',
+  `speedgear` ENUM('0','1') NOT NULL COMMENT '变速',
+  `describe_text` VARCHAR(45) NOT NULL,
+  `describe_pics` VARCHAR(45) NOT NULL,
+  `cover_pic` VARCHAR(45) NOT NULL,
+  `seats` ENUM('0','1') NULL COMMENT '座位数',
+  `include_insure` TINYINT(1) NULL DEFAULT 1,
+  `plege` SMALLINT NULL DEFAULT 0 COMMENT '押金',
+  `miles_perday` SMALLINT NULL DEFAULT 0 COMMENT '日里程\n',
+  PRIMARY KEY (`id`))
 ENGINE = MyISAM;
 
 
@@ -45,16 +118,16 @@ DROP TABLE IF EXISTS `zjb`.`zjb_info` ;
 
 CREATE TABLE IF NOT EXISTS `zjb`.`zjb_info` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `poster_type` BIT(1) NOT NULL DEFAULT 0 COMMENT 'default:common member',
   `poster_id` INT UNSIGNED NOT NULL DEFAULT 0,
   `info_catagory` ENUM('卖房','租房','卖车','租车','贷款','理财') NOT NULL COMMENT '对应当前的六种类型的信息\n',
-  `catagory_id` INT UNSIGNED NOT NULL,
-  `edit_time` TIMESTAMP NOT NULL,
+  `edit_time` INT(10) UNSIGNED NOT NULL DEFAULT 0,
   `is_verified` BIT NOT NULL DEFAULT 0 COMMENT 'default:not verified',
   `city_id` SMALLINT UNSIGNED NOT NULL COMMENT '城市ID',
   `zone_id` SMALLINT UNSIGNED NOT NULL COMMENT '区县ID',
   `post_time` INT(10) UNSIGNED NOT NULL DEFAULT 0,
-  PRIMARY KEY (`id`))
+  `title` CHAR(40) NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `title` (`title` ASC))
 ENGINE = MyISAM;
 
 

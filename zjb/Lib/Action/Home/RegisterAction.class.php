@@ -45,8 +45,9 @@ class RegisterAction extends Action {
       $db->logo = $pic[0]['savepath'].C('THUMB_PREFIX').$pic[0]['savename'];
       $zone = M('area')->where('id='.$_POST['town'])->field('name')->find();
       $db->address = $zone['name'].$_POST['addr'];
+      $db->user_type = 1;
       
-      if(!$mid=$db->add()){
+      if(!$mid=$db->relation(true)->add()){
         $this->error('注册失败！');
       }
       
