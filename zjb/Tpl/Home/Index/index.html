@@ -35,7 +35,7 @@
                   <p><span>主营： </span>&nbsp&nbsp &nbsp <span>{$vo.business}</span></p>
                   <p><span>联系人：</span><span>{$vo.username}</span>&nbsp&nbsp &nbsp <span>手机：</span><span>{$vo.mobile}</span></p>
                   <p style="text-align: center;">
-                    <a href="__SELF__/zan/{$vo['id']}"  class="btn btn-primary">推荐</a> 
+                      <a href="{:U('Index/recommend','zan='.$vo['id'])}"  class="btn btn-primary">推荐</a> 
                     <a href="#" class="btn">评论</a>
                   </p>
                 </div>

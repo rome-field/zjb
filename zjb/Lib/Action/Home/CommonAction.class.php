@@ -28,7 +28,7 @@ Class CommonAction extends Action
 				session('mid', $value[0]);
 				session('mname', $value[2]);
                 session('mtype',$value[3]);
-				//session('grade', $value[4]);
+				session('is_authed', $value[4]);
 			}
 		}
     }

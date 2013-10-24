@@ -38,18 +38,27 @@ class RegisterAction extends Action {
       $pic = upload_pic();
 
       //组装数据
-      $db = D('Company');
+      $db = M('company');
       if (!$db->create()) {
         $this->error($db->getError());
       }
+      $db->re_time = time();
       $db->logo = $pic[0]['savepath'].C('THUMB_PREFIX').$pic[0]['savename'];
       $zone = M('area')->where('id='.$_POST['town'])->field('name')->find();
       $db->address = $zone['name'].$_POST['addr'];
-      $db->user_type = 1;
-      
-      if(!$mid=$db->relation(true)->add()){
-        $this->error('注册失败！');
+      if(!$cid=$db->add()){
+       $this->error('注册失败！');
+       }
+      $db = D('User');
+      if(!$db->create()){
+        $this->error($db->getError());
       }
+      $db->user_type = 1;
+      $db->company_id = $cid;
+      if(!$mid=$db->add()){
+       $this->error('注册失败！');
+       }
+      
       
       //注册成功，等待审核
       //注册成功，设置session

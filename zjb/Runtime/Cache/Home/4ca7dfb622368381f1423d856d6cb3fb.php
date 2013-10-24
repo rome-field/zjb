@@ -1,10 +1,10 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <title>
-      发布房子
-    </title>
-  <meta charset="utf-8" />
+    <head>
+        <title>
+            发布房子
+        </title>
+    <meta charset="utf-8" />
 <meta name="keywords" content="中介帮 rome 信息发布" />
 <link rel="stylesheet" href="__ROOT__/Public/images/reset.css" type="text/css" />
 <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.7.1.js"></script>
@@ -16,28 +16,28 @@
 <link rel="stylesheet" href="__ROOT__/Public/Home/public.css">
 
 
-  <!--[if lte IE 6]>
-  <!-- bsie css 补丁文件 -->
-  <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
-  <!-- bsie 额外的 css 补丁文件 -->
-  <link rel="stylesheet" href="__ROOT__/Public/dist/css/ie.css"/>
-  <![endif]-->
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="__ROOT__/Public/Home/publish.css" type="text/css" />
-  <link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
-  <style type="text/css">
-    *:focus {outline: none}
+    <!--[if lte IE 6]>
+    <!-- bsie css 补丁文件 -->
+    <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
+    <!-- bsie 额外的 css 补丁文件 -->
+    <link rel="stylesheet" href="__ROOT__/Public/dist/css/ie.css"/>
+    <![endif]-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="__ROOT__/Public/Home/publish.css" type="text/css" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
+    <style type="text/css">
+        *:focus {outline: none}
 
-    tr,td{font-size:15px;
-          color:#000000;
-          background:#fff;
-          border:1px;
-    }
-  </style>
+        tr,td{font-size:15px;
+              color:#000000;
+              background:#fff;
+              border:1px;
+        }
+    </style>
 </head>
 <body style="background-color:#e7ebea;">
-  <div id="container" >
-    <div id="pos" >	
+    <div id="container" >
+        <div id="pos" >	
     <ul class="nav nav-tabs ">
         <?php if(session('?mname')): ?><li class="active">欢迎您，<?php echo (session('mname')); ?></li>
             <li class="active"><a href="<?php echo U('Member/index');?>">会员中心</a></li>
@@ -58,7 +58,7 @@
 	
 </div>	
 	
-    
+        
 <div id="header">
   <img src="__ROOT__/Public/images/logo.jpg" alt=""/>
   <div id="rheader">
@@ -79,7 +79,7 @@
 </div>	
 
 
-    		<div>
+        		<div>
 			<ul class="nav nav-tabs navbar nav1">
 				<li class="active"><a href="<?php echo U('Index/index');?>#desc">合作商家</a></li>
 				<li><a href="<?php echo U('Buyhouse/buyhouse');?>#desc">我要买房</a></li>
@@ -91,185 +91,152 @@
 				<li class="navbar-right" style="text-align:right;"><a href="<?php echo U('Publish/index');?>">我要登记</a></li>
 			</ul>
 		</div>		
-    
-    <div id="main">
-      <form class="form-horizontal pull-left" action="<?php echo U('Publish/sellHouse');?>" method='post' >
-        <fieldset style="width:700px;margin:0px auto">
-          <div id="legend" class="">
-            <legend class="">房屋</legend>
-          </div>
-          <div class="control-group" style="clear:both;">
-            <label class="control-label">类型</label>
-            <div class="controls">
-              <!-- Inline Radios -->
-              <label class="radio inline">
-                <input type="radio" value="无装修" name="group" checked="checked">
-                出租
-              </label>
-              <label class="radio inline">
-                <input type="radio" value="简单装修" name="group">
-                出售
-              </label>	  
-            </div>
-          </div>
-          <div class="control-group">
-            <!-- Select Basic -->
-            <label class="control-label" style="clear:both;" >户型</label>
-            <div class="controls">
-              <select class="input-xlarge" >
-                <option style="border: solid 1px #000">1室1厅1卫</option>
-                <option>2室1厅1卫</option>
-                <option>2室2厅1卫</option>
-                <option>3室1厅1卫</option>
-                <option>3室2厅1卫</option>
-                <option>3室2厅2卫</option>
-                <option>4室2厅2卫</option>
-                <option>5室2厅2卫</option>
-                <option>独立别墅</option>
-                <option>屋顶</option>
-                <option></option>
-                <option></option>
-              </select>
-            </div>
-          </div>
-          <div class="control-group" >
-            <!-- Text input-->
-            <label class="control-label" for="input01">面积</label>
-            <div class="controls">
-              <input type="text" placeholder="" class="input-xlarge">  平方米
-              <p class="help-block"></p>
-            </div>
-          </div>
-          <div class="control-group" style="float:left;">
-            <!-- Text input-->
-            <label class="control-label" for="input01">价格</label>
-            <div class="controls">
-              <input type="text" placeholder="" class="input-xlarge" style="float:left width:200px;">
-              <p class="help-block"></p>            
-            </div>
-          </div>
-          <div>
-            <select class="input-xlarge"  style="float:left;width:100px;margin-left:10px;">
-              <option>万元</option>
-              <option>元/月</option>
-              <option>元/平方</option>
-              <option>元/年</option>	 
-            </select>
-          </div>
-          <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input01">地址</label>
-            <div class="controls">
-              <input type="text" placeholder="" class="input-xlarge">
-              <p class="help-block"></p>
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label">基本设施</label>
-            <!-- Multiple Checkboxes -->
-            <div class="controls">
-              <!-- Inline Checkboxes -->
-              <label class="checkbox inline">
-                <input type="checkbox" value="有线">
-                有线
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="管媒">
-                管媒
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="水电">
-                水电
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="热水">
-                热水
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="家具">
-                家具
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="卫生设施">
-                卫生设施
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="宽带">
-                宽带
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="厨房设施">
-                厨房设施
-              </label>
-            </div>
-          </div>
-          <div class="control-group" style="clear:both;">
-            <label class="control-label">家用电器</label>
 
-            <!-- Multiple Checkboxes -->
-            <div class="controls">
-              <!-- Inline Checkboxes -->
-              <label class="checkbox inline" >
-                <input type="checkbox" value="电视">
-                电视
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="冰箱" >
-                冰箱
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="空调">
-                空调
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="电话">
-                电话
-              </label>
-              <label class="checkbox inline">
-                <input type="checkbox" value="洗衣机">
-                洗衣机
-              </label>
-            </div>
-          </div>
-          <div class="control-group" style="clear:both;">
-            <label class="control-label">装修情况</label>
-            <div class="controls">
-              <!-- Inline Radios -->
-              <label class="radio inline">
-                <input type="radio" value="无装修" name="group" checked="checked">
-                无装修
-              </label>
-              <label class="radio inline">
-                <input type="radio" value="简单装修" name="group">
-                简单装修
-              </label>
-              <label class="radio inline">
-                <input type="radio" value="中档装修" name="group">
-                中档装修
-              </label>
-              <label class="radio inline">
-                <input type="radio" value="较佳装修" name="group">
-                较佳装修
-              </label>
-              <label class="radio inline">
-                <input type="radio" value="豪华装修" name="group">
-                豪华装修
-              </label>
-            </div>
-          </div>
-          <div class="control-group">
-            <!-- Textarea -->
-            <label class="control-label">更多描述</label>
-            <div class="controls">
-              <div class="textarea">
-                <textarea type="" class=""> </textarea>
-              </div>
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label">上传图片</label>
-            <!-- File Upload -->
-            <?php  $swfupload_id = isset($swfupload_id) ? ++$swfupload_id : 0; if($swfupload_id==0): ?>
+        <div id="main">
+            <form class="form-horizontal pull-left" action="<?php echo U('Publish/sellHouse');?>" method='post' >
+                <fieldset style="width:700px;margin:0px auto">
+                    <div id="legend" class="">
+                        <legend class="">出售房屋</legend>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">标题</label>
+                        <div class="controls">
+                            <input name='title' type="text" placeholder="输入嘹亮的信息标题" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Select Basic -->
+                        <label class="control-label" style="clear:both;" >房屋类型</label>
+                        <div class="controls">
+                            <select name='house_kind' class='input-xlarge' >
+                                <option style="border: solid 1px #000">请选择</option>
+                                <option value='1'>普通住宅</option>
+                                <option value='2'>高层住宅</option>
+                                <option value='3'>民房</option>
+                                <option value='4'>别墅</option>
+                                <option value='5'>公寓</option>
+                                <option value='6'>写字楼</option>
+                                <option value='7'>商铺</option>
+                                <option value='8'>厂房</option>
+                                <option value='9'>其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">客厅</label>
+                        <div class="controls">
+                            <input name='parlors' type="text" placeholder="客厅的个数" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">卧室</label>
+                        <div class="controls">
+                            <input name='rooms' type="text" placeholder="卧室的个数" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">卫生间</label>
+                        <div class="controls">
+                            <input name='bathrooms' type="text" placeholder="卫生间的个数" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">共有楼层</label>
+                        <div class="controls">
+                            <input name='floors' type="text" placeholder="房屋所在大楼总楼层数" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">所在楼层</label>
+                        <div class="controls">
+                            <input name='floor_of' type="text" placeholder="输入本房所在楼层" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">年代</label>
+                        <div class="controls">
+                            <input name='year' type="text" placeholder="房屋何年投入使用，如“2006”" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">面积</label>
+                        <div class="controls">
+                            <input name='area' type="text" placeholder="" class="input-xlarge">  平方米
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" style="clear:both;" >装修程度</label>
+                        <div class="controls">
+                            <select name='finish_level' class='input-xlarge' >
+                                <option style="border: solid 1px #000">请选择</option>
+                                <option value='1'>毛坯</option>
+                                <option value='2'>简单装修</option>
+                                <option value='3'>中等装修</option>
+                                <option value='4'>精装修</option>
+                                <option value='5'>豪华装修</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <!-- Text input-->
+                        <label class="control-label">地址</label>
+                        <div class="controls">
+                            <select name='zone_id' >
+                                <option>选择当前城市的区县</option>
+                                <?php if(is_array($_SESSION['city_zones'])): foreach($_SESSION['city_zones'] as $key=>$zone): ?><option value="<?php echo ($zone["id"]); ?>"><?php echo ($zone["name"]); ?></option><?php endforeach; endif; ?>
+                            </select>
+                            <p class="help-block"></p>
+                            <input name='addr' type="text" placeholder="建议地址具体到小区名" class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">公交信息</label>
+                        <div class="controls">
+                            <input name='bus_info' type="text" placeholder="输入周边公交地铁信息" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group" >
+                        <!-- Text input-->
+                        <label class="control-label">价格</label>
+                        <div class="controls">
+                            <input name='area' type="text" placeholder="" class="input-xlarge"> 万元
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Textarea -->
+                        <label class="control-label">卖家评点</label>
+                        <div class="controls">
+                            <div class="textarea">
+                                <textarea name='describe_text' > </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">上传图片</label>
+                        <!-- File Upload -->
+                        <div class="controls">
+                            <?php  $swfupload_id = isset($swfupload_id) ? ++$swfupload_id : 0; if($swfupload_id==0): ?>
 
 <link href='__ROOT__/Public/swf/css/default.css' rel='stylesheet' type='text/css' />
 <script type='text/javascript' src='__ROOT__/Public/swf/js/handlers.js'></script>
@@ -356,35 +323,35 @@
   <?php endif;?>
   <ul></ul>
 </div>
-          </div>
-          <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input01">联系人</label>
-            <div class="controls">
-              <input type="text" placeholder="" class="input-xlarge">
-              <p class="help-block"></p>
-            </div>
-          </div>
-          <div class="control-group">
-            <!-- Text input-->
-            <label class="control-label" for="input01">联系电话</label>
-            <div class="controls">
-              <input type="text" placeholder="" class="input-xlarge">
-              <p class="help-block"></p>
-            </div>
-          </div>
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">联系人</label>
+                        <div class="controls">
+                            <input name='contact' type="text" placeholder="" class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Text input-->
+                        <label class="control-label">联系电话</label>
+                        <div class="controls">
+                            <input name='contact_phone' type="text" placeholder="" class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
 
-          <div class="control-group">
-            <label class="control-label"></label>
-
-            <!-- Button -->
-            <div class="controls">
-              <button class="btn btn-default">提交</button>
-            </div>
-          </div>
-        </fieldset>
-      </form>
+                    <div class="control-group">
+                        <!-- Button -->
+                        <div class="controls">
+                            <button class="btn btn-default">发布</button>
+                            <p class='text-muted'>非认证商家会员发布信息需要通过审核</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
-  </div>
 </body>
 </html>
