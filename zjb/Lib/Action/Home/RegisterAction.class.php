@@ -65,6 +65,7 @@ class RegisterAction extends Action {
       session('mname', $_POST['uname']);
       session('mtype', '1');
       session('mid', $mid);
+      session('is_authed',0);//默认未审核
       $this->success('注册成功，请耐心等待审核....', __APP__);
     }
 

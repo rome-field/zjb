@@ -28,7 +28,7 @@ class AjaxAction extends Action {
     $upload->maxSize = C("UPLOAD_MAX_SIZE");
     ; // 设置附件上传大小
     $upload->allowExts = C("UPLOAD_EXTS"); // 设置附件上传类型
-    $upload->savePath = C("UPLOAD_PATH") . 'info_pic/' . date(Ymd) . '/'; // 设置头像上传目录
+    $upload->savePath = C("UPLOAD_PATH") . 'info_pic/' . date('Ymd') . '/'; // 设置头像上传目录
     if (!$upload->upload()) {// 上传错误提示错误信息
       echo json_encode(array('state' => $upload->getErrorMsg()));
       exit;
@@ -37,7 +37,7 @@ class AjaxAction extends Action {
     }
 
     $info2 = $upload->getUploadFileInfo();
-    $field = C("UPLOAD_PATH") . 'info_pic/' . date(Ymd) . '/' . $info2[0]['savename'];
+    $field = C("UPLOAD_PATH") . 'info_pic/' . date('Ymd') . '/' . $info2[0]['savename'];
     $info = pathinfo($field);
     $fileData = array();
     $fileData[0]['path'] = $field; //上传后的大图 			

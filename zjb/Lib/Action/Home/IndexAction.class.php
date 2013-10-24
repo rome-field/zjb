@@ -47,6 +47,9 @@ class IndexAction extends CommonAction {
     }
 
     public function login() {
+        if (session('?mid')) {
+            $this->redirect('Index/index');
+        }
         if ($this->isPost()) {
 //验证码校验
             if (session('verify') != md5(strtoupper($_POST['yzm'])))

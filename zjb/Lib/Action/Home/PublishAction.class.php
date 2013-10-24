@@ -22,8 +22,19 @@ class PublishAction extends Action {
                 $this->error($db->getError());
             }
             $db->info_id = $info_id;
-            $area = M('area')->fields('name')->find($_POST['zone_id']);
+            $area = M('area')->where("id=".$_POST['zone_id'])->field('name')->find();
             $db->address =$area['name'].$_POST['addr'];
+            if(isset($_POST['upload_pic']))
+            {
+              $db->cover = $_POST['upload_pic'][1][1];//默认以中等缩略图为封面
+              foreach ($_POST['upload_pic'] as $v){
+                $db->describe_pic .= $v[0].'|'; 
+              }
+            }
+            if(!$db->add()){
+              $this->error('发布失败！');
+            }
+            $this->success("发布成功，等待审核...",'index');
         }
         $this->display();
     }
@@ -41,7 +52,7 @@ class PublishAction extends Action {
         $info->city_id = session('city_id');
 
         if (!$id = $info->add()) {
-            $this->error('发布信息失败！');
+            $this->error($info->getError());
         }
         
         return $id;
