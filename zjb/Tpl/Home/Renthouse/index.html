@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>
+            我要租房
+        </title>
+    <include file="./zjb/Tpl/Home/Injection/injection.html"/>
+    <link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+</head>
+<body>
+
+    <div id="container" style="width:85%; min-width:1170px;">
+        <include file="Common:top"/>
+        <include file="./zjb/Tpl/Home/Banner/banner.html"/>
+        <include file="./zjb/Tpl/Home/Navigation/navigation.html"/>
+        <div id="main">
+            <form class="form-search form-inline"><input class="input-medium search-query" type="text" />
+                <button class="btn" contenteditable="true" type="submit">查找</button>
+            </form> 
+            <div id='c2'>
+                <include file="Common:search_sel"/>				
+            </div>
+        </div>
+        <div id="footer">
+            <div class="span6">
+                <ul class="thumbnails">
+                    <volist name="list" id="vo">
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <a  href="{:U('buyhouse/'.$vo['id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                <div class="caption">
+                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                    <p><span>类型： {$vo.house_kind}</span>&nbsp&nbsp &nbsp <span>面积： {$vo.area}㎡</span></p>
+                                    <p><span>楼层： {$vo.floor_of}/{$vo.floors}层 </span>&nbsp&nbsp &nbsp <span>户型： {$vo.rooms}室{$vo.parlors}厅</span></p>
+                                    <p><span>装修：</span><span>{$vo.finish_level}</span>&nbsp&nbsp &nbsp <span>租金：</span><span>{$vo.price}元/月</span></p>
+                                    <p><span>地址： {$vo.address}</span>&nbsp&nbsp &nbsp
+                                        <span><if condition="$vo.user_type" >{$vo.company_name}<else />个人房源</if></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </volist>	
+                </ul>
+            </div>
+        </div>
+        <div class="yahoo2">
+            {$page}
+        </div>
+    </div>
+</body>
+</html>

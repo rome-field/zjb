@@ -1,6 +1,6 @@
 <?php
 
-class BuyhouseAction extends Action {
+class RenthouseAction extends Action {
 
     protected $s_type = array(
         array('id' => 1, 'name' => '普通住宅'),
@@ -26,15 +26,15 @@ class BuyhouseAction extends Action {
         array('id' => 10, 'name' => '其他'),
     );
     protected $s_price = array(
-        array('id' => 1, 'name' => '50万以下'),
-        array('id' => 2, 'name' => '50万～100万'),
-        array('id' => 3, 'name' => '100万～150万'),
-        array('id' => 4, 'name' => '150万～200万'),
-        array('id' => 5, 'name' => '200万以上'),
+        array('id' => 1, 'name' => '500元以下'),
+        array('id' => 2, 'name' => '500～1000元'),
+        array('id' => 3, 'name' => '1000～1500元'),
+        array('id' => 4, 'name' => '1500～2000元'),
+        array('id' => 5, 'name' => '2000元以上'),
     );
     protected $s_rank = array(
         array('id' => 1, 'name' => '最新'),
-        array('id' => 2, 'name' => '总价'),
+        array('id' => 2, 'name' => '租金'),
     );
 
     public function index() {

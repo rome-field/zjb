@@ -2,13 +2,23 @@
 
 class IndexAction extends CommonAction {
 
+    protected $s_type = array(
+        array('id' => 1, 'name' => '房产中介'),
+        array('id' => 2, 'name' => '汽车服务'),
+        array('id' => 3, 'name' => '金融担保'),
+    );
+    protected $s_sort = array(
+        array('id' => 1, 'name' => '最新'),
+        array('id' => 2, 'name' => '人气'),
+    );
+
     public function index() {
 
         //设置搜索区域
         $searchArray = array(
             array('name' => '区域', 'key' => 'zone', 'default' => '不限', 'data' => session('city_zones')),
-            array('name' => '类别', 'key' => 'type', 'default' => '不限', 'data' => C('COMPANY_TYPE')),
-            array('name' => '排序', 'key' => 'rank', 'default' => '默认', 'data' => C('COMPANY_SORT')),
+            array('name' => '类别', 'key' => 'type', 'default' => '不限', 'data' => $this->s_type),
+            array('name' => '排序', 'key' => 'rank', 'default' => '默认', 'data' => $this->s_sort),
         );
         $this->assign('searchArray', $searchArray);
 

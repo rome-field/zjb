@@ -5,7 +5,7 @@
  * 
  */
 function secmd5($str) {
-  return md5(C('SECMD5') . $str);
+    return md5(C('SECMD5') . $str);
 }
 
 /**
@@ -15,12 +15,12 @@ function secmd5($str) {
  * @return [type]         [description]
  */
 function encrytion($value, $type = 0) {
-  $key = md5(C('AUTO_LOGIN_KEY'));
-  if ($type) {
-    return str_replace('=', '', base64_encode($value ^ $key));
-  }
-  $value = base64_decode($value);
-  return $value ^ $key;
+    $key = md5(C('AUTO_LOGIN_KEY'));
+    if ($type) {
+        return str_replace('=', '', base64_encode($value ^ $key));
+    }
+    $value = base64_decode($value);
+    return $value ^ $key;
 }
 
 /**
@@ -28,22 +28,22 @@ function encrytion($value, $type = 0) {
  * 
  */
 function upload_pic() {
-  import('ORG.Net.UploadFile');
-  $upload = new UploadFile();
-  $upload->maxSize = C('UPLOAD_MAX_SIZE');
-  $upload->allowExts = C('UPLOAD_EXTS');
-  $upload->savePath = C('UPLOAD_PATH') . 'company/logo/' . date('yW') . '/';
-  $upload->thumb = 'true';
-  $upload->thumbMaxWidth = '240';
-  $upload->thumbMaxHeight = '180';
-  $upload->thumbPrefix = 't_';
-  if (!$upload->upload()) {
-    //$this->error($upload->getErrorMsg());
-    Log::write('upload pic failed!');
-  } else {
-    $info = $upload->getUploadFileInfo();
-  }
-  return $info;
+    import('ORG.Net.UploadFile');
+    $upload = new UploadFile();
+    $upload->maxSize = C('UPLOAD_MAX_SIZE');
+    $upload->allowExts = C('UPLOAD_EXTS');
+    $upload->savePath = C('UPLOAD_PATH') . 'company/logo/' . date('yW') . '/';
+    $upload->thumb = 'true';
+    $upload->thumbMaxWidth = '240';
+    $upload->thumbMaxHeight = '180';
+    $upload->thumbPrefix = 't_';
+    if (!$upload->upload()) {
+        //$this->error($upload->getErrorMsg());
+        Log::write('upload pic failed!');
+    } else {
+        $info = $upload->getUploadFileInfo();
+    }
+    return $info;
 }
 
 /**
@@ -53,21 +53,27 @@ function upload_pic() {
  * @return String     URL地址
  */
 function filterUrl($remove) {
-  $get = $_GET;
-  unset($get['_URL_']);
-  if (is_array($remove)) {
-    foreach ($remove as $v) {
-      unset($get[$v]);
+    $get = $_GET;
+    unset($get['_URL_']);
+    if (is_array($remove)) {
+        foreach ($remove as $v) {
+            unset($get[$v]);
+        }
+    } else {
+        unset($get[$remove]);
     }
-  } else {
-    unset($get[$remove]);
-  }
-  $url = '';
-  foreach ($get as $k => $v) {
-    $url .= '/' . $k . '/' . $v;
-  }
-  return __ACTION__ . $url;
+    $url = '';
+    foreach ($get as $k => $v) {
+        $url .= '/' . $k . '/' . $v;
+    }
+    return __ACTION__ . $url;
 }
 
 
+function getSetValue($arr){
+    foreach ($arr as $v){
+        $t += intval($v);
+    }
+    return $t;
+}
 ?>
