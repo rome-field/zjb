@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>
+            租车
+        </title>
+    <include file="./zjb/Tpl/Injection/injection.html"/>
+    <!--[if lte IE 6]>
+    <!-- bsie css 补丁文件 -->
+    <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
+    <!-- bsie 额外的 css 补丁文件 -->
+    <link rel="stylesheet" href="__ROOT__/Public/dist/css/ie.css"/>
+    <![endif]-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="__ROOT__/Public/Home/publish.css" type="text/css" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/edit.css" type="text/css" />
+
+    <style type="text/css">
+        *:focus {outline: none}
+        tr,td{font-size:15px;
+              color:#000000;
+              background:#fff;
+              border:1px;
+        }
+
+    </style>
+</head>
+<body style="background-color:#e7ebea;">
+    <div id="container">
+        <include file="Common:top"/>
+        <include file="./zjb/Tpl/Banner/Lgbanner.html"/>
+        <include file="./zjb/Tpl/Navigation/Lgnavigation.html"/>
+        <div id="main">
+            <form class="form-horizontal pull-left" action="{:U('Publish/rentCar')}" method='post'>
+                <fieldset style="width:720px;margin:0px auto;height:100%;background:#fff">
+                    <div id="legend" class="">
+                        <legend class="">租车</legend>
+                    </div>
+                    <div class="control-group" >
+                        <label class="control-label">标题</label>
+                        <div class="controls">
+                            <input name='title' type="text" placeholder="输入嘹亮的信息标题" class="input-xlarge"> 
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Select Basic -->
+                        <label class="control-label">车型</label>
+                        <div class="controls">
+                            <select name='type' class="input-xlarge">
+                                <option>请选择</option>
+                                <volist name='car_type' id ='v'>
+                                    <option value='{$i}'>{$v}</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <!-- Select Basic -->
+                        <label class="control-label">品牌</label>
+                        <div class="controls">
+                            <select name='brand' class="input-xlarge">
+                                <option>请选择</option>
+                                <volist name='car_brand' id ='v'>
+                                    <option value='{$i}'>{$v}</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">车系</label>
+                        <div class="controls">
+                            <select name='series' class="input-xlarge">
+                                <option>请选择</option>
+                                <volist name='car_series' id ='v'>
+                                    <option value='{$i}'>{$v}</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">首次上牌年份</label>
+                        <div class="controls">
+                            <select name='year' class="input-xlarge">
+                                <option>请选择</option>
+                                <volist name='car_year' id ='v'>
+                                    <option value='{$v}'>{$v}年</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">座位数</label>
+                        <div class="controls">
+                            <select name='seats' class="input-xlarge">
+                                <option>请选择</option>
+                                <volist name='car_seats' id ='v'>
+                                    <option value='{$i}'>{$v}</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">有无重大事故</label>
+                        <div class="controls">
+                            <!-- Inline Radios -->
+                            <label class="radio inline">
+                                <input type="radio" value="1" name="accident" checked="checked">无
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="2" name="accident">
+                                有<span class="text-muted">(严重撞击、泡水、火烧等)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">是否包含保险</label>
+                        <div class="controls">
+                            <!-- Inline Radios -->
+                            <label class="radio inline">
+                                <input type="radio" value="1" name="include_insure" checked="checked">是
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="2" name="include_insure">否
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+
+                        <!-- Text input-->
+                        <label class="control-label" >日里程</label>
+                        <div class="controls">
+                            <input name="miles" type="text" class="input-xlarge">公里
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">变速箱</label>
+                        <div class="controls">
+                            <label class="radio inline">
+                                <input type="radio" value="1" name="speedgear">手动
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="2" name="speedgear">自动
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >排量</label>
+                        <div class="controls">
+                            <input name="output" type="text" class="input-xlarge">升
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">新旧程度</label>
+                        <div class="controls">
+                            <select name="new_level" class="input-xlarge">
+                                <option>请选择</option>
+                                <option value="1">九成新</option>
+                                <option value="2">八成新</option>
+                                <option value="3">七成新</option>
+                                <option value="4">六成新</option>
+                                <option value="5">五成新</option>
+                                <option value="6">四成新</option>
+                                <option value="7">三成新</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">定期保养</label>
+                        <div class="controls">
+                            <label class="radio inline">
+                                <input type="radio" value="1" name="maintain">4S店定期保养
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="2" name="maintain">非4S店定期保养
+                            </label>
+                            <label class="radio inline">
+                                <input type="radio" value="3" name="maintain">无定期保养
+                            </label>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">更多描述</label>
+                        <div class="controls">
+                            <div class="textarea">
+                                <textarea name='describe_text'> </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">上传图片</label>
+                        <div class="controls">
+                            <include file='Common:upload_pic' />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">看车地点</label>
+                        <div class="controls">
+                            <select name='zone_id' >
+                                <option>选择当前城市的区县</option>
+                                <foreach name='Think.session.city_zones' item='zone'>
+                                    <option value="{$zone.id}">{$zone.name}</option>
+                                </foreach>
+                            </select>
+                            <p class="help-block"></p>
+                            <input name='addr' type="text" placeholder="建议地址具体到街道" class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >租金</label>
+                        <div class="controls">
+                            <input type="text" name="price" class="input-xlarge">元每天
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >押金</label>
+                        <div class="controls">
+                            <input type="text" name="deposit" class="input-xlarge">元
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >联系人</label>
+                        <div class="controls">
+                            <input type="text" name='contact' class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >联系电话</label>
+                        <div class="controls">
+                            <input type="text" name='contact_phone' class="input-xlarge">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label"></label>
+                        <!-- Button -->
+                        <div class="controls">
+                            <button class="btn btn-default">提交</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>	
+        </div>
+    </div>
+<js href="__ROOT__/Public/js/edit.js" />
+<js href="__ROOT__/Public/js/artDialog.min.js" />
+</body>
+</html>

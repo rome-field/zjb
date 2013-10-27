@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>
+发布理财
+</title>
+<include file="./zjb/Tpl/Injection/injection.html"/>
+<!--[if lte IE 6]>
+<!-- bsie css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
+<!-- bsie 额外的 css 补丁文件 -->
+<link rel="stylesheet" href="__ROOT__/Public/dist/css/ie.css"/>
+ <![endif]-->
+<!-- Optional theme -->
+<link rel="stylesheet" href="__ROOT__/Public/Home/publish.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
+<link rel="stylesheet" href="__ROOT__/Public/Home/edit.css" type="text/css" />
+
+
+
+<style type="text/css">
+*:focus {outline: none}
+
+
+tr,td{font-size:15px;
+color:#000000;
+background:#fff;
+border:1px;
+}
+#login-header{
+	float:left;
+	font:15px;
+}
+#cityname{
+	float:left;
+}
+</style>
+
+
+
+</head>
+<body style="background-color:#e7ebea;">
+<div id="container">
+	<include file="./zjb/Tpl/Header/header.html"/>
+	<include file="./zjb/Tpl/Banner/Lgbanner.html"/>
+    <include file="./zjb/Tpl/Navigation/Lgnavigation.html"/>			
+<div id="main">
+	  <form class="form-horizontal pull-left">
+		<fieldset style="width:720px;margin:0px auto;height:100%;background:#fff">
+		  <div id="legend" class="">
+			<legend class="">理财发布</legend>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">名称</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Select Basic -->
+			  <label class="control-label">类型</label>
+			  <div class="controls">
+				<select class="input-xlarge">
+				  <option>个人借款</option>
+				  <option>银行借款</option>
+				  <option>企业借款</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">公司名</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Select Basic -->
+			  <label class="control-label">抵押物</label>
+			  <div class="controls">
+				<select class="input-xlarge">
+				  <option>有</option>
+				  <option>无</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">利率</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Select Basic -->
+			  <label class="control-label">还款方式</label>
+			  <div class="controls">
+				<select class="input-xlarge">
+				  <option>到期付款</option>
+				  <option>面议</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">手续费</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Select Basic -->
+			  <label class="control-label">金额</label>
+			  <div class="controls">
+				<select class="input-xlarge">
+				  <option>10万以下</option>
+				  <option>10-50万</option>
+				  <option>50-100万</option>
+				  <option>100-500万</option>
+				  <option>500万以上</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Select Basic -->
+			  <label class="control-label">期限</label>
+			  <div class="controls">
+				<select class="input-xlarge">
+				  <option>1-3个月</option>
+				  <option>4-6个月</option>
+				  <option>7-12个月</option>
+				  <option>一年以上</option>
+				</select>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">联系人</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <!-- Text input-->
+			  <label class="control-label" for="input01">联系电话</label>
+			  <div class="controls">
+				<input type="text" placeholder="placeholder" class="input-xlarge">
+				<p class="help-block"></p>
+			  </div>
+		  </div>
+		  <div class="control-group">
+			  <label class="control-label"></label>
+			  <!-- Button -->
+			  <div class="controls">
+				<button class="btn btn-default">确认</button>
+			  </div>
+		  </div>
+		</fieldset>
+	  </form>
+  </div>
+</div>	
+</body>
+</html>

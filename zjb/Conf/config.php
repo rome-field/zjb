@@ -2,8 +2,6 @@
 
 return array(
     //'配置项'=>'配置值'
-    'APP_GROUP_LIST' => 'Admin,Home',
-    'DEFAULT_GROUP' => 'Home',
     
     //'SHOW_PAGE_TRACE' => true, // 显示页面Trace信息
     'USER_AUTH_KEY' => 'authId',
@@ -35,8 +33,11 @@ return array(
     'SWFUPLOAD_IMAGESIZE' => '80,60,240,180',
     'URL_ROUTER_ON' => true, //开启路由
     'URL_ROUTE_RULES' => array(//定义路由规则
-        'company/:id\d' => 'Company/showIndex',
+        'company/:id\d' => 'Company/index',
         'buyhouse/:id\d' => 'Buyhouse/view',
+        'renthouse/:id\d' => 'Renthouse/view',
+        'buycar/:id\d' => 'Buycar/view',
+        'rentcar/:id\d' => 'Rentcar/view',
     ),
     
     //每页显示记录个数

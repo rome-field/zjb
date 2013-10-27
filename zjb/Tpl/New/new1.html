@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>
+公司
+</title>
+<include file="./zjb/Tpl/Injection/injection.html"/>
+<link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+ </head>
+ <body>
+ 	
+ <div id="container">
+	<include file="./zjb/Tpl/Header/header.html"/>
+	<include file="./zjb/Tpl/Banner/Combanner.html"/>
+		
+		
+	 <div id="main">
+				<div id="c1">
+				<div id="xw">
+					<ul class="nav nav-tabs" id="myTab">
+						<li><a href="#qbxw" data-toggle="tab">Home全部新闻<</a></li>
+						<li><a href="#qydt" data-toggle="tab">Profile企业动态</a></li>
+						 <li><a href="#yhcx" data-toggle="tab">Messages优惠促销</a></li>
+				</ul>
+				</div>
+				<div class="tab-content">
+				<div id="qbxw" class="tab-pane fade in active" >
+				<volist name="list" id="vo">
+				 <dl  class='ba'>
+              <dt><a href="">二把刀新手开车省油技巧</a><span style="margin-left:15px; font-size:12px; font-weight:normal;">(2013-03-04 04:37:11)</span></dt>
+              <dd>我们都知道，对于同样一辆车不同的人开，耗油量是不同的，尤其对于一些二把刀驾驶新手，耗油量差别是很大的，除了车辆自身的排量以外，驾驶技巧对耗油也至关重要，让北京优途二手车连锁品牌经营中心的赵经理来告诉大  <a href="/v3112/news/127350.html">[查看详情]</a></dd>
+           </dl>
+		   </volist>			
+			</div>
+			<div id="qydt" class="tab-pane fade" >
+				<volist name="list" id="vo">
+				 <dl  class='ba'>
+              <dt><a href="">二把刀新手开车省油技巧</a><span style="margin-left:15px; font-size:12px; font-weight:normal;">(2013-03-04 04:37:11)</span></dt>
+              <dd>我们都知道，对于同样一辆车不同的人开，耗油量是不同的，尤其对于一些二把刀驾驶新手，耗油量差别是很大的，除了车辆自身的排量以外，驾驶技巧对耗油也至关重要，让北京优途二手车连锁品牌经营中心的赵经理来告诉大  <a href="/v3112/news/127350.html">[查看详情]</a></dd>
+           </dl>
+		   </volist>			
+			</div>
+			<div id="yhcx" class="tab-pane fade" >				
+				<volist name="list" id="vo">
+				 <dl  class='ba'>
+              <dt><a href="">二把刀新手开车省油技巧</a><span style="margin-left:15px; font-size:12px; font-weight:normal;">(2013-03-04 04:37:11)</span></dt>
+              <dd>我们都知道，对于同样一辆车不同的人开，耗油量是不同的，尤其对于一些二把刀驾驶新手，耗油量差别是很大的，除了车辆自身的排量以外，驾驶技巧对耗油也至关重要，让北京优途二手车连锁品牌经营中心的赵经理来告诉大  <a href="/v3112/news/127350.html">[查看详情]</a></dd>
+           </dl>
+		   </volist>			
+			</div>
+			</div>
+		
+			</div>
+		
+			
+	 <include file="./zjb/Tpl/Comint/Comint.html"/>
+		
+  </div>
+ </body>
+</html>
