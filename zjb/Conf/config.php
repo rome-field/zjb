@@ -38,6 +38,8 @@ return array(
         'renthouse/:id\d' => 'Renthouse/view',
         'buycar/:id\d' => 'Buycar/view',
         'rentcar/:id\d' => 'Rentcar/view',
+        'loan/:id\d' => 'Loan/view',
+        'invest/:id\d' => 'Invest/view',
     ),
     
     //每页显示记录个数

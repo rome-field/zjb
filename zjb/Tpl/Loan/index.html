@@ -2,7 +2,7 @@
 <html lang="zh-CN">
     <head>
         <title>
-            我要租车
+            我要贷款
         </title>
     <include file="./zjb/Tpl/Injection/injection.html"/>
     <link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
@@ -27,14 +27,14 @@
                     <volist name="list" id="vo">
                         <li class="span3">
                             <div class="thumbnail">
-                                <a  href="{:U('rentcar/'.$vo['id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                <a  href="{:U('loan/'.$vo['id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
                                 <div class="caption">
                                     <h3  style="text-align: center;">{$vo.title}</h3>
-                                    <p><span>类型： {$vo.type}</span>&nbsp&nbsp &nbsp <span>上牌： {$vo.year}</span></p>
-                                    <p><span>日里程： {$vo.miles}公里 </span>&nbsp&nbsp &nbsp <span>保险： {$vo.include_insure}</span></p>
-                                    <p><span>押金：</span><span>{$vo.deposit}元</span>&nbsp&nbsp &nbsp <span>租金：</span><span>{$vo.price}元每天</span></p>
+                                    <p><span>来源： {$vo.type}</span>&nbsp&nbsp &nbsp <span>方式： {$vo.loan_way}</span></p>
+                                    <p><span>利率： {$vo.interest_rate} </span>&nbsp&nbsp &nbsp <span>手续费： {$vo.charge}</span></p>
+                                    <p><span>额度：</span><span>{$vo.price}万元</span>&nbsp&nbsp &nbsp <span>期限：</span><span>{$vo.deadline}个月</span></p>
                                     <p><span>地址： {$vo.address}</span>&nbsp&nbsp &nbsp
-                                        <span><if condition="$vo.user_type" >{$vo.company_name}<else />个人车源</if></span>
+                                        <span><if condition="$vo.user_type" >{$vo.company_name}<else />个人信息</if></span>
                                     </p>
                                 </div>
                             </div>

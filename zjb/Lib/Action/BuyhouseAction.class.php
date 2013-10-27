@@ -50,6 +50,7 @@ class BuyhouseAction extends Action {
         $this->assign('searchArray', $searchArray);
         //设置搜索城市id
         $condition['city_id'] = session('city_id');
+        $condition['info_catagory']=1;
         if ($this->isGet()) {
             if (isset($_GET['zone'])) {
                 $condition['zone_id'] = $_GET['zone'];

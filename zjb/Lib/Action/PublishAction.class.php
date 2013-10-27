@@ -44,6 +44,60 @@ class PublishAction extends Action {
         $this->display();
     }
 
+    public function invest() {
+        if ($this->isPost()) {
+            $info_id = $this->create_info(INVEST);
+
+            $db = M('invest');
+            if (!$db->create()) {
+                $this->error($db->getError());
+            }
+            $db->info_id = $info_id;
+            $area = M('area')->where("id=" . $_POST['zone_id'])->field('name')->find();
+            $db->address = $area['name'] . $_POST['addr'];
+            
+            if (isset($_POST['upload_pic'])) {
+                $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
+                foreach ($_POST['upload_pic'] as $v) {
+                    $db->describe_pic .= $v[0] . '|';
+                }
+                $db->describe_pic = trim($db->describe_pic, '|');
+            }
+            if (!$db->add()) {
+                $this->error('发布失败！');
+            }
+            $this->success("发布成功，等待审核...", 'index');
+        }
+        $this->display();
+    }
+
+    public function loan() {
+        if ($this->isPost()) {
+            $info_id = $this->create_info(LOAN);
+
+            $db = M('loan');
+            if (!$db->create()) {
+                $this->error($db->getError());
+            }
+            $db->info_id = $info_id;
+            $area = M('area')->where("id=" . $_POST['zone_id'])->field('name')->find();
+            $db->address = $area['name'] . $_POST['addr'];
+            
+            if (isset($_POST['upload_pic'])) {
+                $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
+                foreach ($_POST['upload_pic'] as $v) {
+                    $db->describe_pic .= $v[0] . '|';
+                }
+                $db->describe_pic = trim($db->describe_pic, '|');
+            }
+            if (!$db->add()) {
+                $this->error('发布失败！');
+            }
+            $this->success("发布成功，等待审核...", 'index');
+        }
+        $this->display();
+    }
+
     public function rentHouse() {
         if ($this->isPost()) {
             $info_id = $this->create_info(RENT_HOUSE);
@@ -101,7 +155,7 @@ class PublishAction extends Action {
     }
 
     public function rentCar() {
-        
+
         if ($this->isPost()) {
             $info_id = $this->create_info(RENT_CAR);
             $db = M('rentcar');
@@ -138,7 +192,7 @@ class PublishAction extends Action {
         }
         $info->poster_id = session('mid');
         $info->info_catagory = $type; //123456分别与导航栏对应
-        $info->is_verified = intval(session('is_authed'));
+        $info->is_verified = intval( session('is_authed') )+1;
         $info->city_id = session('city_id');
 
         if (!$id = $info->add()) {

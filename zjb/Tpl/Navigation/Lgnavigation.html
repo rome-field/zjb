@@ -1,12 +1,12 @@
 		<div>
-			<ul class="nav nav-tabs navbar nav1">
-				<li class="active"><a href="{:U('Index/index')}">合作商家</a></li>
-				<li><a href="{:U('Buyhouse/index')}">我要买房</a></li>
-				<li><a href="{:U('Renthouse/index')}">我要租房</a></li>
-				<li><a href="{:U('Buycar/index')}">我要买车</a></li>
-				<li><a href="{:U('Rentcar/index')}">我要租车</a></li>
-				<li><a href="{:U('Loan/index')}">我要贷款</a></li>
-				<li><a href="{:U('Invest/index')}">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
+			<ul class="nav nav-pills navbar nav1">
+				<li <if condition="MODULE_NAME eq 'Index'">class="active"</if>><a href="{:U('Index/index')}">合作商家</a></li>
+				<li <if condition="MODULE_NAME eq 'Buyhouse'">class="active"</if>><a href="{:U('Buyhouse/index')}">我要买房</a></li>
+				<li <if condition="MODULE_NAME eq 'Renthouse'">class="active"</if>><a href="{:U('Renthouse/index')}">我要租房</a></li>
+				<li <if condition="MODULE_NAME eq 'Buycar'">class="active"</if>><a href="{:U('Buycar/index')}">我要买车</a></li>
+				<li <if condition="MODULE_NAME eq 'Rentcar'">class="active"</if>><a href="{:U('Rentcar/index')}">我要租车</a></li>
+				<li <if condition="MODULE_NAME eq 'Loan'">class="active"</if>><a href="{:U('Loan/index')}">我要贷款</a></li>
+				<li <if condition="MODULE_NAME eq 'Invest'">class="active"</if>><a href="{:U('Invest/index')}">我要理财</a></li>&nbsp&nbsp&nbsp&nbsp&nbsp
 				<li class="navbar-right" style="text-align:right;"><a href="{:U('Publish/index')}">我要登记</a></li>
 			</ul>
 		</div>
