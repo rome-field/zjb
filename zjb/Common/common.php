@@ -69,11 +69,41 @@ function filterUrl($remove) {
     return __ACTION__ . $url;
 }
 
-
-function getSetValue($arr){
-    foreach ($arr as $v){
+//计算出多选框post过来的数值
+function getSetValue($arr) {
+    foreach ($arr as $v) {
         $t += intval($v);
     }
     return $t;
 }
+
+/**
+ * 返回发布时间字符串
+ * @param type $time
+ */
+function getPublishTime($time) {
+    $now = $_SERVER['REQUEST_TIME'];
+    $str = '';
+    switch ($time) {
+        case $now - $time < 60:
+            $str = ($now - $time) . '秒前';
+            break;
+        case $now - $time < 3600 :
+            $str = floor(($now - $time) / 60) . '分钟前';
+            break;
+        case $now - $time < 3600 * 8:
+            $str = floor(($now - $time) / 3600) . '小时前';
+            break;
+        case strtotime(date('Y-m-d', $now)) < $time:
+            $str = '今天';
+            break;
+        case strtotime(date('Y-m-d', $now) . '-1 day') < $time:
+            $str = '昨天';
+            break;
+        default:
+            $str = date('Y-m-d', $time);
+    }
+    return $str;
+}
+
 ?>

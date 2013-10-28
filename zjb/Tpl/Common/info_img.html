@@ -1,0 +1,24 @@
+<div id="info_img">
+    <div id="zoom_info_img">
+        <if condition="!$thumbs">
+            <img src="__ROOT__/Public/images/nopic.gif" width="250" height="190"/>
+        </if>
+    </div>
+    <div id="myCarousel" class="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <foreach name="thumbs" item="vo">
+                <li data-target="#myCarousel" data-slide-to='{$key}' <if condition="$key eq 0">class='active'</if>></li>
+            </foreach>
+        </ol>
+        <div class="carousel-inner">
+            <foreach name="thumbs" item="vo">
+                <div class="item <if condition='$key eq 0'>active</if>">
+                    <img src="__ROOT__/{$vo}">
+                </div>
+            </foreach>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+</div>

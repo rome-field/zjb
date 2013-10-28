@@ -1,0 +1,29 @@
+/*文章展示页*/
+.main .arc_left{width: 880px;height: auto;overflow: hidden;float: left;}
+.main .arc_left .wrap_arc_info{width: 880px;height: auto;overflow: hidden;margin-bottom: 30px;}
+.main .arc_left .arc_title{width: 758px;height: auto;overflow: hidden;border: 1px solid #cccccc;}
+.main .arc_left .arc_title p{width: 760px;height: 32px;line-height: 32px;background: url(../images/seach.png) repeat-x 0 -102px;font-weight: bold;text-align: center;}
+.main .arc_left .arc_title ul{height: 22px;float: right;}
+.main .arc_left .arc_title ul li{height: 22px;line-height: 22px;float: left;padding: 0 10px;color: #808080;font-size: 12px;}
+
+#info_img{width: 340px;height: 270px;margin-top: 20px;float: left;}
+#zoom_info_img{width: 250px;margin: 0 auto;}
+.carousel-inner > .item > img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+.panel-body > img{
+	max-width: 880px;
+}
+.main .arc_left .arc_info{width: 400px;height: auto;overflow: hidden;float: right;margin:10px 0;padding: 10px 0;}
+.main .arc_left .arc_info ul{width: 400px;height: auto;overflow: hidden;}
+.main .arc_left .arc_info ul li{height: 30px;line-height: 30px;}
+.main .arc_left .arc_info ul li div{float: left;}
+.main .arc_left .arc_info ul li .info_left{width: 80px;text-align: right;}
+.main .arc_right{width: 280px;height: auto;overflow: hidden;float:right;}
+.main .arc_right .arc_author_border{width: 274px;height: auto;overflow: hidden;border: 3px solid #f6f6f6;}
+.main .arc_right .arc_author{width: 272px;height: auto;overflow: hidden;border: 1px solid #cccccc;}
+.main .arc_right .other_msg{width: 280px;height: auto;overflow: hidden;border: 1px solid #cccccc;margin: 10px 0;}
+.main .arc_right .other_msg dt{width: 280px;height: 22px;line-height: 22px;background: url(../images/seach.png) repeat-x 0 -102px;padding:5 5px;}
+.main .arc_right .other_msg dd{line-height: 22px;padding:0 5px;}

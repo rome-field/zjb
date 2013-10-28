@@ -25,7 +25,7 @@ class RentcarAction extends Action {
         array('id' => 6, 'name' => '1000～2000元'),
         array('id' => 8, 'name' => '2000元以上'),
     );
-    protected $s_seats= array(
+    protected $s_seats = array(
         array('id' => 1, 'name' => '5座'),
         array('id' => 2, 'name' => '7座'),
         array('id' => 3, 'name' => '9座'),
@@ -66,7 +66,7 @@ class RentcarAction extends Action {
             if (isset($_GET['type'])) {
                 $condition['type'] = intval($_GET['type']);
             }
-            
+
             if (isset($_GET['seats'])) {
                 $condition['series'] = intval($_GET['seats']);
             }
@@ -76,7 +76,7 @@ class RentcarAction extends Action {
                     $condition['price'] = $vo;
                 }
             }
-            
+
             if (isset($_GET['rank'])) {
                 if ($_GET['rank'] == '1') {
                     $order = 'post_time desc';
@@ -97,6 +97,30 @@ class RentcarAction extends Action {
         $this->assign('list', $list);
         $this->assign('page', $show);
 
+        $this->display();
+    }
+
+    public function view() {
+        if (!$this->isGet()) {
+            $this->error('没有要显示的汽车信息。');
+        }
+        $db = D('RentCarInfoView');
+        if (!$info = $db->where('info_id=' . $_GET['id'])->find()) {
+            $this->error('没有找到要显示的汽车信息');
+        }
+        if ($info['describe_pic']) {
+            $pics = explode('|', $info['describe_pic']);
+            $thumbs = explode('|', $info['thumb_max']);
+            $this->assign('pics', $pics);
+            $this->assign('thumbs', $thumbs);
+        }
+        $this->assign('ptime', getPublishTime($info['edit_time']));
+        $this->assign('info', $info);
+        $map['poster_id'] = $info['user_id'];
+        $map['info_catagory'] = $info['info_catagory'];
+        $map['id'] = array('neq', $_GET['id']);
+        $msg = M('info')->where($map)->field('id,title')->select();
+        $this->assign('msg', $msg);
         $this->display();
     }
 

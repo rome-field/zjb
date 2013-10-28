@@ -50,7 +50,7 @@ class BuyhouseAction extends Action {
         $this->assign('searchArray', $searchArray);
         //设置搜索城市id
         $condition['city_id'] = session('city_id');
-        $condition['info_catagory']=1;
+        $condition['info_catagory'] = 1;
         if ($this->isGet()) {
             if (isset($_GET['zone'])) {
                 $condition['zone_id'] = $_GET['zone'];
@@ -87,6 +87,30 @@ class BuyhouseAction extends Action {
         $this->assign('list', $list);
         $this->assign('page', $show);
 
+        $this->display();
+    }
+
+    public function view() {
+        if (!$this->isGet()) {
+            $this->error('没有要显示的房屋信息。', 'index');
+        }
+        $db = D('HouseInfoView');
+        if (!$info = $db->where('info_id=' . $_GET['id'])->find()) {
+            $this->error('没有找到要显示的房屋信息', 'index');
+        }
+        if ($info['describe_pic']) {
+            $pics = explode('|', $info['describe_pic']);
+            $thumbs = explode('|', $info['thumb_max']);
+            $this->assign('pics', $pics);
+            $this->assign('thumbs', $thumbs);
+        }
+        $this->assign('ptime', getPublishTime($info['edit_time']));
+        $this->assign('info', $info);
+        $map['poster_id'] = $info['user_id'];
+        $map['info_catagory'] = $info['info_catagory'];
+        $map['id'] = array('neq', $_GET['id']);
+        $msg = M('info')->where($map)->field('id,title')->select();
+        $this->assign('msg', $msg);
         $this->display();
     }
 

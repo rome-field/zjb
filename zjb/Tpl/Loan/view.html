@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>
+            我要贷款
+        </title>
+    <include file="./zjb/Tpl/Injection/injection.html"/>
+    <link rel="stylesheet" href="__ROOT__/Public/Home/index.css" type="text/css" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/article.css" type="text/css" />
+
+</head>
+<body>
+    <div id="container" style="width:85%; min-width:1170px;">
+        <include file="Common:top"/>
+        <include file="./zjb/Tpl/Banner/banner.html"/>
+        <include file="./zjb/Tpl/Navigation/navigation.html"/>
+
+        <div class="guide">
+            <legend>贷款信息</legend>
+        </div>
+        <div class="main">
+            <div class="arc_left">
+                <div class="wrap_arc_info">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">{$info.title}</div>
+                        <div class="panel-body">
+                            发布时间:{$ptime}
+                        </div>
+                    </div>
+                    <include file="Common:info_img"/>
+                    <div class="arc_info">
+                        <ul>
+                            <li><div class="info_left">来源：</div><div>{$info.type}</div></li>
+                            <li><div class="info_left">方式：</div><div>{$info.loan_way}</div></li>
+                            <li><div class="info_left">利率：</div><div>{$info.interest_rate}%</div></li>
+                            <li><div class="info_left">手续费：</div><div>{$info.charge}</div></li>
+                            <li><div class="info_left">金额：</div><div>{$info.price}万元</div></li>
+                            <li><div class="info_left">期限：</div><div>{$info.deadline}个月</div></li>
+                            <li><div class="info_left">联系人：</div><div>{$info.contact}</div></li>
+                            <li><div class="info_left">联系电话：</div><div >{$info.contact_phone}</div></li>
+                            <li><div class="info_left">联系地址：</div><div>{$info.address}</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="arc_cons">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">卖家推介</div>
+                        <div class="panel-body">
+                            {$info.describe_text}
+                        </div>
+                    </div>
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">图片展示</div>
+                        <div class="panel-body">
+                            <foreach name="pics" item="v">
+                                <img src="__ROOT__/{$v}"/>
+                            </foreach>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arc_right">
+                <div class="arc_author_border">
+                    <div class="arc_author">
+                        <if condition='$info.user_type'>
+                            <div class="thumbnail">
+                                <a  href="{:U('company/'.$info['company_id'])}"><img src='__ROOT__/{$info.logo}' alt="暂无logo"></a>
+                                <div class="caption">
+                                    <h3  style="text-align: center;">{$info.company_name}</h3>
+                                    <p><span>地址：</span>&nbsp&nbsp &nbsp <span>{$info.company_addr}</span></p>
+                                    <p><span>联系人：</span><span>{$info.username}</span>&nbsp&nbsp &nbsp <span>手机：</span><span>{$info.mobile}</span></p>
+                                </div>
+                            </div>
+                            <else/>
+                            <p class="text-center">{$info.username}</p>
+                            <p class="text-center">{$info.mobile}</p>
+                        </if>
+                    </div>
+
+                </div>
+                <dl class="other_msg">
+                    <dt>该用户发布的其他信息</dt>
+                </dl>
+                <div class="list-group">
+                    <foreach name='msg' item='voo'>
+                        <a href="{:U('loan/'.$voo['id'])}" class="list-group-item">{$voo.title}</a>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+
+        <div class='clear'></div>
+    </div>
+</body>
+</html>

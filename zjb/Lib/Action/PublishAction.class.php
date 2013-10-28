@@ -33,8 +33,10 @@ class PublishAction extends Action {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumb_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -55,13 +57,15 @@ class PublishAction extends Action {
             $db->info_id = $info_id;
             $area = M('area')->where("id=" . $_POST['zone_id'])->field('name')->find();
             $db->address = $area['name'] . $_POST['addr'];
-            
+
             if (isset($_POST['upload_pic'])) {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumb_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -82,13 +86,15 @@ class PublishAction extends Action {
             $db->info_id = $info_id;
             $area = M('area')->where("id=" . $_POST['zone_id'])->field('name')->find();
             $db->address = $area['name'] . $_POST['addr'];
-            
+
             if (isset($_POST['upload_pic'])) {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumb_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -116,8 +122,10 @@ class PublishAction extends Action {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumb_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -142,8 +150,10 @@ class PublishAction extends Action {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumb_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -170,8 +180,10 @@ class PublishAction extends Action {
                 $db->cover = $_POST['upload_pic'][1][2]; //默认以中等缩略图为封面
                 foreach ($_POST['upload_pic'] as $v) {
                     $db->describe_pic .= $v[0] . '|';
+                    $db->thumb_max .= $v[2] . '|';
                 }
-                $db->describe_pic = trim($db->describe_pic, '|');
+                $db->describe_pic = rtrim($db->describe_pic, '|');
+                $db->thumbe_max = trim($db->thumb_max, '|');
             }
             if (!$db->add()) {
                 $this->error('发布失败！');
@@ -192,7 +204,7 @@ class PublishAction extends Action {
         }
         $info->poster_id = session('mid');
         $info->info_catagory = $type; //123456分别与导航栏对应
-        $info->is_verified = intval( session('is_authed') )+1;
+        $info->is_verified = intval(session('is_authed')) + 1;
         $info->city_id = session('city_id');
 
         if (!$id = $info->add()) {

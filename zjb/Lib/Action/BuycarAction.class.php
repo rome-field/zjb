@@ -139,6 +139,30 @@ class BuycarAction extends Action {
         $this->display();
     }
 
+    public function view() {
+        if (!$this->isGet()) {
+            $this->error('没有要显示的汽车信息。');
+        }
+        $db = D('BuyCarInfoView');
+        if (!$info = $db->where('info_id=' . $_GET['id'])->find()) {
+            $this->error('没有找到要显示的汽车信息', 'index');
+        }
+        if ($info['describe_pic']) {
+            $pics = explode('|', $info['describe_pic']);
+            $thumbs = explode('|', $info['thumb_max']);
+            $this->assign('pics', $pics);
+            $this->assign('thumbs', $thumbs);
+        }
+        $this->assign('ptime', getPublishTime($info['edit_time']));
+        $this->assign('info', $info);
+        $map['poster_id'] = $info['user_id'];
+        $map['info_catagory'] = $info['info_catagory'];
+        $map['id'] = array('neq', $_GET['id']);
+        $msg = M('info')->where($map)->field('id,title')->select();
+        $this->assign('msg', $msg);
+        $this->display();
+    }
+
     private function setPriceCondition($v) {
         switch ($v) {
             case '1':
@@ -178,19 +202,19 @@ class BuycarAction extends Action {
                 $cond = array('eq', $thisyear);
                 break;
             case '2':
-                $cond = array('between', ($thisyear-1).','.($thisyear-2));
+                $cond = array('between', ($thisyear - 1) . ',' . ($thisyear - 2));
                 break;
             case '3':
-                $cond = array('between', ($thisyear-3).','.($thisyear-5));
+                $cond = array('between', ($thisyear - 3) . ',' . ($thisyear - 5));
                 break;
             case '4':
-                $cond = array('between', ($thisyear-6).','.($thisyear-8));
+                $cond = array('between', ($thisyear - 6) . ',' . ($thisyear - 8));
                 break;
             case '5':
-                $cond = array('between', ($thisyear-9).','.($thisyear-11));
+                $cond = array('between', ($thisyear - 9) . ',' . ($thisyear - 11));
                 break;
             case '6':
-                $cond = array('gt', $thisyear-11);
+                $cond = array('gt', $thisyear - 11);
                 break;
             default :
                 $cond = 0;
