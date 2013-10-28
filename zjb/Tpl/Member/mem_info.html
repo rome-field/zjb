@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>管理页面</title>
+        <script src="__PUBLIC__/admin/js/prototype.lite.js" type="text/javascript"></script>
+        <script src="__PUBLIC__/admin/js/moo.fx.js" type="text/javascript"></script>
+        <script src="__PUBLIC__/admin/js/moo.fx.pack.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
+        <style>
+            body {
+                font-size:12px;
+                font-family:"宋体";
+                color: #000;
+                background-color: #EEF2FB;
+                margin: 0px;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body style="background:#fff">
+        <div class="cs">
+
+            <form class="form-horizontal" action="{:U('Member/mem_info')}" method='post'>
+                <fieldset>
+                    <div id="legend" >
+                        <legend >个人信息</legend>
+                    </div>
+
+                    <div class="control-group">
+
+                        <!-- Text input-->
+                        <label class="control-label" >用户名 </label>
+                        <div class="controls">
+                            <input type="text" name='username' placeholder="{$user.username}" class="input-xlarge">
+                                <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+
+                        <!-- Text input-->
+                        <label class="control-label" >邮箱</label>
+                        <div class="controls">
+                            <input type="text" name='email' placeholder="{$user.email}" class="input-xlarge">
+                                <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+
+                        <!-- Text input-->
+                        <label class="control-label" for="input01">手机(登录帐号)</label>
+                        <div class="controls">
+                            <input type="text" name='mobile' placeholder="{$user.mobile}" class="input-xlarge">
+                                <p class="help-block"></p>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label"></label>
+
+                        <!-- Button -->
+                        <div class="controls">
+                            <button class="btn btn-default">确定</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </body>
+</html>
