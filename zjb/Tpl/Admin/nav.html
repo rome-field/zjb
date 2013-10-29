@@ -1,65 +1,24 @@
-<div class="navbar navbar-fixed-top navbar-inverse">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<a class="btn btn-navbar" data-target="nav-collapse" data-toggle="collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			
-			<a class="brand" href="{:W('Parameter','PROJECT_URL',true)}">{:W('Parameter','PROJECT_NAME',true)}</a>
-			<div class="nav-collapse">
-				{:W('Menu',array('location'=>'top','level'=>'0'),false)}
-				<ul class="nav pull-right">
-					<present name="Think.session.username">
-						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						{$Think.session.username}<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Profile</a>
-							</li>
-							<li>
-								<a href="#">Other Action</a>
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-							<li class="divider"/>
-							<li>
-								<a href="{:U('Login/logout')}">退出</a>
-							</li>
-						</ul>
-					</li>
-						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						设置<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Action</a>
-							</li>
-							<li>
-								<a href="#">Other Action</a>
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-							<li class="divider"/>
-							<li class="nav-header">导航头</li>
-							<li>
-								<a href="#">Separated link</a>
-							</li>
-						</ul>
-					</li>
-					<else /> 
-						<li><a href="{:U('Adminlogin/login')}">Login</a></li>
-						<li><a href="{:U('Admin/signup')}">Signup</a></li>
-					</present>
-				</ul>
-				
-			</div>
-		</div>
-	</div>
+<div class="navbar navbar-fixed-top navbar-inverse" role='navigation'>
+
+    <div class="navbar-header">
+        <a class="navbar-brand" href="{:U('Index/index')}">中介帮管理中心</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li <if condition="ACTION_NAME eq 'index'"> class="active"</if>>
+            <a href="{:U('Admin/index')}" >首页</a>
+        </li>
+        <li <if condition="ACTION_NAME eq 'company_auth'"> class="active"</if>>
+            <a href="{:U('Admin/company_auth')}">商家会员认证审核</a>
+        </li>
+        <li <if condition="ACTION_NAME eq 'info_auth'"> class="active"</if>>
+            <a href="{:U('Admin/info_auth')}">信息审核</a>
+        </li>
+        <li <if condition="ACTION_NAME eq 'branch'"> class="active"</if>>
+            <a href="{:U('Admin/branch')}">分站管理</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">{$Think.session.admin_name}</p></li>
+        <li><a href="{:U('Admin/logout')}">安全登出</a></li>
+    </ul>
 </div>
