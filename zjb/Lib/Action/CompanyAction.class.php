@@ -6,7 +6,7 @@ class CompanyAction extends Action{
     
     //显示商家主页
     function showIndex(){
-      $this->redirect('Index/login');
+      //$this->redirect('Index/login');
     }
 	
 

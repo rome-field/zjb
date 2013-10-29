@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_company` (
   `business` VARCHAR(60) NOT NULL,
   `re_time` INT(10) UNSIGNED NOT NULL DEFAULT 0,
   `recommends` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '推荐人数',
+  `is_checked` ENUM('未审核','已审核') NOT NULL DEFAULT '未审核',
   PRIMARY KEY (`id`),
   INDEX `name` (`name` ASC),
   INDEX `address` (`address` ASC))
@@ -66,6 +67,7 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_house` (
   `equipment` SET('床','家具','煤气','暖气','宽带','电视','空调','冰箱','洗衣机','热水器','厨房设施') NULL DEFAULT NULL,
   `cover` VARCHAR(250) NULL DEFAULT NULL,
   `describe_text` TEXT NULL DEFAULT NULL,
+  `thumb_max` VARCHAR(500) NULL DEFAULT NULL COMMENT '缩略图',
   `describe_pic` VARCHAR(500) NULL DEFAULT NULL,
   `address` CHAR(40) NOT NULL COMMENT '小区地址名称',
   `finish_level` ENUM('毛坯','简单装修','中等装修','精装修','豪华装修') NOT NULL COMMENT '毛坯，简单装修，精装修',
@@ -92,19 +94,20 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_sellcar` (
   `type` ENUM('轿车','越野SUV','MPV','跑车','客车','货车','面包车','皮卡','工程车') NOT NULL COMMENT '轿车，商务，面包',
   `series` ENUM('捷达','帕萨特','速腾','QQ3','A6L','宝来（经典）','凯越','雅阁','凯美瑞','思域','桑塔纳','伊兰特','马自达6','POLO') NOT NULL COMMENT '车系',
   `miles` MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 COMMENT '里程数',
-  `commerical_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '保险到期时间',
+  `commercial_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '保险到期时间',
   `yearcheck_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '上牌时间',
   `jiaoqiangxian_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '年检时间',
   `year` YEAR NOT NULL,
   `price` MEDIUMINT UNSIGNED NOT NULL,
-  `use` ENUM('非营运','营运','营转非','租赁') NULL DEFAULT NULL,
+  `useful` ENUM('非营运','营运','营转非','租赁') NULL,
   `maintain` ENUM('4S店定期保养','非4S店定期保养','无定期保养') NOT NULL COMMENT '保养维护',
   `accident` ENUM('无重大事故','有重大事故') NOT NULL COMMENT '重大事故',
   `speedgear` ENUM('手动','自动') NOT NULL COMMENT '变速',
   `new_level` ENUM('九成新','八成新','七成新','六成新','五成新','四成新','三成新') NOT NULL,
   `color` ENUM('白色','银白色','黑色','灰色','银灰色','香槟银色','铁灰色','灰紫蓝色','青灰色','绿色','深绿色','深灰绿色','淡蓝色','湖蓝色','天蓝色','蓝色','淡紫色','粉红色','紫色','酱紫色','深紫色','浅香槟色','金色','珍珠白色','淡黄色','中黄色','黄色','橙色','红色','暗红色','深红色','灰赭色','赭色','褐色','深褐色','其他') NULL DEFAULT NULL,
   `output` CHAR(6) NOT NULL COMMENT '排量',
-  `describe_text` VARCHAR(500) NULL DEFAULT NULL,
+  `describe_text` TEXT NULL DEFAULT NULL,
+  `thumb_max` VARCHAR(500) NULL,
   `describe_pic` VARCHAR(500) NULL DEFAULT NULL,
   `cover` VARCHAR(150) NULL DEFAULT NULL,
   `contact` VARCHAR(45) NOT NULL,
@@ -113,6 +116,22 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_sellcar` (
   PRIMARY KEY (`id`),
   INDEX `info_id` (`info_id` ASC))
 ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_area`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_area` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_area` (
+  `id` MEDIUMINT(8) UNSIGNED NOT NULL,
+  `name` VARCHAR(40) NOT NULL,
+  `level` TINYINT(4) UNSIGNED NOT NULL,
+  `pid` MEDIUMINT(8) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `pid` (`pid` ASC))
+ENGINE = MyISAM
+PACK_KEYS = 1;
 
 
 -- -----------------------------------------------------
@@ -157,8 +176,9 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_rentcar` (
   `speedgear` ENUM('手动','自动') NOT NULL COMMENT '变速',
   `new_level` ENUM('九成新','八成新','七成新','六成新','五成新','四成新','三成新') NOT NULL,
   `output` CHAR(7) NOT NULL COMMENT '排量',
-  `describe_text` VARCHAR(500) NULL DEFAULT NULL,
+  `describe_text` TEXT NULL DEFAULT NULL,
   `describe_pic` VARCHAR(500) NULL DEFAULT NULL,
+  `thumb_max` VARCHAR(500) NULL,
   `cover` VARCHAR(200) NULL DEFAULT NULL,
   `contact` VARCHAR(45) NOT NULL,
   `contact_phone` CHAR(14) NOT NULL,
@@ -183,8 +203,9 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_invest` (
   `refund_way` VARCHAR(45) NOT NULL COMMENT '还款方式\n',
   `price` SMALLINT UNSIGNED NOT NULL COMMENT '金额：万',
   `deadline` TINYINT UNSIGNED NOT NULL COMMENT '期限：月\n',
-  `describe_text` VARCHAR(500) NULL DEFAULT NULL,
+  `describe_text` TEXT NULL DEFAULT NULL,
   `describe_pic` VARCHAR(500) NULL DEFAULT NULL,
+  `thumb_max` VARCHAR(500) NULL DEFAULT NULL,
   `cover` VARCHAR(100) NULL DEFAULT NULL,
   `address` VARCHAR(100) NOT NULL,
   `contact` VARCHAR(45) NOT NULL,
@@ -209,13 +230,47 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_loan` (
   `price` SMALLINT UNSIGNED NOT NULL,
   `deadline` TINYINT UNSIGNED NOT NULL,
   `cover` VARCHAR(100) NULL DEFAULT NULL,
-  `describe_text` VARCHAR(500) NULL DEFAULT NULL,
+  `describe_text` TEXT NULL DEFAULT NULL,
   `describe_pic` VARCHAR(500) NULL DEFAULT NULL,
+  `thumb_max` VARCHAR(500) NULL,
   `address` VARCHAR(45) NOT NULL,
   `contact` VARCHAR(20) NOT NULL,
   `contact_phone` CHAR(14) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `info_id` (`info_id` ASC))
+ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_admin`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_admin` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_admin` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` CHAR(20) NOT NULL,
+  `password` CHAR(32) NOT NULL,
+  `city_id` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 1943,
+  `user_type` BIT(1) NOT NULL DEFAULT 0 COMMENT '默认分站',
+  PRIMARY KEY (`id`),
+  INDEX `cityid` (`city_id` ASC),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC))
+ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_citylist`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_citylist` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_citylist` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `city_id` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 1943,
+  `ads` VARCHAR(500) NULL COMMENT '轮播图片',
+  `business_corp` VARCHAR(25) NULL COMMENT '商家合作电话',
+  `fund_corp` VARCHAR(25) NULL COMMENT '资金合作电话',
+  PRIMARY KEY (`id`),
+  INDEX `cityid` (`city_id` ASC))
 ENGINE = MyISAM;
 
 

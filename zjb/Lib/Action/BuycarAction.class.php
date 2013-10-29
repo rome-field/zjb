@@ -39,6 +39,7 @@ class BuycarAction extends Action {
         array('id' => 20, 'name' => '标致'),
         array('id' => 21, 'name' => '其他'),
     );
+    /*
     protected $s_series = array(
         array('id' => 1, 'name' => '捷达'),
         array('id' => 2, 'name' => '帕萨特'),
@@ -53,7 +54,7 @@ class BuycarAction extends Action {
         array('id' => 11, 'name' => '桑塔纳'),
         array('id' => 12, 'name' => '马自达6'),
         array('id' => 13, 'name' => 'POLO'),
-    );
+    );*/
     protected $s_price = array(
         array('id' => 1, 'name' => '1万以下'),
         array('id' => 2, 'name' => '1～2万'),
@@ -64,6 +65,7 @@ class BuycarAction extends Action {
         array('id' => 7, 'name' => '8～10万'),
         array('id' => 8, 'name' => '10万以上'),
     );
+    /*
     protected $s_age = array(
         array('id' => 1, 'name' => '1年以下'),
         array('id' => 2, 'name' => '1～2年'),
@@ -72,6 +74,8 @@ class BuycarAction extends Action {
         array('id' => 5, 'name' => '9～11年'),
         array('id' => 6, 'name' => '12年以上'),
     );
+     * 
+     */
     protected $s_rank = array(
         array('id' => 1, 'name' => '最新'),
         array('id' => 2, 'name' => '售价'),
@@ -83,9 +87,9 @@ class BuycarAction extends Action {
             array('name' => '区域', 'key' => 'zone', 'default' => '不限', 'data' => session('city_zones')),
             array('name' => '车型', 'key' => 'type', 'default' => '不限', 'data' => $this->s_type),
             array('name' => '品牌', 'key' => 'brand', 'default' => '不限', 'data' => $this->s_brand),
-            array('name' => '车系', 'key' => 'series', 'default' => '不限', 'data' => $this->s_series),
+            //array('name' => '车系', 'key' => 'series', 'default' => '不限', 'data' => $this->s_series),
             array('name' => '售价', 'key' => 'price', 'default' => '不限', 'data' => $this->s_price),
-            array('name' => '车龄', 'key' => 'age', 'default' => '不限', 'data' => $this->s_age),
+           // array('name' => '车龄', 'key' => 'age', 'default' => '不限', 'data' => $this->s_age),
             array('name' => '排序', 'key' => 'rank', 'default' => '默认', 'data' => $this->s_rank),
         );
         $this->assign('searchArray', $searchArray);
@@ -101,14 +105,15 @@ class BuycarAction extends Action {
             if (isset($_GET['brand'])) {
                 $condition['brand'] = intval($_GET['brand']);
             }
-            if (isset($_GET['series'])) {
-                $condition['series'] = intval($_GET['series']);
-            }
             if (isset($_GET['price'])) {
                 $vo = $this->setPriceCondition($_GET['price']);
                 if ($vo) {
                     $condition['price'] = $vo;
                 }
+            }
+            /*
+            if (isset($_GET['series'])) {
+                $condition['series'] = intval($_GET['series']);
             }
             if (isset($_GET['age'])) {
                 $vo = $this->setAgeCondition($_GET['age']);
@@ -116,6 +121,7 @@ class BuycarAction extends Action {
                     $condition['year'] = $vo;
                 }
             }
+             */
             if (isset($_GET['rank'])) {
                 if ($_GET['rank'] == '1') {
                     $order = 'post_time desc';
@@ -195,6 +201,7 @@ class BuycarAction extends Action {
         return $cond;
     }
 
+    /*
     private function setAgeCondition($v) {
         $thisyear = intval(date('Y'));
         switch ($v) {
@@ -220,7 +227,7 @@ class BuycarAction extends Action {
                 $cond = 0;
         }
         return $cond;
-    }
+    }*/
 
 }
 
