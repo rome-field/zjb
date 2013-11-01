@@ -15,7 +15,7 @@
                 <div class="form-group "> <strong class="text-danger">类别：</strong></div>
                 <div class="form-group">
                     <select name="type_d" class="form-control">
-                        <option value="0">不限</option>
+                        <option >不限</option>
                         <option value="1">房产中介</option>
                         <option value="2">汽车服务</option>
                         <option value="3">金融担保</option>
@@ -32,13 +32,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="shi" class="form-control" onchange="loadRegion('shiqu', 3, 'town', '{:U(\'Ajax/getRegion\')}');">
+                    <select name="shi" class="form-control">
                         <option value="0">城市选择</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select name="town" class="form-control">
-                        <option value="0">县区选择</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">确定</button>
@@ -52,6 +47,8 @@
                         <th>类型</th>
                         <th>公司名称</th>
                         <th>所属城市</th>
+                        <th>联系人</th>
+                        <th>联系电话</th>
                         <th>地址</th>
                         <th>是否审核</th>
                         <th>通过审核</th>
@@ -65,10 +62,21 @@
                             <td>{$vo.company_type}</td>
                             <td>{$vo.name}</td>
                             <td>{$vo.city_name}</td>
+                            <td>{$vo.username}</td>
+                            <td>{$vo.mobile}</td>
                             <td>{$vo.address}</td>
                             <td>{$vo.is_checked}</td>
-                            <td><if condition="$vo.is_verified">通过<else/>未通过</if></td>
+                            <td><if condition="$vo.is_authed eq '1'">已通过<else/>未通过</if></td>
                             <td>    
+                                【<a href="{:U('Company/view?id='.$vo['id'])}" target='company_view'>查看</a>】
+                                <if condition="$vo.is_checked eq '未审核'">
+                                    【<a href="{:U('Admin/company_auth?approval='.$vo['id'])}" >批准</a>】
+                                    【<a href="{:U('Admin/company_auth?reject='.$vo['id'])}">不批准</a>】
+                                <elseif condition="$vo.is_authed" />
+                                    【<a href="{:U('Admin/company_auth?reject='.$vo['id'])}">不批准</a>】
+                                <else/>
+                                    【<a href="{:U('Admin/company_auth?approval='.$vo['id'])}" >批准</a>】
+                                </if>
                             </td>
                         </tr>
                     </volist>
