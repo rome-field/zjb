@@ -50,24 +50,17 @@ class AdminAction extends Action {
 
     public function company_ops() {
 
-        if ($this->isGet()) {
-
-            if (isset($_GET['approval'])) { //批准
-                $data['is_checked'] = 2;
-                $data['id'] = $_GET['approval'];
-                $data['User'] = array('is_authed' => 1);
-                D('Company')->relation(true)->where('id=' . $_GET['approval'])->save($data);
-              //  $param = filterUrlParam('approval');
-            } elseif (isset($_GET['reject'])) {//不批准
-                $data['is_checked'] = 2;
-                $data['id'] = $_GET['reject'];
-                $data['User'] = array('is_authed' => 0);
-                D('Company')->relation(true)->where('id=' . $_GET['reject'])->save($data);
-              //  $param = filterUrlParam('reject');
-            }
-            //$this->redirect('Admin/company_auth',$param);
+        if ($_REQUEST['option'] == 'approval') { //批准
+            $data['User'] = array('is_authed' => 1);
+        } elseif ($_REQUEST['option'] == 'reject') {//不批准
+            $data['User'] = array('is_authed' => 0);
+        } else {
+            return 0;
         }
-        exit;
+        $data['is_checked'] = 2;
+        $data['id'] = intval($_REQUEST['cid']);
+        D('Company')->relation(true)->where('id=' . $_REQUEST['cid'])->save($data);
+        return 1;
     }
 
     public function company_auth() {
@@ -112,6 +105,42 @@ class AdminAction extends Action {
     }
 
     public function info_auth() {
+        if ($this->isGet()) {
+            if (isset($_GET['type']) && $_GET['type'] != '不限') {
+                $this->condition['company_type'] = intval($_GET['type']);
+            }
+            if (!empty($_GET['shi']) && $_GET['shi'] != '0') {
+                $this->condition['city_id'] = $_GET['shi'];
+                $v = M('area')->where('id=' . $_GET['shi'])->find();
+                if ($v) {
+                    $this->assign('cur_city', $v);
+                }
+            }
+            if (isset($_GET['auth'])) {
+                if ($_GET['auth'] == '1') {
+                    $this->condition['is_checked'] = 1;
+                } elseif ($_GET['auth'] == '2') {
+                    $this->condition['is_authed'] = 1;
+                } elseif ($_GET['auth'] == '3') {
+                    $this->condition['is_checked'] = 2;
+                    $this->condition['is_authed'] = 0;
+                }
+            }
+        }
+        if (empty($this->condition)) {
+            $this->condition['is_checked'] = 1;
+        }
+        $order = 'create_at desc'; //默认按时间排序
+        $db = D('CompanyView');
+        $counts = $db->where($this->condition)->count();
+        import('ORG.Util.Page');
+        $Page = new Page($counts, C('NUM_PER_PAGE'));
+        $show = $Page->show();
+        $list = $db->where($this->condition)->order($order)->limit($Page->firstRow . ',' . $Page->listRows)->select();
+        $this->assign('list', $list);
+        $this->assign('page', $show);
+        $province = M('area')->where('level=1')->select();
+        $this->assign('province', $province);
         $this->display();
     }
 

@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <form class="form-inline well well-sm" role="form" action="{:U('Admin/company_auth')}" method='get'>
+            <form class="form-inline well well-sm" role="form" action="{:U('Admin/info_auth')}" method='get'>
                 <div class="form-group"> <strong class="text-danger">状态：</strong></div>
                 <div class="form-group">
                     <select name="auth" class="form-control">
@@ -16,9 +16,12 @@
                 <div class="form-group">
                     <select name="type" class="form-control">
                         <option >不限</option>
-                        <option value="1" <if condition="$Think.get.type eq '1'">selected='selected'</if>>房产中介</option>
-                        <option value="2" <if condition="$Think.get.type eq '2'">selected='selected'</if>>汽车服务</option>
-                        <option value="3" <if condition="$Think.get.type eq '3'">selected='selected'</if>>金融担保</option>
+                        <option value="1" <if condition="$Think.get.type eq '1'">selected='selected'</if>>卖房信息</option>
+                        <option value="2" <if condition="$Think.get.type eq '2'">selected='selected'</if>>租房信息</option>
+                        <option value="3" <if condition="$Think.get.type eq '3'">selected='selected'</if>>二手车</option>
+                        <option value="4" <if condition="$Think.get.type eq '4'">selected='selected'</if>>租车信息</option>
+                        <option value="5" <if condition="$Think.get.type eq '5'">selected='selected'</if>>贷款信息</option>
+                        <option value="6" <if condition="$Think.get.type eq '6'">selected='selected'</if>>理财信息</option>
                     </select>
                 </div>
                 <div class="form-group"> <strong class="text-danger">地点：</strong></div>
@@ -48,11 +51,11 @@
                     <tr class="align-center">
                         <th>序号</th>
                         <th>类型</th>
-                        <th>公司名称</th>
-                        <th>所属城市</th>
-                        <th>联系人</th>
+                        <th>标题</th>
+                        <th>发帖者</th>
                         <th>联系电话</th>
-                        <th>地址</th>
+                        <th>所属城市</th>
+                        <th>发帖时间</th>
                         <th>是否审核</th>
                         <th>通过审核</th>
                         <th>操作</th>
@@ -62,8 +65,8 @@
                     <volist name="list" id="vo">
                         <tr>
                             <td>{$i}</td>
-                            <td>{$vo.company_type}</td>
-                            <td>{$vo.name}</td>
+                            <td>{$vo.info_catagory}</td>
+                            <td>{$vo.title}</td>
                             <td>{$vo.city_name}</td>
                             <td>{$vo.username}</td>
                             <td>{$vo.mobile}</td>
