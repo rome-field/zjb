@@ -10,11 +10,12 @@ class CompanyAction extends Action{
     }
     
     function view(){
-        if(!$_GET['id']){
-            if(!$corp=D('CompanyView')->where('id='.$_GET['id'])->find()){
+        if($_GET['id']){
+            $corp=D('CompanyView')->where('Company.id='.$_GET['id'])->find();
+            if(!$corp){
                 $this->error('未找到商家！');
             }
-            $this->assign('company_info',$corp);
+            $this->assign('vo',$corp);
             $this->display();
         }  else {
         

@@ -48,38 +48,56 @@ class AdminAction extends Action {
         $this->display();
     }
 
-    public function company_auth() {
+    public function company_ops() {
+
         if ($this->isGet()) {
-            $data['is_checked'] = 2;
+
             if (isset($_GET['approval'])) { //批准
+                $data['is_checked'] = 2;
+                $data['id'] = $_GET['approval'];
                 $data['User'] = array('is_authed' => 1);
                 D('Company')->relation(true)->where('id=' . $_GET['approval'])->save($data);
+              //  $param = filterUrlParam('approval');
             } elseif (isset($_GET['reject'])) {//不批准
+                $data['is_checked'] = 2;
+                $data['id'] = $_GET['reject'];
                 $data['User'] = array('is_authed' => 0);
                 D('Company')->relation(true)->where('id=' . $_GET['reject'])->save($data);
+              //  $param = filterUrlParam('reject');
+            }
+            //$this->redirect('Admin/company_auth',$param);
+        }
+        exit;
+    }
+
+    public function company_auth() {
+        if ($this->isGet()) {
+
+            if (isset($_GET['type']) && $_GET['type'] != '不限') {
+                $this->condition['company_type'] = intval($_GET['type']);
+            }
+            if (!empty($_GET['shi']) && $_GET['shi'] != '0') {
+                $this->condition['city_id'] = $_GET['shi'];
+                $v = M('area')->where('id=' . $_GET['shi'])->find();
+                if ($v) {
+                    $this->assign('cur_city', $v);
+                }
+            }
+            if (isset($_GET['auth'])) {
+                if ($_GET['auth'] == '1') {
+                    $this->condition['is_checked'] = 1;
+                } elseif ($_GET['auth'] == '2') {
+                    $this->condition['is_authed'] = 1;
+                } elseif ($_GET['auth'] == '3') {
+                    $this->condition['is_checked'] = 2;
+                    $this->condition['is_authed'] = 0;
+                }
             }
         }
-
-        if ($this->isPost()) {
-            if(isset($_POST['type_d'])){
-                $this->condition['company_type'] = $_POST['type_d'];
-            }
-            if(!empty($_POST['shi'])){
-                $this->condition['city_id'] = $_POST['shi'];
-            }
-            if($_POST['auth_d'] == '1'){
-                $this->condition['is_checked'] = 1;
-            }elseif($_POST['auth_d']=='2'){
-                $this->condition['is_authed']=1;
-            }elseif ($_POST['auth_d']=='3') {
-                $this->condition['is_checked'] =1;
-                $this->condition['is_authed'] = 0;
-            }
-        } 
-        if(empty($this->condition)){
+        if (empty($this->condition)) {
             $this->condition['is_checked'] = 1;
         }
-        $order = 'create_at desc';//默认按时间排序
+        $order = 'create_at desc'; //默认按时间排序
         $db = D('CompanyView');
         $counts = $db->where($this->condition)->count();
         import('ORG.Util.Page');

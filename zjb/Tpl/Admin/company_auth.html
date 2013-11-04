@@ -3,28 +3,28 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <form class="form-inline" role="form" action="{:U('Admin/company_auth')}" method='post'>
+            <form class="form-inline well well-sm" role="form" action="{:U('Admin/company_auth')}" method='get'>
                 <div class="form-group"> <strong class="text-danger">状态：</strong></div>
                 <div class="form-group">
-                    <select name="auth_d" class="form-control">
-                        <option value="1">未审核</option>
-                        <option value="2">审核通过</option>
-                        <option value="3">审核未通过</option>
+                    <select name="auth" class="form-control">
+                        <option value="1" <if condition="$Think.get.auth eq '1'">selected='selected'</if>>未审核</option>
+                        <option value="2" <if condition="$Think.get.auth eq '2'">selected='selected'</if>>审核通过</option>
+                        <option value="3" <if condition="$Think.get.auth eq '3'">selected='selected'</if>>审核未通过</option>
                     </select>
                 </div>
                 <div class="form-group "> <strong class="text-danger">类别：</strong></div>
                 <div class="form-group">
-                    <select name="type_d" class="form-control">
+                    <select name="type" class="form-control">
                         <option >不限</option>
-                        <option value="1">房产中介</option>
-                        <option value="2">汽车服务</option>
-                        <option value="3">金融担保</option>
+                        <option value="1" <if condition="$Think.get.type eq '1'">selected='selected'</if>>房产中介</option>
+                        <option value="2" <if condition="$Think.get.type eq '2'">selected='selected'</if>>汽车服务</option>
+                        <option value="3" <if condition="$Think.get.type eq '3'">selected='selected'</if>>金融担保</option>
                     </select>
                 </div>
                 <div class="form-group"> <strong class="text-danger">地点：</strong></div>
                 <script type="text/javascript" src="__ROOT__/Public/js/region.js"></script>
                 <div class="form-group">
-                    <select name="sheng" class="form-control" onchange="loadRegion('sheng', 2, 'shiqu', '{:U(\'Ajax/getRegion\')}');">
+                    <select id='sheng' name="sheng" class="form-control" onchange="loadRegion('sheng', 2, 'shiqu', '{:U(\'Ajax/getRegion\')}');">
                         <option value='0'>省份选择</option>
                         <volist name="province" id="area">
                             <option value="{$area.id}">{$area.name}</option>
@@ -32,8 +32,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <select name="shi" class="form-control">
+                    <select id='shiqu' name="shi" class="form-control">
+                        <if condition='isset($cur_city)'>
+                            <option value='{$cur_city.id}'>{$cur_city.name}</option><else/>
                         <option value="0">城市选择</option>
+                        </if>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">确定</button>
@@ -70,12 +73,12 @@
                             <td>    
                                 【<a href="{:U('Company/view?id='.$vo['id'])}" target='company_view'>查看</a>】
                                 <if condition="$vo.is_checked eq '未审核'">
-                                    【<a href="{:U('Admin/company_auth?approval='.$vo['id'])}" >批准</a>】
-                                    【<a href="{:U('Admin/company_auth?reject='.$vo['id'])}">不批准</a>】
-                                <elseif condition="$vo.is_authed" />
-                                    【<a href="{:U('Admin/company_auth?reject='.$vo['id'])}">不批准</a>】
+                                    【<a href="{:U('Admin/company_ops?approval='.$vo['id'])}" >批准</a>】
+                                    【<a href="{:U('Admin/company_ops?reject='.$vo['id'])}">不批准</a>】
+                                <elseif condition="$vo.is_authed eq '1'" />
+                                    【<a href="{:U('Admin/company_ops?reject='.$vo['id'])}">不批准</a>】
                                 <else/>
-                                    【<a href="{:U('Admin/company_auth?approval='.$vo['id'])}" >批准</a>】
+                                    【<a href="{:U('Admin/company_ops?approval='.$vo['id'])}" >批准</a>】
                                 </if>
                             </td>
                         </tr>
