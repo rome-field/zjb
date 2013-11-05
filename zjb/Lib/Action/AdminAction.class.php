@@ -235,7 +235,7 @@ class AdminAction extends Action {
             $this->success('操作成功！', 'branch');
             exit;
         }
-        if ($this->isGet()) {//修改分站信息
+        if (isset($_GET['cid'])) {//修改分站信息
             $this->assign('edit', $_GET['cid']);
             $this->assign('cname', $_GET['cname']);
         } else {
