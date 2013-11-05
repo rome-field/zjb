@@ -270,7 +270,8 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_citylist` (
   `business_corp` VARCHAR(25) NULL COMMENT '商家合作电话',
   `fund_corp` VARCHAR(25) NULL COMMENT '资金合作电话',
   PRIMARY KEY (`id`),
-  INDEX `cityid` (`city_id` ASC))
+  INDEX `cityid` (`city_id` ASC),
+  UNIQUE INDEX `city_id_UNIQUE` (`city_id` ASC))
 ENGINE = MyISAM;
 
 
