@@ -18,6 +18,8 @@ class AdminloginAction extends Action {
                     session('full_admin',1);//设置全能管理员
                 }else{
                     session('admin_city',$user['city_id']);//设置分站管理员
+                    $area = M('area')->where('id='.$user['city_id'])->find();
+                    session('admin_city_name',$area['name']);
                 }
                 session('admin_name',$user['username']);//设置管理员名称
                 $this->redirect('Admin/index');

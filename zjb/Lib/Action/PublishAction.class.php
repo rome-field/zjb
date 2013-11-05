@@ -205,6 +205,7 @@ class PublishAction extends Action {
         $info->poster_id = session('mid');
         $info->info_catagory = $type; //123456分别与导航栏对应
         $info->is_verified = intval(session('is_authed')) + 1;
+        $this->is_checked = session('is_authed')?2:1;
         $info->city_id = session('city_id');
 
         if (!$id = $info->add()) {

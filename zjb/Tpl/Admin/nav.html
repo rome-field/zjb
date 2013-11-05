@@ -1,21 +1,27 @@
 <div class="navbar navbar-fixed-top navbar-inverse" role='navigation'>
 
     <div class="navbar-header">
-        <a class="navbar-brand" href="{:U('Index/index')}">中介帮管理中心</a>
+        <a class="navbar-brand" href="{:U('Index/index')}">
+            中介帮<if condition="!session('?full_admin')">
+                <strong class="text-danger">{$Think.session.admin_city_name}站</strong>
+            </if>管理中心
+        </a>
     </div>
     <ul class="nav navbar-nav">
         <li <if condition="ACTION_NAME eq 'index'"> class="active"</if>>
-            <a href="{:U('Admin/index')}" >首页</a>
+        <a href="{:U('Admin/index')}" >首页</a>
         </li>
         <li <if condition="ACTION_NAME eq 'company_auth'"> class="active"</if>>
-            <a href="{:U('Admin/company_auth')}">商家会员认证审核</a>
+        <a href="{:U('Admin/company_auth')}">商家会员认证审核</a>
         </li>
         <li <if condition="ACTION_NAME eq 'info_auth'"> class="active"</if>>
-            <a href="{:U('Admin/info_auth')}">信息审核</a>
+        <a href="{:U('Admin/info_auth')}">信息审核</a>
         </li>
-        <li <if condition="ACTION_NAME eq 'branch'"> class="active"</if>>
+        <if condition="session('?full_admin')">
+            <li <if condition="ACTION_NAME eq 'branch'"> class="active"</if>>
             <a href="{:U('Admin/branch')}">分站管理</a>
-        </li>
+            </li>
+        </if>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">{$Think.session.admin_name}</p></li>

@@ -106,4 +106,34 @@ function getPublishTime($time) {
     return $str;
 }
 
+/*
+ * 根据信息类型和信息id生成信息浏览url
+ * 
+ */
+
+function getInfoUrl($type, $id) {
+    switch ($type) {
+        case '卖房':
+            return U('buyhouse/' . $id);
+            break;
+        case '租房':
+            return U('renthouse/' . $id);
+            break;
+        case '卖车':
+            return U('buycar/' . $id);
+            break;
+        case '租车':
+            return U('rentcar/' . $id);
+            break;
+        case '贷款':
+            return U('loan/' . $id);
+            break;
+        case '理财':
+            return U('invest/' . $id);
+            break;
+        default :
+            return '#';
+    }
+}
+
 ?>

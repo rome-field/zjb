@@ -2,7 +2,7 @@
 <include file="Admin:nav"/>
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <form class="form-inline well well-sm" role="form" action="{:U('Admin/info_auth')}" method='get'>
                 <div class="form-group"> <strong class="text-danger">状态：</strong></div>
                 <div class="form-group">
@@ -25,27 +25,31 @@
                     </select>
                 </div>
                 <div class="form-group"> <strong class="text-danger">地点：</strong></div>
-                <script type="text/javascript" src="__ROOT__/Public/js/region.js"></script>
-                <div class="form-group">
-                    <select id='sheng' name="sheng" class="form-control" onchange="loadRegion('sheng', 2, 'shiqu', '{:U(\'Ajax/getRegion\')}');">
-                        <option value='0'>省份选择</option>
-                        <volist name="province" id="area">
-                            <option value="{$area.id}">{$area.name}</option>
-                        </volist>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select id='shiqu' name="shi" class="form-control">
-                        <if condition='isset($cur_city)'>
-                            <option value='{$cur_city.id}'>{$cur_city.name}</option><else/>
-                        <option value="0">城市选择</option>
-                        </if>
-                    </select>
-                </div>
+                <if condition="session('?full_admin')">
+                    <script type="text/javascript" src="__ROOT__/Public/js/region.js"></script>
+                    <div class="form-group">
+                        <select id='sheng' name="sheng" class="form-control" onchange="loadRegion('sheng', 2, 'shiqu', '{:U(\'Ajax/getRegion\')}');">
+                            <option value='0'>省份选择</option>
+                            <volist name="province" id="area">
+                                <option value="{$area.id}">{$area.name}</option>
+                            </volist>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id='shiqu' name="shi" class="form-control">
+                            <if condition='isset($cur_city)'>
+                                <option value='{$cur_city.id}'>{$cur_city.name}</option><else/>
+                                <option value="0">城市选择</option>
+                            </if>
+                        </select>
+                    </div>
+                    <else/>
+                    <strong>{$Think.session.admin_city_name}</strong>
+                </if>
                 <button type="submit" class="btn btn-primary">确定</button>
             </form>
         </div>
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-12">
             <table class=' table table-bordered table-condensed table-hover'>
                 <thead>
                     <tr class="align-center">
@@ -62,30 +66,30 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <volist name="list" id="vo">
-                        <tr>
-                            <td>{$i}</td>
-                            <td>{$vo.info_catagory}</td>
-                            <td>{$vo.title}</td>
-                            <td>{$vo.city_name}</td>
-                            <td>{$vo.username}</td>
-                            <td>{$vo.mobile}</td>
-                            <td>{$vo.address}</td>
-                            <td>{$vo.is_checked}</td>
-                            <td><if condition="$vo.is_authed eq '1'">已通过<else/>未通过</if></td>
-                            <td>    
-                                <a href="{:U('Company/view?id='.$vo['id'])}" class="btn btn-success btn-sm" target='company_view'>查看</a>
-                                <if condition="$vo.is_checked eq '未审核'">
-                                    <button type="button" class="btn btn-primary btn-sm" onclick="company_ops('approval',{$vo.id},{$i-1});">批准</button>
-                                    <button type="button" class="btn btn-danger btn-sm" onclick="company_ops('reject',{$vo.id},{$i-1});">不批准</button>
-                                <elseif condition="$vo.is_authed eq '1'" />
-                                    <button type="button" class="btn btn-danger btn-sm" onclick="company_ops('reject',{$vo.id},{$i-1});">不批准</button>
-                                <else/>
-                                    <button type="button" class="btn btn-primary btn-sm" onclick="company_ops('approval',{$vo.id},{$i-1});">批准</button>
-                                </if>
-                            </td>
-                        </tr>
-                    </volist>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$i}</td>
+                        <td>{$vo.info_catagory}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.username}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.city_name}</td>
+                        <td>{$vo.edit_time|date="Y-m-d",###}</td>
+                        <td>{$vo.is_checked}</td>
+                        <td>{$vo.is_verified}</td>
+                        <td>    
+                            <a href="{:getInfoUrl($vo['info_catagory'],$vo['id'])}" class="btn btn-success btn-sm" target='info_view'>查看</a>
+                    <if condition="$vo.is_checked eq '未审核'">
+                        <button type="button" class="btn btn-primary btn-sm" onclick="info_ops('approval', {$vo.id}, {$i - 1});">批准</button>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="info_ops('reject', {$vo.id}, {$i - 1});">不批准</button>
+                        <elseif condition="$vo.is_verified eq '已通过验证'" />
+                        <button type="button" class="btn btn-danger btn-sm" onclick="info_ops('reject', {$vo.id}, {$i - 1});">不批准</button>
+                        <else/>
+                        <button type="button" class="btn btn-primary btn-sm" onclick="info_ops('approval', {$vo.id}, {$i - 1});">批准</button>
+                    </if>
+                    </td>
+                    </tr>
+                </volist>
                 </tbody>
             </table>
             <form class='form-inline'>
@@ -99,14 +103,14 @@
     </div>
 </div>
 <script>
-    function company_ops(ops,id,tid){
-        $.get("{:U('Admin/company_ops')}",{option:ops,cid:id},
-    function(data,textStatus){
-        $("tbody tr:eq("+tid+")").hide();
-    }
-    );
-        
-    }
+                        function info_ops(ops, id, tid) {
+                            $.get("{:U('Admin/info_ops')}", {option: ops, info_id: id},
+                            function(data, textStatus) {
+                                $("tbody tr:eq(" + tid + ")").hide();
+                            }
+                            );
+
+                        }
 
 </script>
 </body>

@@ -13,7 +13,32 @@
         <include file="./zjb/Tpl/Banner/banner.html"/>
         <include file="./zjb/Tpl/Navigation/navigation.html"/>
         <div id="main">
-            <img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/>
+            <!--img src="__ROOT__/Public/images/about_banner.jpg" style="width: 100%;" alt="banner"/-->
+            <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <foreach name="Think.session.ads" item="vo">
+                        <li data-target="#carousel-generic" data-slide-to="{$key}" <if condition="$key eq 0">class='active'</if>></li>
+                    </foreach>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <foreach name="Think.session.ads" item="vo">
+                        <div class="item <if condition='$key eq 0'>active</if>">
+                            <img src="__ROOT__/{$vo}" alt="no img">    
+                        </div>
+                    </foreach>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
             <form class="form-search form-inline">
                 <input class="input-medium search-query" type="text" />
                 <button class="btn" contenteditable="true" type="submit">查找</button>
