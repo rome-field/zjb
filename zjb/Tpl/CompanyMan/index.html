@@ -1,0 +1,47 @@
+<include file='CompanyMan:header' />
+<include file='CompanyMan:nav' />
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">
+            <a class="btn btn-danger btn-lg" href="{:U('CompanyMan/add_article')}">新增文章</a>
+        </div>
+        <div class="col-md-9 col-md-offset-1">
+            <form class='form-inline well well-sm'>
+                <strong class='text-warning'>已发布文章列表</strong>
+            </form>
+            <table class=' table table-bordered table-condensed table-hover'>
+                <thead>
+                    <tr class="align-center">
+                        <th>序号</th>
+                        <th>类型</th>
+                        <th>标题</th>
+                        <th>发布时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$i}</td>
+                        <td>{$vo.column}</td>
+                        <td>{$vo.title}</td>
+                        <td>{$vo.post_time|date="Y-m-d",###}</td>
+                        <td>
+                            <a role='button' class='btn btn-success btn-sm' href="{:U('Common/city?shi='.$vo['city_id'])}">查看</a>
+                            <a role='button' class='btn btn-danger btn-sm' href="{:U('CompanyMan/add_article',array('edit'=>$vo['id']))}">修改</a>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <form class='form-inline'>
+                <div class="pagination pagination-centered pagination-large inline">
+                    <ul >
+                        {$page}
+                    </ul>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

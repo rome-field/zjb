@@ -7,7 +7,7 @@
 
 Class CommonAction extends Action {
 
-    Public function _initialize() {
+    public function _initialize() {
         //Debug
         //session(null);
         //城市id和用户地址中的城市id不相关。默认根据ip地址设置城市id。用户可以手动切换。

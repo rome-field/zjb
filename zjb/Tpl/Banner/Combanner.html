@@ -1,12 +1,13 @@
-	     <div id="c0">
-				<img src="__ROOT__/Public/images/about_banner.jpg" alt="banner"/>
-		 </div>
-		 <div id="banner">
-			<ul class="nav nav-pills">
-			  <li class="active"><a href="{:U('Home/Company/company')}">首页</a></li>
-			  <li><a href="{:U('Home/New/new1')}">新闻广告</a></li>
-			  <li><a href="{:U('Home/Answers/answers')}">咨询答疑</a></li>
-			  <li><a href="{:U('Home/Introduce/introduce')}">公司介绍</a></li>
-			</ul>
-		</div>
+<include file='Common:top'/>
+<div id="c0">
+    <img src="__ROOT__/{$com_info.big_logo}" alt="banner"/>
+</div>
+<div id="banner">
+    <ul class="nav nav-pills ">
+        <li <if condition='ACTION_NAME eq index'>class="active"</if>><a href="{:U(MODULE_NAME.'/index')}">首页</a></li>
+        <li <if condition='ACTION_NAME eq article'>class="active"</if>><a href="{:U(MODULE_NAME.'/article')}">新闻广告</a></li>
+        <li <if condition='ACTION_NAME eq message'>class="active"</if>><a href="{:U(MODULE_NAME.'/message')}">咨询答疑</a></li>
+        <li <if condition='ACTION_NAME eq introduction'>class="active"</if>><a href="{:U(MODULE_NAME.'/introduction')}">公司介绍</a></li>
+    </ul>
+</div>
 

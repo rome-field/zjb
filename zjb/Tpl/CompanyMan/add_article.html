@@ -1,0 +1,48 @@
+<include file="CompanyMan:header"/>
+<include file="CompanyMan:nav"/>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <form class='form-inline well well-sm'>
+                <strong class='text-danger'>
+                    <if condition='isset($article)'>修改<else/>创建新</if>文章
+                </strong>
+            </form>
+            <form class="form-horizontal" role="form" action="{:U('CompanyMan/add_article')}" method="post">
+                <div class='form-group'>
+                    <label class='col-md-2 control-label'>标题</label>
+                    <div class="col-md-10">
+                        <input class="form-control" name='title' value="{$article['title']}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">文章类型</label>
+                    <div class="col-md-6">
+                        <label class="radio-inline">
+                            <input type="radio" value="1" name="column" checked="checked">企业动态
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="2" name="column">优惠促销
+                        </label>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label class='col-md-2 control-label'>文章内容</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" rows='8' name='content' />{$article.content}</textarea>
+                    </div>
+                </div>
+                <if condition='isset($article)'>
+                    <input type="hidden" name='edit' value="{$article.id}"/>
+                </if>
+                <div class='form-group'>
+                    <div class="col-md-6 col-md-offset-2">
+                        <button type='submit' class='btn btn-primary btn-lg'>提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

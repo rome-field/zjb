@@ -192,9 +192,9 @@ class AdminAction extends Action {
                     }
                     if (!empty($_POST['upload_pic'])) {//保存轮播广告图片
                         foreach ($_POST['upload_pic'] as $v) {
-                            $city->ads .= $v[0] . '|';
+                            $ads .= $v[0] . '|';
                         }
-                        $city->ads = rtrim($city->ads, '|');
+                        $city->ads = rtrim($ads, '|');
                     }
                     if (!$city->where('city_id=' . $_POST['city_id'])->save()) {
                         $this->error($city->getError());

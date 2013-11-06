@@ -1,0 +1,43 @@
+<include file='CompanyMan:header' />
+<include file='CompanyMan:nav' />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class='page-header'>
+                <h2 class='text-danger'><if condition='isset($company)'>修改<else/>添加</if>商家主页信息</h2>
+            </div>
+            <form class='form-horizontal' role='form' action="{:U('CompanyMan/setting')}" method='post' enctype="multipart/form-data">
+                <div class='form-group'>
+                    <label class='col-md-2 control-label'>公司介绍</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" rows='5' name='introduction' />{$company.introduction}</textarea>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label class='col-md-2 control-label'>主页logo</label>
+                    <div class="col-md-10">
+                        <input type='file' class="form-control" name='logo'/>
+                        <span class="help-block">请上传1170x250分辨率的图片</span>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label class='col-md-2 control-label'>轮播广告</label>
+                    <div class="col-md-10">
+                        <include file='Common:upload_pic' />
+                        <span class="help-block">请上传1170x250分辨率的图片</span>
+                    </div>
+                </div>
+                <if condition='isset($company)'>
+                    <input type='hidden' name='edit' value='{$company.company_id}'>
+                </if>
+                <div class='form-group'>
+                    <div class="col-md-6 col-md-offset-2">
+                        <button type='submit' class='btn btn-success btn-lg'>提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="navbar navbar-fixed-top navbar-inverse" role='navigation'>
+
+    <div class="navbar-header">
+        <strong class="navbar-brand">{$Think.session.m_company_name}</strong>
+    </div>
+    <ul class="nav navbar-nav">
+        <li <if condition="ACTION_NAME eq 'index'"> class="active"</if>>
+        <a href="{:U('CompanyMan/index')}" >文章管理</a>
+        </li>
+        <li <if condition="ACTION_NAME eq 'message'"> class="active"</if>>
+        <a href="{:U('CompanyMan/message')}">留言管理</a>
+        </li>
+        <li <if condition="ACTION_NAME eq 'setting'"> class="active"</if>>
+        <a href="{:U('CompanyMan/setting')}">主页设置</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="__APP__/{$Think.session.m_company_id}">查看商家主页</a></li>
+    </ul>
+</div>

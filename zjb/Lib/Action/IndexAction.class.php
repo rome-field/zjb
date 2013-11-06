@@ -67,7 +67,7 @@ class IndexAction extends CommonAction {
 
             //搜索数据库
             $db = M('user');
-            $member = $db->where(array('mobile' => $_POST['phone']))->field('id,username,user_type,is_authed,password')->find();
+            $member = $db->where(array('mobile' => $_POST['phone']))->field('id,username,user_type,is_authed,password,company_id')->find();
 
             //验证密码
             if (!$member || $member['password'] != $this->_post('upwd', 'secmd5')) {
@@ -86,6 +86,9 @@ class IndexAction extends CommonAction {
             session('mname', $member['username']);
             session('mtype', $member['type']);
             session('is_authed', $member['is_authed']);
+            if($member['user_type']){
+                session('m_company_id',$member['company_id']);
+            }
             $this->redirect('Index/index');
         }
         $this->display();

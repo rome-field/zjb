@@ -39,11 +39,11 @@ function upload_pic() {
     $upload->thumbPrefix = 't_';
     if (!$upload->upload()) {
         //$this->error($upload->getErrorMsg());
-        Log::write('upload pic failed!');
+        Log::write('upload pic failed!'.$upload->getErrorMsg());
     } else {
         $info = $upload->getUploadFileInfo();
     }
-    return $info;
+    return isset($info)?$info:0;
 }
 
 /**
