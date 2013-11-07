@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title> 商家主页</title>
+    <include file="./zjb/Tpl/Injection/injection.html"/>
+    <link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <include file="./zjb/Tpl/Banner/Combanner.html"/>
+        <div id="container">
+            <div class='row'>
+                <div class="col-md-12">
+                    <if condition="$Think.get.view eq 'buyHouse' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要买房——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="{:U('buyhouse/'.$vo['info_id'])}" target="_blank"><img src="__ROOT__/{$vo.cover}" alt="no img"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>类型： {$vo.house_kind}</span>&nbsp&nbsp &nbsp <span>面积： {$vo.area}㎡</span></p>
+                                                    <p><span>楼层： {$vo.floor_of}/{$vo.floors}层 </span>&nbsp&nbsp &nbsp <span>户型： {$vo.rooms}室{$vo.parlors}厅</span></p>
+                                                    <p><span>年代：</span><span>{$vo.year}年</span>&nbsp&nbsp &nbsp <span>售价：</span><span>{$vo.price}万</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                    <if condition="$Think.get.view eq 'rentHouse' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要租房——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span30">
+                                            <div class="thumbnail">
+                                                <a  href="{:U('renthouse/'.$vo['info_id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>类型： {$vo.house_kind}</span>&nbsp&nbsp &nbsp <span>面积： {$vo.area}㎡</span></p>
+                                                    <p><span>楼层： {$vo.floor_of}/{$vo.floors}层 </span>&nbsp&nbsp &nbsp <span>户型： {$vo.rooms}室{$vo.parlors}厅</span></p>
+                                                    <p><span>装修：</span><span>{$vo.finish_level}</span>&nbsp&nbsp &nbsp <span>租金：</span><span>{$vo.price}元/月</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                    <if condition="$Think.get.view eq 'buyCar' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要买车——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span30">
+                                            <div class="thumbnail">
+                                                <a  href="{:U('buycar/'.$vo['info_id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>类型： {$vo.type}</span>&nbsp&nbsp &nbsp <span>品牌： {$vo.brand}</span></p>
+                                                    <p><span>里程： {$vo.miles}万公里 </span>&nbsp&nbsp &nbsp <span>保险： {$vo.jiaoqiangxian_date}</span></p>
+                                                    <p><span>上牌：</span><span>{$vo.year}年</span>&nbsp&nbsp &nbsp <span>售价：</span><span>{$vo.price}万</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                    <if condition="$Think.get.view eq 'rentCar' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要租车——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span30">
+                                            <div class="thumbnail">
+                                                <a  href="{:U('rentcar/'.$vo['info_id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>类型： {$vo.type}</span>&nbsp&nbsp &nbsp <span>上牌： {$vo.year}</span></p>
+                                                    <p><span>日里程： {$vo.miles}公里 </span>&nbsp&nbsp &nbsp <span>保险： {$vo.include_insure}</span></p>
+                                                    <p><span>押金：</span><span>{$vo.deposit}元</span>&nbsp&nbsp &nbsp <span>租金：</span><span>{$vo.price}元每天</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                    <if condition="$Think.get.view eq 'loan' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要贷款——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span30">
+                                            <div class="thumbnail">
+                                                <a  href="{:U('loan/'.$vo['info_id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>来源： {$vo.type}</span>&nbsp&nbsp &nbsp <span>方式： {$vo.loan_way}</span></p>
+                                                    <p><span>利率： {$vo.interest_rate} </span>&nbsp&nbsp &nbsp <span>手续费： {$vo.charge}</span></p>
+                                                    <p><span>额度：</span><span>{$vo.price}万元</span>&nbsp&nbsp &nbsp <span>期限：</span><span>{$vo.deadline}个月</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                    <if condition="$Think.get.view eq 'invest' ">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class='panel-title text-center'>我要理财——最新信息</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="thumbnails">
+                                    <volist name="list" id="vo">
+                                        <li class="span30">
+                                            <div class="thumbnail">
+                                                <a  href="{:U('invest/'.$vo['info_id'])}"><img src='__ROOT__/{$vo.cover}' alt="暂无图片"></a>
+                                                <div class="caption">
+                                                    <h3  style="text-align: center;">{$vo.title}</h3>
+                                                    <p><span>类型： {$vo.type}</span>&nbsp&nbsp &nbsp <span>抵押物： {$vo.pawn}</span></p>
+                                                    <p><span>利率： {$vo.interest_rate}% </span>&nbsp&nbsp &nbsp <span>还款方式： {$vo.refund_way}</span></p>
+                                                    <p><span>金额：</span><span>{$vo.price}万元</span>&nbsp&nbsp &nbsp <span>期限：</span><span>{$vo.deadline}个月</span></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </if>
+                </div>
+
+            </div>
+            <div class='col-md-8 col-md-offset-2'>
+                <div class="well well-sm">
+                    {$page}
+                </div>
+            </div>
+        </div>	 
+    </div>
+</body>
+</html>

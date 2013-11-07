@@ -1,7 +1,9 @@
 <nav id="pos" class='navbar navbar-default navbar-fixed-top' role='navigation'>	
-    <ul class="nav navbar-nav pull-left">
-        <li><p class='navbar-text'>中介帮欢迎您，{$Think.session.mname}</p></li>
-    </ul>
+    <if condition="session('?mname')">
+        <ul class="nav navbar-nav pull-left">
+            <li><p class='navbar-text'>中介帮欢迎您，{$Think.session.mname}</p></li>
+        </ul>
+    </if>
     <ul class="nav navbar-nav pull-right">
         <if condition="session('?mname')">
             <li ><a href="{:U('Member/index')}">会员中心</a></li>

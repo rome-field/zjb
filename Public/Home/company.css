@@ -1,11 +1,12 @@
 			#container{
-				width:1002px;
+				width:1040px;
 				margin:0 auto;
+                margin-top: 20px;
 			}
 
 			#c0 img{
 				height:150px;
-				width:1002px;
+				width:1040px;
 			}
 
 
@@ -23,10 +24,11 @@
 		
 			
 			#banner{
-			   width:1002px;
-			   height:37px;
+			   width:1040px;
+			   height:50px;
 			   background-color:#fff;
-			   Font:15px/20PX simhei;
+			   /*Font:25px/30PX simhei;*/
+               font-size: 40px;
 			   padding-top: 10px;
 			}
 			

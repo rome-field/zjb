@@ -43,8 +43,8 @@ return array(
     ),
     
     //每页显示记录个数
-    'NUM_PER_PAGE' => '2',
-    
+    'NUM_PER_PAGE' => '4',
+    'INFO_NUM_COM'=> '4',//商家主页上的分类信息显示个数
    
 );
 ?>
