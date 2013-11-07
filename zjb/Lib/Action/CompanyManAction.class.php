@@ -14,7 +14,7 @@ class CompanyManAction extends Action {
 
     public function index() {
         $db = M('article');
-        $condition['company_id']=  session('m_company_id');
+        $condition['company_id'] = session('m_company_id');
         $order = 'post_time desc';
         $counts = $db->where($condition)->count();
         import('ORG.Util.Page');
@@ -71,7 +71,7 @@ class CompanyManAction extends Action {
                 $this->error($db->getError());
             }
             $db->post_time = time();
-            
+
             if (isset($_POST['edit'])) {//编辑文章
                 if (!$db->where('id=' . $_POST('edit'))->save()) {
                     $this->error('修改失败！');
@@ -82,12 +82,46 @@ class CompanyManAction extends Action {
                     $this->error('添加失败！');
                 }
             }
-            $this->success('操作成功！','index');
+            $this->success('操作成功！', 'index');
         }
         $this->display();
     }
 
     public function message() {
+        $db = M('message');
+        $condition['company_id'] = session('m_company_id');
+
+        $order = 'post_time desc';
+        $counts = $db->where($condition)->count();
+        import('ORG.Util.Page');
+        $Page = new Page($counts, C('NUM_PER_PAGE'));
+        $show = $Page->show();
+        $list = $db->where($condition)->order($order)->limit($Page->firstRow . ',' . $Page->listRows)->select();
+        $this->assign('list', $list);
+        $this->assign('page', $show);
+        $this->display();
+    }
+
+    public function answer() {
+
+        if (!isset($_GET['id'])) {
+            $this->error('访问地址非法！');
+        } else {
+            $db = M('message');
+            if ($this->isPost()) {
+                $db->create();
+                $db->is_replied = 1;
+                if(!$db->where('id='.$_GET['id'])->save()){
+                    $this->error('回复留言失败！');
+                }
+                $this->success('回复成功！',U('CompanyMan/message'));
+            }
+            if (($m = $db->where('id=' . $_GET['id'])->find())) {
+                $this->assign('message', $m);
+            } else {
+                $this->error('未找到留言信息！');
+            }
+        }
         $this->display();
     }
 

@@ -1,15 +1,17 @@
 <volist name='searchArray' id='s'>
-  <a class="navbar-brand" href="#">{$s['name']} :</a>
-  <ul class="nav nav-pills navbar-brand">
-    <li <if condition="!isset($_GET[$s['key']])">class="active"</if>>
-    <a href=<?php echo (isset($_GET[$s['key']])?filterUrl($s['key']):'#')?>>{$s['default']}</a>
-    </li>
-    <foreach name="s['data']" item="v">
-      <li <if condition="$_GET[$s['key']] eq $v['id']">class="active"</if>>
-      <a href=<?php echo filterUrl($s['key']).'/'.$s['key'].'/'.$v['id'];?>>{$v['name']}</a>
-      </li>
-    </foreach>
-  </ul>
+    <div class="row">
+        <a class="navbar-brand" href="#">{$s['name']} :</a>
+        <ul class="nav nav-pills navbar-brand">
+            <li <if condition="!isset($_GET[$s['key']])">class="active"</if>>
+            <a href=<?php echo (isset($_GET[$s['key']])?filterUrl($s['key']):'#')?>>{$s['default']}</a>
+            </li>
+            <foreach name="s['data']" item="v">
+                <li <if condition="$_GET[$s['key']] eq $v['id']">class="active"</if>>
+                <a href=<?php echo filterUrl($s['key']).'/'.$s['key'].'/'.$v['id'];?>>{$v['name']}</a>
+                </li>
+            </foreach>
+        </ul>
+    </div>
 </volist>
 
 

@@ -15,6 +15,13 @@
                     <li <if condition="$Think.get.type eq '1'">class='active'</if>><a href="{:U(MODULE_NAME.'/article?type=1')}">企业动态</a></li>
                     <li <if condition="$Think.get.type eq '2'">class='active'</if>><a href="{:U(MODULE_NAME.'/article?type=2')}">优惠促销</a></li>
                 </ul>
+                <volist name="list" id="vo">
+                    <h3>{$i}.【{$vo.column}】  {$vo.title}   <small>{$vo.post_time|date="r",###}</small>
+                        <small class="text-danger"><a href="__URL__/article_view?id={$vo.id}">查看详情</a></small></h3>
+                </volist>
+                <div class="well well-sm">
+                    {$page}
+                </div>
             </div>
             <div class='col-md-3' >
                 <include file="Company:com_info"/>

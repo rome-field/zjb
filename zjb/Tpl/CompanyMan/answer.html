@@ -1,0 +1,24 @@
+<include file='CompanyMan:header' />
+<include file='CompanyMan:nav' />
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <form class='form-inline well well-sm'>
+                <strong class='text-warning'>回复留言</strong>
+            </form>
+            <div class="alert alert-success">
+                {$message.content}
+            </div>
+            <form class="form-horizontal" action='__SELF__' method='post'>
+                <div class='form-group'>
+                    <textarea name='reply' class="form-control" type='text'></textarea>
+                </div>
+                <div class='form-group '>
+                    <button type="submit" class="btn btn-primary btn-lg">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
