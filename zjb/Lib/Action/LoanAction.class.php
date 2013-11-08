@@ -26,6 +26,12 @@ class LoanAction extends Action {
         array('id' => 2, 'name' => '金额'),
     );
 
+//加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        
+        $condition['price'] = array('eq', intval($_GET['search']));
+    }
+
     public function index() {
 
         //设置搜索区域
@@ -64,6 +70,9 @@ class LoanAction extends Action {
                 } elseif ($_GET['rank'] == '2') {
                     $order = 'price asc';
                 }
+            }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
             }
         }
         if (!isset($order)) {

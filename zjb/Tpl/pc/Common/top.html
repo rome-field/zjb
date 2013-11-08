@@ -7,7 +7,9 @@
     <ul class="nav navbar-nav pull-right">
         <if condition="session('?mname')">
             <li ><a href="{:U('Member/index')}">会员中心</a></li>
+            <if condition="session('mtype')">
             <li><a href="{:U('CompanyMan/index')}">商家主页管理</a></li>
+            </if>
             <li ><a href='{:U("Index/logout")}'>注销</a></li>
             <else />
             <li class="dropdown">

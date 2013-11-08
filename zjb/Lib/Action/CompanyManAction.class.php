@@ -56,6 +56,7 @@ class CompanyManAction extends Action {
             }
 
             $this->success('操作成功！');
+            exit;
         }
         $this->display();
     }
@@ -83,6 +84,7 @@ class CompanyManAction extends Action {
                 }
             }
             $this->success('操作成功！', 'index');
+            exit;
         }
         $this->display();
     }
@@ -115,11 +117,13 @@ class CompanyManAction extends Action {
                     $this->error('回复留言失败！');
                 }
                 $this->success('回复成功！',U('CompanyMan/message'));
+                exit;
             }
             if (($m = $db->where('id=' . $_GET['id'])->find())) {
                 $this->assign('message', $m);
             } else {
                 $this->error('未找到留言信息！');
+                exit;
             }
         }
         $this->display();

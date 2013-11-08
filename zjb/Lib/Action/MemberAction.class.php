@@ -50,8 +50,9 @@ class MemberAction extends Action {
                 $user['password']=  secmd5($_POST['new_password']);
                 $db->where('id='.session('mid'))->save($user);
                 $this->success('密码修改成功');
+                exit;
             }else{
-                $this->error('密码错误');
+                $this->error('密码错误');exit;
             }
                 
         }

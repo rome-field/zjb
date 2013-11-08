@@ -39,6 +39,9 @@ class IndexAction extends CommonAction {
                     $order = 'recommends desc';
                 }
             }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
+            }
         }
 
         //默认排序
@@ -86,8 +89,8 @@ class IndexAction extends CommonAction {
             session('mname', $member['username']);
             session('mtype', $member['type']);
             session('is_authed', $member['is_authed']);
-            if($member['user_type']){
-                session('m_company_id',$member['company_id']);
+            if ($member['user_type']) {
+                session('m_company_id', $member['company_id']);
             }
             $this->redirect('Index/index');
         }
@@ -116,6 +119,15 @@ class IndexAction extends CommonAction {
             }
         }
         $this->redirect('Index/index');
+    }
+
+    //加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        $cond['Company.name'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['address'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['mobile'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['_logic'] = 'or';
+        $condition['_complex'] = $cond;
     }
 
 }

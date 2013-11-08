@@ -26,6 +26,11 @@ class InvestAction extends Action {
         array('id' => 2, 'name' => '金额'),
     );
 
+//加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        $condition['price'] = array('eq', intval($_GET['search']));
+    }
+
     public function index() {
 
         //设置搜索区域
@@ -65,6 +70,9 @@ class InvestAction extends Action {
                     $order = 'price asc';
                 }
             }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
+            }
         }
         if (!isset($order)) {
             $order = 'edit_time desc';
@@ -80,6 +88,7 @@ class InvestAction extends Action {
 
         $this->display();
     }
+
     public function view() {
         if (!$this->isGet()) {
             $this->error('没有要显示的理财信息。');
@@ -126,7 +135,7 @@ class InvestAction extends Action {
         }
         return $cond;
     }
-    
+
     protected function setPriceCondition($v) {
         switch ($v) {
             case '1':

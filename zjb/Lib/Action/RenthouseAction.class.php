@@ -74,6 +74,9 @@ class RenthouseAction extends Action {
                     $order = 'price asc';
                 }
             }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
+            }
         }
         if (!isset($order)) {
             $order = 'edit_time desc';
@@ -112,6 +115,14 @@ class RenthouseAction extends Action {
         $msg = M('info')->where($map)->field('id,title')->select();
         $this->assign('msg', $msg);
         $this->display();
+    }
+
+//加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        $cond['House.address'] = array('like', '%' . $_GET['search'] . '%'); //租房类暂只支持搜地址和标题
+        $cond['title'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['_logic'] = 'or';
+        $condition['_complex'] = $cond;
     }
 
     protected function setPriceCondition($v) {

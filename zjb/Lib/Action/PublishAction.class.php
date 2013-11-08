@@ -41,7 +41,7 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", 'index');exit;
         }
         $this->display();
     }
@@ -70,7 +70,8 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", U('Publish/index'));exit;
+            exit;
         }
         $this->display();
     }
@@ -99,7 +100,7 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", 'index');exit;
         }
         $this->display();
     }
@@ -130,7 +131,7 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", 'index');exit;
         }
         $this->display();
     }
@@ -158,7 +159,7 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", 'index');exit;
         }
         $this->prepare_car_data();
         $this->display();
@@ -188,7 +189,7 @@ class PublishAction extends Action {
             if (!$db->add()) {
                 $this->error('发布失败！');
             }
-            $this->success("发布成功，等待审核...", 'index');
+            $this->success("发布成功，等待审核...", 'index');exit;
         }
         $this->prepare_car_data();
         $this->assign('car_seats', array('5座', '7座', '9座', '11座', '12座', '14座', '15座', '16座', '17座', '22座', '24座', '29座', '33座', '39座', '40座'));

@@ -40,21 +40,21 @@ class BuycarAction extends Action {
         array('id' => 21, 'name' => '其他'),
     );
     /*
-    protected $s_series = array(
-        array('id' => 1, 'name' => '捷达'),
-        array('id' => 2, 'name' => '帕萨特'),
-        array('id' => 3, 'name' => '速腾'),
-        array('id' => 4, 'name' => 'QQ3'),
-        array('id' => 5, 'name' => 'A6L'),
-        array('id' => 6, 'name' => '宝来'),
-        array('id' => 7, 'name' => '凯越'),
-        array('id' => 8, 'name' => '雅阁'),
-        array('id' => 9, 'name' => '凯美瑞'),
-        array('id' => 10, 'name' => '思域'),
-        array('id' => 11, 'name' => '桑塔纳'),
-        array('id' => 12, 'name' => '马自达6'),
-        array('id' => 13, 'name' => 'POLO'),
-    );*/
+      protected $s_series = array(
+      array('id' => 1, 'name' => '捷达'),
+      array('id' => 2, 'name' => '帕萨特'),
+      array('id' => 3, 'name' => '速腾'),
+      array('id' => 4, 'name' => 'QQ3'),
+      array('id' => 5, 'name' => 'A6L'),
+      array('id' => 6, 'name' => '宝来'),
+      array('id' => 7, 'name' => '凯越'),
+      array('id' => 8, 'name' => '雅阁'),
+      array('id' => 9, 'name' => '凯美瑞'),
+      array('id' => 10, 'name' => '思域'),
+      array('id' => 11, 'name' => '桑塔纳'),
+      array('id' => 12, 'name' => '马自达6'),
+      array('id' => 13, 'name' => 'POLO'),
+      ); */
     protected $s_price = array(
         array('id' => 1, 'name' => '1万以下'),
         array('id' => 2, 'name' => '1～2万'),
@@ -66,20 +66,28 @@ class BuycarAction extends Action {
         array('id' => 8, 'name' => '10万以上'),
     );
     /*
-    protected $s_age = array(
-        array('id' => 1, 'name' => '1年以下'),
-        array('id' => 2, 'name' => '1～2年'),
-        array('id' => 3, 'name' => '3～5年'),
-        array('id' => 4, 'name' => '6～8年'),
-        array('id' => 5, 'name' => '9～11年'),
-        array('id' => 6, 'name' => '12年以上'),
-    );
+      protected $s_age = array(
+      array('id' => 1, 'name' => '1年以下'),
+      array('id' => 2, 'name' => '1～2年'),
+      array('id' => 3, 'name' => '3～5年'),
+      array('id' => 4, 'name' => '6～8年'),
+      array('id' => 5, 'name' => '9～11年'),
+      array('id' => 6, 'name' => '12年以上'),
+      );
      * 
      */
     protected $s_rank = array(
         array('id' => 1, 'name' => '最新'),
         array('id' => 2, 'name' => '售价'),
     );
+
+//加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        $cond['title'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['series'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['_logic'] = 'or';
+        $condition['_complex'] = $cond;
+    }
 
     public function index() {
         //设置搜索区域
@@ -89,7 +97,7 @@ class BuycarAction extends Action {
             array('name' => '品牌', 'key' => 'brand', 'default' => '不限', 'data' => $this->s_brand),
             //array('name' => '车系', 'key' => 'series', 'default' => '不限', 'data' => $this->s_series),
             array('name' => '售价', 'key' => 'price', 'default' => '不限', 'data' => $this->s_price),
-           // array('name' => '车龄', 'key' => 'age', 'default' => '不限', 'data' => $this->s_age),
+            // array('name' => '车龄', 'key' => 'age', 'default' => '不限', 'data' => $this->s_age),
             array('name' => '排序', 'key' => 'rank', 'default' => '默认', 'data' => $this->s_rank),
         );
         $this->assign('searchArray', $searchArray);
@@ -111,16 +119,19 @@ class BuycarAction extends Action {
                     $condition['price'] = $vo;
                 }
             }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
+            }
             /*
-            if (isset($_GET['series'])) {
-                $condition['series'] = intval($_GET['series']);
-            }
-            if (isset($_GET['age'])) {
-                $vo = $this->setAgeCondition($_GET['age']);
-                if ($vo) {
-                    $condition['year'] = $vo;
-                }
-            }
+              if (isset($_GET['series'])) {
+              $condition['series'] = intval($_GET['series']);
+              }
+              if (isset($_GET['age'])) {
+              $vo = $this->setAgeCondition($_GET['age']);
+              if ($vo) {
+              $condition['year'] = $vo;
+              }
+              }
              */
             if (isset($_GET['rank'])) {
                 if ($_GET['rank'] == '1') {
@@ -202,33 +213,32 @@ class BuycarAction extends Action {
     }
 
     /*
-    private function setAgeCondition($v) {
-        $thisyear = intval(date('Y'));
-        switch ($v) {
-            case '1':
-                $cond = array('eq', $thisyear);
-                break;
-            case '2':
-                $cond = array('between', ($thisyear - 1) . ',' . ($thisyear - 2));
-                break;
-            case '3':
-                $cond = array('between', ($thisyear - 3) . ',' . ($thisyear - 5));
-                break;
-            case '4':
-                $cond = array('between', ($thisyear - 6) . ',' . ($thisyear - 8));
-                break;
-            case '5':
-                $cond = array('between', ($thisyear - 9) . ',' . ($thisyear - 11));
-                break;
-            case '6':
-                $cond = array('gt', $thisyear - 11);
-                break;
-            default :
-                $cond = 0;
-        }
-        return $cond;
-    }*/
-
+      private function setAgeCondition($v) {
+      $thisyear = intval(date('Y'));
+      switch ($v) {
+      case '1':
+      $cond = array('eq', $thisyear);
+      break;
+      case '2':
+      $cond = array('between', ($thisyear - 1) . ',' . ($thisyear - 2));
+      break;
+      case '3':
+      $cond = array('between', ($thisyear - 3) . ',' . ($thisyear - 5));
+      break;
+      case '4':
+      $cond = array('between', ($thisyear - 6) . ',' . ($thisyear - 8));
+      break;
+      case '5':
+      $cond = array('between', ($thisyear - 9) . ',' . ($thisyear - 11));
+      break;
+      case '6':
+      $cond = array('gt', $thisyear - 11);
+      break;
+      default :
+      $cond = 0;
+      }
+      return $cond;
+      } */
 }
 
 ?>

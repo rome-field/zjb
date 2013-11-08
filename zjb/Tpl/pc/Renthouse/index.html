@@ -14,14 +14,20 @@
         <include file="Common:banner" />
         <include file="Common:nav" />
         <div id="main">
-            <form class="form-search form-inline"><input class="input-medium search-query" type="text" />
+            <form class="form-search form-inline" action="__SELF__" method="get">
+                <input name="search" class="input-medium search-query" type="text" />
                 <button class="btn" contenteditable="true" type="submit">查找</button>
-            </form> 
+            </form>
             <div id='c2'>
                 <include file="Common:search_sel"/>				
             </div>
         </div>
         <div id="footer">
+            <if condition="isset($_GET['search'])">
+                <div class="alert alert-danger">
+                    <h3>【<span class="text-success">{$Think.get.search}</span>】的搜索结果如下：</h3>
+                </div>
+            </if>
             <div class="span6">
                 <ul class="thumbnails">
                     <volist name="list" id="vo">

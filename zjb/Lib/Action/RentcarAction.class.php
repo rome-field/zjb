@@ -47,6 +47,15 @@ class RentcarAction extends Action {
         array('id' => 2, 'name' => '租金'),
     );
 
+    //加入搜索需要的复合查询
+    private function addSearchCondition(&$condition) {
+        $cond['title'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['series'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['brand'] = array('like', '%' . $_GET['search'] . '%');
+        $cond['_logic'] = 'or';
+        $condition['_complex'] = $cond;
+    }
+
     public function index() {
         //设置搜索区域
         $searchArray = array(
@@ -83,6 +92,9 @@ class RentcarAction extends Action {
                 } elseif ($_GET['rank'] == '2') {
                     $order = 'price asc';
                 }
+            }
+            if (isset($_GET['search'])) {
+                $this->addSearchCondition($condition);
             }
         }
         if (!isset($order)) {

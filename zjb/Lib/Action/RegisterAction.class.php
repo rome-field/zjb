@@ -18,7 +18,7 @@ class RegisterAction extends Action {
         $this->error("注册失败！");
       }
 
-      $this->success('注册成功，正在为您跳转....',U('Index/login'));
+      $this->success('注册成功，正在为您跳转....',U('Index/login'));exit;
     }
     $province = M('area')->where('level=1')->field('id,name')->select();
     $this->assign('province', $province);
@@ -56,7 +56,7 @@ class RegisterAction extends Action {
        }
       
       //注册成功，等待审核
-      $this->success('注册成功，请耐心等待审核....', U('Index/login'));
+      $this->success('注册成功，请耐心等待审核....', U('Index/login'));exit;
     }
 
     $province = M('area')->where('level=1')->field('id,name')->select();
