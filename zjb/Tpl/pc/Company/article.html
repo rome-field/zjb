@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>商家主页</title>
+    <include file="Common:header" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <include file="Common:company_banner" />
+        <div class='row' >
+            <div class='col-md-9'>
+                <ul class="nav nav-tabs">
+                    <li <if condition="!isset($_GET['type'])">class='active'</if>><a href="{:U(MODULE_NAME.'/article')}">全部新闻</a></li>
+                    <li <if condition="$Think.get.type eq '1'">class='active'</if>><a href="{:U(MODULE_NAME.'/article?type=1')}">企业动态</a></li>
+                    <li <if condition="$Think.get.type eq '2'">class='active'</if>><a href="{:U(MODULE_NAME.'/article?type=2')}">优惠促销</a></li>
+                </ul>
+                <volist name="list" id="vo">
+                    <h3>{$i}.【{$vo.column}】  {$vo.title}   <small>{$vo.post_time|date="r",###}</small>
+                        <small class="text-danger"><a href="__URL__/article_view?id={$vo.id}">查看详情</a></small></h3>
+                </volist>
+                <div class="well well-sm">
+                    {$page}
+                </div>
+            </div>
+            <div class='col-md-3' >
+                <include file="Company:com_info"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

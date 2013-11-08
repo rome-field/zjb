@@ -46,5 +46,9 @@ return array(
     'NUM_PER_PAGE' => '4',
     'INFO_NUM_COM'=> '4',//商家主页上的分类信息显示个数
    
+   //模板主题配置
+   'DEFAULT_THEME' => 'pc',
+   'TMPL_DETECT_THEME' => true,
+   'THEME_LIST' => 'pc,mobile',
 );
 ?>

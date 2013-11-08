@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>商家主页</title>
+    <include file="Common:header" />
+    <link rel="stylesheet" href="__ROOT__/Public/Home/company.css" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <include file="Common:company_banner" />
+        <div class='row' >
+            <div class="col-md-10 col-md-offset-1">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class='panel-title text-center'>【{$vo.column}】  {$vo.title}   <small>{$vo.post_time|date="r",###}</small></h3>
+                    </div>
+                    <div class="panel-body">
+                        {$vo.content}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
