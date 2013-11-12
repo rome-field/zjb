@@ -1,80 +1,79 @@
-			#container{
-				width:1002px;	
-				height:100%;
-				margin:0 auto;
-			}
-
-		
-			
-			.navbar{
-				 Font:15px/37PX simhei;
-				 font-weight:700;
-			}
-			.nav{
-				Font:15px/37PX simhei;
-				margin-bottom:0;
-			}
-		
-
-			#header img{
-				float:left;
-				margin:0px 10px 0 0px;
-				
-			}
-
-				#rheader img{
-			   float:left;
-			 margin-left:10px;
-			 margin-right:20px;
-			   width:450px;
-			   height:40px;
-			}
-			
-			.navbar-brand{				
-				margin-left:20px;
-				font-size:15px;
-				
-				}
-			
-			
-			form{
-				width:1002px;
-			}
+#container{
+    width:1002px;	
+    height:100%;
+    margin:0 auto;
+}
 
 
-			user agent stylesheetinput:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
-			padding: 1px 0px;
-			}
-			user agent stylesheetinput, input[type="password"], input[type="search"], isindex {
-			-webkit-appearance: textfield;
-			padding: 1px;
-			background-color: white;
-			border: 2px inset;
-			border-image-source: initial;
-			border-image-slice: initial;
-			border-image-width: initial;
-			border-image-outset: initial;
-			border-image-repeat: initial;
-			-webkit-rtl-ordering: logical;
-			-webkit-user-select: text;
-			cursor: auto;
-			}
-			user agent stylesheetinput, textarea, keygen, select, button, isindex {
-			margin: 0em;
-			font: -webkit-small-control;
-			color: initial;
-			letter-spacing: normal;
-			word-spacing: normal;
-			text-transform: none;
-			text-indent: 0px;
-			text-shadow: none;
-			display: inline-block;
-			text-align: start;
-			}
-			user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
-			-webkit-writing-mode: horizontal-tb;
-			}
-			 .thumbnail img{
-				   width:430px;
-				   height:300px;
-				   }
+
+.navbar{
+    Font:15px/37PX simhei;
+    font-weight:700;
+}
+.nav{
+    Font:15px/37PX simhei;
+    margin-bottom:0;
+}
+
+
+#header img{
+    float:left;
+    margin:0px 10px 0 0px;
+
+}
+
+#rheader img{
+    float:left;
+    margin-left:10px;
+    margin-right:20px;
+    width:450px;
+    height:40px;
+}
+
+.navbar-brand{				
+    margin-left:20px;
+    font-size:15px;
+
+}
+
+
+form{
+    width:1002px;
+}
+
+
+user agent stylesheetinput:not([type]), input[type="color"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+    padding: 1px 0px;
+}
+user agent stylesheetinput, input[type="password"], input[type="search"], isindex {
+    -webkit-appearance: textfield;
+    padding: 1px;
+    background-color: white;
+    border: 2px inset;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+}
+user agent stylesheetinput, textarea, keygen, select, button, isindex {
+    margin: 0em;
+    font: -webkit-small-control;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+}
+user agent stylesheetinput, textarea, keygen, select, button, isindex, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+.thumbnail img{
+    width:430px;
+    height:300px;
+}

@@ -5,12 +5,6 @@
             租车
         </title>
     <include file="Common:header" />
-    <!--[if lte IE 6]>
-    <!-- bsie css 补丁文件 -->
-    <link rel="stylesheet" href="__ROOT__/Public/dist/css/bootstrap-ie6.css"/>
-    <!-- bsie 额外的 css 补丁文件 -->
-    <link rel="stylesheet" href="__ROOT__/Public/dist/css/ie.css"/>
-    <![endif]-->
     <!-- Optional theme -->
     <link rel="stylesheet" href="__ROOT__/Public/Home/publish.css" type="text/css" />
     <link rel="stylesheet" href="__ROOT__/Public/Home/form.css" type="text/css" />
@@ -71,12 +65,7 @@
                     <div class="control-group">
                         <label class="control-label">车系</label>
                         <div class="controls">
-                            <select name='series' class="input-xlarge">
-                                <option>请选择</option>
-                                <volist name='car_series' id ='v'>
-                                    <option value='{$i}'>{$v}</option>
-                                </volist>
-                            </select>
+                            <input type="text" name="series"/>
                         </div>
                     </div>
                     <div class="control-group">

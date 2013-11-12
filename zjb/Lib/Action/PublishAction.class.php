@@ -220,7 +220,7 @@ class PublishAction extends Action {
 
         $this->assign('car_type', array('轿车', '越野SUV', 'MPV', '跑车', '客车', '货车', '面包车', '皮卡', '工程车'));
         $this->assign('car_brand', array('大众', '本田', '别克', '丰田', '夏利', '日产', '奇瑞', '宝马', '现代', '奥迪', '马自达', '比亚迪', '铃木', '雪铁龙', '吉利', '奔驰', '福特', '雪弗兰', '起亚', '标志', '其他'));
-        $this->assign('car_series', array('捷达', '帕萨特', '速腾', 'QQ3', 'A6L', '宝来（经典）', '凯越', '雅阁', '凯美瑞', '思域', '桑塔纳', '伊兰特', '马自达6', 'POLO'));
+        //$this->assign('car_series', array('捷达', '帕萨特', '速腾', 'QQ3', 'A6L', '宝来（经典）', '凯越', '雅阁', '凯美瑞', '思域', '桑塔纳', '伊兰特', '马自达6', 'POLO'));
         $this->assign('car_year', range(date('Y'), '2000'));
     }
 

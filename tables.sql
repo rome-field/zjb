@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_sellcar` (
   `info_id` INT UNSIGNED NOT NULL,
   `brand` ENUM('大众','本田','别克','丰田','夏利','日产','奇瑞','宝马','现代','奥迪','马自达','比亚迪','铃木','雪铁龙','吉利','奔驰','福特','雪弗兰','起亚','标志','其他') NOT NULL COMMENT '宝马，大众',
   `type` ENUM('轿车','越野SUV','MPV','跑车','客车','货车','面包车','皮卡','工程车') NOT NULL COMMENT '轿车，商务，面包',
-  `series` ENUM('捷达','帕萨特','速腾','QQ3','A6L','宝来（经典）','凯越','雅阁','凯美瑞','思域','桑塔纳','伊兰特','马自达6','POLO') NOT NULL COMMENT '车系',
+  `series` CHAR(12) NOT NULL DEFAULT '' COMMENT '车系',
   `miles` MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 COMMENT '里程数',
   `commercial_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '保险到期时间',
   `yearcheck_date` VARCHAR(15) NULL DEFAULT NULL COMMENT '上牌时间',
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_rentcar` (
   `info_id` INT UNSIGNED NOT NULL,
   `brand` ENUM('大众','本田','别克','丰田','夏利','日产','奇瑞','宝马','现代','奥迪','马自达','比亚迪','铃木','雪铁龙','吉利','奔驰','福特','雪弗兰','起亚','标志','其他') NOT NULL COMMENT '宝马，大众',
   `type` ENUM('轿车','越野SUV','MPV','跑车','客车','货车','面包车','皮卡','工程车') NOT NULL COMMENT '轿车，商务，面包',
-  `series` ENUM('捷达','帕萨特','速腾','QQ3','A6L','宝来（经典）','凯越','雅阁','凯美瑞','思域','桑塔纳','伊兰特','马自达6','POLO') NOT NULL COMMENT '车系',
+  `series` CHAR(12) NOT NULL DEFAULT '' COMMENT '车系',
   `miles` SMALLINT UNSIGNED NOT NULL DEFAULT 0 COMMENT '里程数',
   `include_insure` ENUM('已包含','未包含') NOT NULL COMMENT '上牌时间',
   `year` YEAR NOT NULL COMMENT '上牌时间\n',
@@ -273,6 +273,62 @@ CREATE TABLE IF NOT EXISTS `zjb`.`zjb_citylist` (
   INDEX `cityid` (`city_id` ASC),
   UNIQUE INDEX `city_id_UNIQUE` (`city_id` ASC))
 ENGINE = MyISAM;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_message`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_message` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_message` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `post_time` INT(10) UNSIGNED NOT NULL,
+  `company_id` INT UNSIGNED NOT NULL,
+  `poster` VARCHAR(40) NOT NULL COMMENT '留言者ip',
+  `content` VARCHAR(500) NOT NULL,
+  `reply` VARCHAR(500) NULL,
+  `is_replied` BIT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `pid` (`is_replied` ASC),
+  INDEX `company_id` (`company_id` ASC))
+ENGINE = MyISAM
+PACK_KEYS = 1;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_company_index`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_company_index` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_company_index` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `company_id` INT UNSIGNED NOT NULL,
+  `big_logo` VARCHAR(100) NOT NULL,
+  `ads` VARCHAR(500) NULL,
+  `introduction` TEXT NOT NULL COMMENT '企业介绍\n',
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `company_id_UNIQUE` (`company_id` ASC),
+  INDEX `company_id` (`company_id` ASC))
+ENGINE = MyISAM
+PACK_KEYS = 1;
+
+
+-- -----------------------------------------------------
+-- Table `zjb`.`zjb_article`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `zjb`.`zjb_article` ;
+
+CREATE TABLE IF NOT EXISTS `zjb`.`zjb_article` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `company_id` INT UNSIGNED NOT NULL,
+  `title` VARCHAR(100) NOT NULL,
+  `post_time` INT(10) UNSIGNED NOT NULL,
+  `content` TEXT NOT NULL,
+  `column` ENUM('企业动态','优惠促销') NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `company_id` (`company_id` ASC))
+ENGINE = MyISAM
+PACK_KEYS = 1;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

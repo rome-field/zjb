@@ -87,7 +87,7 @@ class IndexAction extends CommonAction {
             //设置session
             session('mid', $member['id']);
             session('mname', $member['username']);
-            session('mtype', $member['type']);
+            session('mtype', $member['user_type']);
             session('is_authed', $member['is_authed']);
             if ($member['user_type']) {
                 session('m_company_id', $member['company_id']);
